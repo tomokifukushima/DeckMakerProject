@@ -1,0 +1,14 @@
+[
+    {
+      "id": 1,
+      "name": "ピカチュウ",
+      "image": "images/pikatyu.png",
+      "type": "Electric"
+    },
+    {
+      "id": 2,
+      "name": "リザードン",
+      "image": "images/riza-don.jpg",
+      "type": "Fire"
+    }
+  ]
