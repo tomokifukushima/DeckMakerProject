@@ -121,7 +121,7 @@ document.addEventListener("DOMContentLoaded", () => {
         buttonContainer.innerHTML = ""; // コンテナを初期化
 
         // ボタンを4つ作成して追加
-        const buttonNames = ["イラスト変更", "進化系統カード", "関連タグ", "関連情報"]; // ボタンの名前をリストで指定
+        const buttonNames = ["イラスト\n変更", "進化系統\nカード", "関連タグ", "関連情報"]; // ボタンの名前をリストで指定
 
         buttonNames.forEach(name => {
             const button = document.createElement("button");

@@ -62,15 +62,29 @@ body {
 
 .close-btn {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 20px;
+    top: 8px;
+    right: 8px;
+    width: 20px;
+    height: 20px;
+    font-size: 18px;
     cursor: pointer;
+    color: #000;
+    border: solid 1px #000;
+    border-radius: 5px;
+    transition: .4s;
+}
+
+.close-btn:hover {
+    background: #000;
+    color: #fff;
 }
 
 #popup-name {
-    font-size: 18px;
-    margin: 10px 0px;
+    font-size: 20px;
+    font-weight: 700;
+    /* border-bottom: solid 2px #000; */
+    margin: 0px;
+    margin-bottom: 10px;
 }
 
 /* ポップアップのサイドボタン */
@@ -96,6 +110,15 @@ body {
     height: 50px;
     font-size: 14px;
     cursor: pointer;
+    color: #000;
+    border: solid 1px #000;
+    border-radius: 3px;
+    transition: .4s;
+}
+
+.popup-button:hover {
+    background: #000;
+    color: #fff;
 }
 
 /* ポップアップの同じ画像 */
@@ -116,17 +139,29 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
     margin-top: 10px;
 }
 
 .counter button {
-    padding: 5px 10px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
     font-size: 18px;
+    color: #000;
+    border: solid 2px #000;
+    border-radius: 3px;
+    transition: .4s;
+}
+
+.counter button:hover {
+    background: #000;
+    color: #fff;
 }
 
 .counter span{
-    font-size: 18px;
+    font-size: 24px;
+    font-weight: 700;
 }
 
 .hidden {
