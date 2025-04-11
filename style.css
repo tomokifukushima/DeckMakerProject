@@ -68,16 +68,16 @@ body {
 /* ポップアップの同じ画像 */
 .scrollable {
     display: flex;
-    gap: 10px;
+    gap: 6px;
     overflow-x: auto;
     max-width: 200px;
     padding: 10px 0;
 }
 
 .scrollable img {
-    width: 100px;
+    width: 87px;
     height: auto;
-    border: 1px solid #ccc;
+    border: 5px solid #ccc;
     border-radius: 5px;
 }
 
