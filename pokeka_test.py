@@ -260,6 +260,7 @@ def fetch_pokemon_data(base_url, max_page, headers,pack_flag):
             category_text = category_header.text.strip() if category_header else ""
 
             image_url = detail_soup.find("img", class_="fit")["src"]
+            image_url="https://www.pokemon-card.com/"+image_url
             regulation = detail_soup.find("img", class_="img-regulation")["alt"]
             card_number = detail_soup.find("div", class_="subtext").text.strip().split()[0]
             illustrator = detail_soup.find("a", href=lambda x: x and "regulation_illust" in x)
