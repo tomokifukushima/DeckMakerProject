@@ -65,6 +65,22 @@ body {
     height: auto;
 }
 
+/* ポップアップの同じ画像 */
+.scrollable {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    max-width: 200px;
+    padding: 10px 0;
+}
+
+.scrollable img {
+    width: 100px;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
 .close-btn {
     position: absolute;
     top: 10px;

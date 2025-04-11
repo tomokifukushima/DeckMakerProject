@@ -16,10 +16,12 @@ document.addEventListener("DOMContentLoaded", () => {
   
     const deck = {};
     let currentCard = null;
+    let cards = []; // 全カードデータ
   
     fetch("pokemon_cards.json")
       .then(response => response.json())
-      .then(cards => {
+      .then(data => {
+        cards = data; // データをグローバル変数に代入
         const allTypes = new Set(cards.map(card => card["ポケモンのタイプ"]).filter(Boolean));
         allTypes.forEach(type => {
           const option = document.createElement("option");
@@ -110,7 +112,26 @@ document.addEventListener("DOMContentLoaded", () => {
   
     function openPopup(card) {
       currentCard = card;
+
+      // メインのカード画像を設定
       popupImage.src = card["画像"] || DEFAULT_IMAGE;
+
+      // "同じカードid" が存在する場合のみ処理を実行
+      const sameCardsContainer = document.getElementById("same-cards-container");
+      sameCardsContainer.innerHTML = ""; // コンテナを初期化
+
+      if (card["同じカードid"] && Array.isArray(card["同じカードid"])) {
+          const otherCards = cards.filter(c => card["同じカードid"].includes(c["id"]));
+
+          // 同じカードの画像を追加
+          otherCards.forEach(otherCard => {
+              const img = document.createElement("img");
+              img.src = otherCard["画像"] || DEFAULT_IMAGE;
+              img.alt = otherCard["カード名"];
+              sameCardsContainer.appendChild(img);
+          });
+      }
+      
       popupName.textContent = card["カード名"];
       cardCount.textContent = deck[card["カード名"]] || 0;
       updateButtonState();
