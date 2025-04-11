@@ -98,10 +98,12 @@ button.disabled {
 
 /* 検索結果のカードリスト */
 #cardList {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: flex; /* 横並びにする */
+    flex-wrap: nowrap; /* 折り返さない */
+    overflow-x: auto; /* 横スクロールを有効にする */
+    gap: 10px; /* カード間のスペース */
     margin-top: 20px;
+    padding-bottom: 10px; /* スクロールバーとの間隔を確保 */
 }
 
 /* 検索結果のカード */
@@ -113,6 +115,7 @@ button.disabled {
     text-align: center;
     cursor: pointer;
     width: 120px; /* 幅を小さめに */
+    flex: 0 0 auto; /* サイズを固定 */
 }
 
 /* 検索結果のカード画像 */
@@ -127,4 +130,11 @@ button.disabled {
 .card p {
     font-size: 12px;
     margin-top: 5px;
+}
+
+.search-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
 }
