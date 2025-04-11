@@ -121,12 +121,14 @@ document.addEventListener("DOMContentLoaded", () => {
         buttonContainer.innerHTML = ""; // コンテナを初期化
 
         // ボタンを4つ作成して追加
-        for (let i = 1; i <= 4; i++) {
+        const buttonNames = ["イラスト変更", "進化系統カード", "関連タグ", "関連情報"]; // ボタンの名前をリストで指定
+
+        buttonNames.forEach(name => {
             const button = document.createElement("button");
-            button.textContent = `仮ボタン${i}`;
+            button.textContent = name; // 指定した名前をボタンに設定
             button.classList.add("popup-button");
             buttonContainer.appendChild(button);
-        }
+        });
 
         // "同じカードid" が存在する場合のみ処理を実行
         const sameCardsContainer = document.getElementById("same-cards-container");

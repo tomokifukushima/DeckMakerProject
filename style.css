@@ -65,6 +65,11 @@ body {
     height: auto;
 }
 
+.popup-content p {
+    font-size: 18px;
+    margin: 0px;
+}
+
 /* ポップアップのサイドボタン */
 .popup-main {
     display: flex;
@@ -119,6 +124,10 @@ body {
 
 .counter button {
     padding: 5px 10px;
+    font-size: 18px;
+}
+
+.counter span{
     font-size: 18px;
 }
 
