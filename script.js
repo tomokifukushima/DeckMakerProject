@@ -116,6 +116,18 @@ document.addEventListener("DOMContentLoaded", () => {
         // メインのカード画像を設定
         popupImage.src = card["画像"] || DEFAULT_IMAGE;
 
+        // ボタンコンテナを作成
+        const buttonContainer = document.getElementById("button-container");
+        buttonContainer.innerHTML = ""; // コンテナを初期化
+
+        // ボタンを4つ作成して追加
+        for (let i = 1; i <= 4; i++) {
+            const button = document.createElement("button");
+            button.textContent = `仮ボタン${i}`;
+            button.classList.add("popup-button");
+            buttonContainer.appendChild(button);
+        }
+
         // "同じカードid" が存在する場合のみ処理を実行
         const sameCardsContainer = document.getElementById("same-cards-container");
         sameCardsContainer.innerHTML = ""; // コンテナを初期化
@@ -128,6 +140,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 const img = document.createElement("img");
                 img.src = otherCard["画像"] || DEFAULT_IMAGE;
                 img.alt = otherCard["カード名"];
+                img.addEventListener("click", () => openPopup(otherCard)); // クリックでポップアップを開く
                 sameCardsContainer.appendChild(img);
             });
         }

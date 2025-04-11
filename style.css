@@ -65,17 +65,37 @@ body {
     height: auto;
 }
 
+/* ポップアップのサイドボタン */
+.popup-main {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* ボタン間のスペース */
+}
+
+.popup-button {
+    width: 80px;
+    height: 50px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
 /* ポップアップの同じ画像 */
 .scrollable {
     display: flex;
-    gap: 6px;
+    gap: 5px;
     overflow-x: auto;
-    max-width: 200px;
+    max-width: 295px;
     padding: 10px 0;
 }
 
 .scrollable img {
-    width: 87px;
+    width: 85px;
     height: auto;
     border: 5px solid #ccc;
     border-radius: 5px;
