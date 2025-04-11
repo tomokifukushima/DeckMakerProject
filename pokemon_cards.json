@@ -1,9 +1,11 @@
 [
     {
+        "id": "47296",
         "カード名": "ヒビキのカイロス",
         "カテゴリ": "ポケモン",
+        "HP": "120",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com/assets/images/card_images/large/SV9a/047296_P_HIBIKINOKAIROSU.jpg",
+        "画像": "/assets/images/card_images/large/SV9a/047296_P_HIBIKINOKAIROSU.jpg",
         "レギュレーション": "SV9a",
         "カード番号": "001",
         "イラストレーター": "GIDORA",
@@ -32,13 +34,16 @@
         "弱点": "炎",
         "抵抗": "なし",
         "逃げるために必要なエネルギー": 2,
-        "進化": []
+        "進化": [],
+        "収録パック": "強化拡張パック「熱風のアリーナ」"
     },
     {
+        "id": "47297",
         "カード名": "ヤンヤンマ",
         "カテゴリ": "ポケモン",
+        "HP": "70",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047297_P_YANYANMA.jpg",
+        "画像": "/assets/images/card_images/large/SV9a/047297_P_YANYANMA.jpg",
         "レギュレーション": "SV9a",
         "カード番号": "002",
         "イラストレーター": "svlt",
@@ -71,13 +76,16 @@
             "メガヤンマ",
             "メガヤンマex",
             "ヤンヤンマ"
-        ]
+        ],
+        "収録パック": "強化拡張パック「熱風のアリーナ」"
     },
     {
+        "id": "47298",
         "カード名": "メガヤンマex",
         "カテゴリ": "ポケモン",
+        "HP": "280",
         "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com/assets/images/card_images/large/SV9a/047298_P_MYANMAEX.jpg",
+        "画像": "/assets/images/card_images/large/SV9a/047298_P_MYANMAEX.jpg",
         "レギュレーション": "SV9a",
         "カード番号": "003",
         "イラストレーター": "takuyoa",
@@ -109,13 +117,16 @@
             "メガヤンマ",
             "メガヤンマex",
             "ヤンヤンマ"
-        ]
+        ],
+        "収録パック": "強化拡張パック「熱風のアリーナ」"
     },
     {
+        "id": "47299",
         "カード名": "シロナのロゼリア",
         "カテゴリ": "ポケモン",
+        "HP": "70",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047299_P_SHIRONANOROZERIA.jpg",
+        "画像": "/assets/images/card_images/large/SV9a/047299_P_SHIRONANOROZERIA.jpg",
         "レギュレーション": "SV9a",
         "カード番号": "004",
         "イラストレーター": "nisimono",
@@ -137,13 +148,16 @@
         "進化": [
             "シロナのロズレイド",
             "シロナのロゼリア"
-        ]
+        ],
+        "収録パック": "強化拡張パック「熱風のアリーナ」"
     },
     {
+        "id": "47300",
         "カード名": "シロナのロズレイド",
         "カテゴリ": "ポケモン",
+        "HP": "130",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047300_P_SHIRONANOROZUREIDO.jpg",
+        "画像": "/assets/images/card_images/large/SV9a/047300_P_SHIRONANOROZUREIDO.jpg",
         "レギュレーション": "SV9a",
         "カード番号": "005",
         "イラストレーター": "En Morikura",
@@ -172,13 +186,16 @@
         "進化": [
             "シロナのロズレイド",
             "シロナのロゼリア"
-        ]
+        ],
+        "収録パック": "強化拡張パック「熱風のアリーナ」"
     },
     {
+        "id": "47301",
         "カード名": "シェイミ",
         "カテゴリ": "ポケモン",
+        "HP": "80",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047301_P_SHIEIMI.jpg",
+        "画像": "/assets/images/card_images/large/SV9a/047301_P_SHIEIMI.jpg",
         "レギュレーション": "SV9a",
         "カード番号": "006",
         "イラストレーター": "tono",
@@ -203,13 +220,16 @@
         "弱点": "炎",
         "抵抗": "なし",
         "逃げるために必要なエネルギー": 1,
-        "進化": []
+        "進化": [],
+        "収録パック": "強化拡張パック「熱風のアリーナ」"
     },
     {
+        "id": "47302",
         "カード名": "イシズマイ",
         "カテゴリ": "ポケモン",
+        "HP": "70",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047302_P_ISHIZUMAI.jpg",
+        "画像": "/assets/images/card_images/large/SV9a/047302_P_ISHIZUMAI.jpg",
         "レギュレーション": "SV9a",
         "カード番号": "007",
         "イラストレーター": "Kanami Ogata",
@@ -231,13 +251,16 @@
         "進化": [
             "イワパレス",
             "イシズマイ"
-        ]
+        ],
+        "収録パック": "強化拡張パック「熱風のアリーナ」"
     },
     {
+        "id": "47303",
         "カード名": "イワパレス",
         "カテゴリ": "ポケモン",
+        "HP": "150",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047303_P_IWAPARESU.jpg",
+        "画像": "/assets/images/card_images/large/SV9a/047303_P_IWAPARESU.jpg",
         "レギュレーション": "SV9a",
         "カード番号": "008",
         "イラストレーター": "Po-Suzuki",
@@ -266,13 +289,16 @@
         "進化": [
             "イワパレス",
             "イシズマイ"
-        ]
+        ],
+        "収録パック": "強化拡張パック「熱風のアリーナ」"
     },
     {
+        "id": "47304",
         "カード名": "カジッチュ",
         "カテゴリ": "ポケモン",
+        "HP": "40",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047304_P_KAJITCHIXYU.jpg",
+        "画像": "/assets/images/card_images/large/SV9a/047304_P_KAJITCHIXYU.jpg",
         "レギュレーション": "SV9a",
         "カード番号": "009",
         "イラストレーター": "Tetsu Kayama",
@@ -298,13 +324,16 @@
             "アップリュー",
             "カミッチュ",
             "カジッチュ"
-        ]
+        ],
+        "収録パック": "強化拡張パック「熱風のアリーナ」"
     },
     {
+        "id": "47305",
         "カード名": "カミッチュ",
         "カテゴリ": "ポケモン",
+        "HP": "90",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047305_P_KAMITCHIXYU.jpg",
+        "画像": "/assets/images/card_images/large/SV9a/047305_P_KAMITCHIXYU.jpg",
         "レギュレーション": "SV9a",
         "カード番号": "010",
         "イラストレーター": "Shigenori Negishi",
@@ -330,13 +359,16 @@
             "アップリュー",
             "カミッチュ",
             "カジッチュ"
-        ]
+        ],
+        "収録パック": "強化拡張パック「熱風のアリーナ」"
     },
     {
+        "id": "47306",
         "カード名": "カミツオロチ",
         "カテゴリ": "ポケモン",
+        "HP": "170",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047306_P_KAMITSUOROCHI.jpg",
+        "画像": "/assets/images/card_images/large/SV9a/047306_P_KAMITSUOROCHI.jpg",
         "レギュレーション": "SV9a",
         "カード番号": "011",
         "イラストレーター": "Anesaki Dynamic",
@@ -372,13 +404,16 @@
             "アップリュー",
             "カミッチュ",
             "カジッチュ"
-        ]
+        ],
+        "収録パック": "強化拡張パック「熱風のアリーナ」"
     },
     {
+        "id": "47307",
         "カード名": "オーガポン みどりのめん",
         "カテゴリ": "ポケモン",
+        "HP": "110",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047307_P_OGAPONMIDORINOMEN.jpg",
+        "画像": "/assets/images/card_images/large/SV9a/047307_P_OGAPONMIDORINOMEN.jpg",
         "レギュレーション": "SV9a",
         "カード番号": "012",
         "イラストレーター": "Tomomi Ozaki",
@@ -407,13 +442,16 @@
         "弱点": "炎",
         "抵抗": "なし",
         "逃げるために必要なエネルギー": 1,
-        "進化": []
+        "進化": [],
+        "収録パック": "強化拡張パック「熱風のアリーナ」"
     },
     {
+        "id": "47308",
         "カード名": "ポニータ",
         "カテゴリ": "ポケモン",
+        "HP": "70",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047308_P_PONITA.jpg",
+        "画像": "/assets/images/card_images/large/SV9a/047308_P_PONITA.jpg",
         "レギュレーション": "SV9a",
         "カード番号": "013",
         "イラストレーター": "Ayako Ozaki",
@@ -435,13 +473,16 @@
         "進化": [
             "ギャロップ",
             "ポニータ"
-        ]
+        ],
+        "収録パック": "強化拡張パック「熱風のアリーナ」"
     },
     {
+        "id": "47309",
         "カード名": "ギャロップ",
         "カテゴリ": "ポケモン",
+        "HP": "110",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047309_P_GIXYAROPPU.jpg",
+        "画像": "/assets/images/card_images/large/SV9a/047309_P_GIXYAROPPU.jpg",
         "レギュレーション": "SV9a",
         "カード番号": "014",
         "イラストレーター": "SIE NANAHARA",
@@ -469,13 +510,16 @@
         "進化": [
             "ギャロップ",
             "ポニータ"
-        ]
+        ],
+        "収録パック": "強化拡張パック「熱風のアリーナ」"
     },
     {
+        "id": "47310",
         "カード名": "ヒビキのヒノアラシ",
         "カテゴリ": "ポケモン",
+        "HP": "70",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047310_P_HIBIKINOHINOARASHI.jpg",
+        "画像": "/assets/images/card_images/large/SV9a/047310_P_HIBIKINOHINOARASHI.jpg",
         "レギュレーション": "SV9a",
         "カード番号": "015",
         "イラストレーター": "Susumu Maeya",
@@ -498,13 +542,16 @@
             "ヒビキのバクフーン",
             "ヒビキのマグマラシ",
             "ヒビキのヒノアラシ"
-        ]
+        ],
+        "収録パック": "強化拡張パック「熱風のアリーナ」"
     },
     {
+        "id": "47311",
         "カード名": "ヒビキのマグマラシ",
         "カテゴリ": "ポケモン",
+        "HP": "100",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047311_P_HIBIKINOMAGUMARASHI.jpg",
+        "画像": "/assets/images/card_images/large/SV9a/047311_P_HIBIKINOMAGUMARASHI.jpg",
         "レギュレーション": "SV9a",
         "カード番号": "016",
         "イラストレーター": "Souichirou Gunjima",
@@ -532,13 +579,16 @@
             "ヒビキのバクフーン",
             "ヒビキのマグマラシ",
             "ヒビキのヒノアラシ"
-        ]
+        ],
+        "収録パック": "強化拡張パック「熱風のアリーナ」"
     },
     {
+        "id": "47312",
         "カード名": "ヒビキのバクフーン",
         "カテゴリ": "ポケモン",
+        "HP": "170",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047312_P_HIBIKINOBAKUFUN.jpg",
+        "画像": "/assets/images/card_images/large/SV9a/047312_P_HIBIKINOBAKUFUN.jpg",
         "レギュレーション": "SV9a",
         "カード番号": "017",
         "イラストレーター": "danciao",
@@ -571,13 +621,16 @@
             "ヒビキのバクフーン",
             "ヒビキのマグマラシ",
             "ヒビキのヒノアラシ"
-        ]
+        ],
+        "収録パック": "強化拡張パック「熱風のアリーナ」"
     },
     {
+        "id": "47313",
         "カード名": "ヒビキのマグマッグ",
         "カテゴリ": "ポケモン",
+        "HP": "80",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047313_P_HIBIKINOMAGUMAGGU.jpg",
+        "画像": "/assets/images/card_images/large/SV9a/047313_P_HIBIKINOMAGUMAGGU.jpg",
         "レギュレーション": "SV9a",
         "カード番号": "018",
         "イラストレーター": "Sanosuke Sakuma",
@@ -599,13 +652,16 @@
         "進化": [
             "ヒビキのマグカルゴ",
             "ヒビキのマグマッグ"
-        ]
+        ],
+        "収録パック": "強化拡張パック「熱風のアリーナ」"
     },
     {
+        "id": "47314",
         "カード名": "ヒビキのマグカルゴ",
         "カテゴリ": "ポケモン",
+        "HP": "130",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047314_P_HIBIKINOMAGUKARUGO.jpg",
+        "画像": "/assets/images/card_images/large/SV9a/047314_P_HIBIKINOMAGUKARUGO.jpg",
         "レギュレーション": "SV9a",
         "カード番号": "019",
         "イラストレーター": "kodama",
@@ -634,13 +690,16 @@
         "進化": [
             "ヒビキのマグカルゴ",
             "ヒビキのマグマッグ"
-        ]
+        ],
+        "収録パック": "強化拡張パック「熱風のアリーナ」"
     },
     {
+        "id": "47315",
         "カード名": "ヒビキのホウオウex",
         "カテゴリ": "ポケモン",
+        "HP": "230",
         "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047315_P_HIBIKINOHOUOUEX.jpg",
+        "画像": "/assets/images/card_images/large/SV9a/047315_P_HIBIKINOHOUOUEX.jpg",
         "レギュレーション": "SV9a",
         "カード番号": "020",
         "イラストレーター": "aky CG Works",
@@ -667,13 +726,16 @@
         "弱点": "水",
         "抵抗": "なし",
         "逃げるために必要なエネルギー": 2,
-        "進化": []
+        "進化": [],
+        "収録パック": "強化拡張パック「熱風のアリーナ」"
     },
     {
+        "id": "47316",
         "カード名": "オーガポン かまどのめん",
         "カテゴリ": "ポケモン",
+        "HP": "110",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047316_P_OGAPONKAMADONOMEN.jpg",
+        "画像": "/assets/images/card_images/large/SV9a/047316_P_OGAPONKAMADONOMEN.jpg",
         "レギュレーション": "SV9a",
         "カード番号": "021",
         "イラストレーター": "HYOGONOSUKE",
@@ -702,13 +764,16 @@
         "弱点": "水",
         "抵抗": "なし",
         "逃げるために必要なエネルギー": 1,
-        "進化": []
+        "進化": [],
+        "収録パック": "強化拡張パック「熱風のアリーナ」"
     },
     {
+        "id": "47317",
         "カード名": "カスミのコダック",
         "カテゴリ": "ポケモン",
+        "HP": "70",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047317_P_KASUMINOKODAKKU.jpg",
+        "画像": "/assets/images/card_images/large/SV9a/047317_P_KASUMINOKODAKKU.jpg",
         "レギュレーション": "SV9a",
         "カード番号": "022",
         "イラストレーター": "Yuu Nishida",
@@ -732,13 +797,16 @@
         "弱点": "雷",
         "抵抗": "なし",
         "逃げるために必要なエネルギー": 1,
-        "進化": []
+        "進化": [],
+        "収録パック": "強化拡張パック「熱風のアリーナ」"
     },
     {
+        "id": "47318",
         "カード名": "カスミのヒトデマン",
         "カテゴリ": "ポケモン",
+        "HP": "70",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047318_P_KASUMINOHITODEMAN.jpg",
+        "画像": "/assets/images/card_images/large/SV9a/047318_P_KASUMINOHITODEMAN.jpg",
         "レギュレーション": "SV9a",
         "カード番号": "023",
         "イラストレーター": "Shinya Komatsu",
@@ -760,13 +828,16 @@
         "進化": [
             "カスミのスターミー",
             "カスミのヒトデマン"
-        ]
+        ],
+        "収録パック": "強化拡張パック「熱風のアリーナ」"
     },
     {
+        "id": "47319",
         "カード名": "カスミのスターミー",
         "カテゴリ": "ポケモン",
+        "HP": "100",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047319_P_KASUMINOSUTAMI.jpg",
+        "画像": "/assets/images/card_images/large/SV9a/047319_P_KASUMINOSUTAMI.jpg",
         "レギュレーション": "SV9a",
         "カード番号": "024",
         "イラストレーター": "Natsumi Yoshida",
@@ -788,13 +859,16 @@
         "進化": [
             "カスミのスターミー",
             "カスミのヒトデマン"
-        ]
+        ],
+        "収録パック": "強化拡張パック「熱風のアリーナ」"
     },
     {
+        "id": "47320",
         "カード名": "カスミのコイキング",
         "カテゴリ": "ポケモン",
+        "HP": "30",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047320_P_KASUMINOKOIKINGU.jpg",
+        "画像": "/assets/images/card_images/large/SV9a/047320_P_KASUMINOKOIKINGU.jpg",
         "レギュレーション": "SV9a",
         "カード番号": "025",
         "イラストレーター": "Shimaris Yukichi",
@@ -821,13 +895,16 @@
         "進化": [
             "カスミのギャラドス",
             "カスミのコイキング"
-        ]
+        ],
+        "収録パック": "強化拡張パック「熱風のアリーナ」"
     },
     {
+        "id": "47321",
         "カード名": "カスミのギャラドス",
         "カテゴリ": "ポケモン",
+        "HP": "180",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047321_P_KASUMINOGIXYARADOSU.jpg",
+        "画像": "/assets/images/card_images/large/SV9a/047321_P_KASUMINOGIXYARADOSU.jpg",
         "レギュレーション": "SV9a",
         "カード番号": "026",
         "イラストレーター": "GOSSAN",
@@ -859,13 +936,16 @@
         "進化": [
             "カスミのギャラドス",
             "カスミのコイキング"
-        ]
+        ],
+        "収録パック": "強化拡張パック「熱風のアリーナ」"
     },
     {
+        "id": "47322",
         "カード名": "カスミのラプラス",
         "カテゴリ": "ポケモン",
+        "HP": "110",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047322_P_KASUMINORAPURASU.jpg",
+        "画像": "/assets/images/card_images/large/SV9a/047322_P_KASUMINORAPURASU.jpg",
         "レギュレーション": "SV9a",
         "カード番号": "027",
         "イラストレーター": "En Morikura",
@@ -893,13 +973,16 @@
         "弱点": "雷",
         "抵抗": "なし",
         "逃げるために必要なエネルギー": 1,
-        "進化": []
+        "進化": [],
+        "収録パック": "強化拡張パック「熱風のアリーナ」"
     },
     {
+        "id": "47323",
         "カード名": "シロナのヒンバス",
         "カテゴリ": "ポケモン",
+        "HP": "30",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047323_P_SHIRONANOHINBASU.jpg",
+        "画像": "/assets/images/card_images/large/SV9a/047323_P_SHIRONANOHINBASU.jpg",
         "レギュレーション": "SV9a",
         "カード番号": "028",
         "イラストレーター": "kamonabe",
@@ -921,13 +1004,16 @@
         "進化": [
             "シロナのミロカロス",
             "シロナのヒンバス"
-        ]
+        ],
+        "収録パック": "強化拡張パック「熱風のアリーナ」"
     },
     {
+        "id": "47324",
         "カード名": "シロナのミロカロス",
         "カテゴリ": "ポケモン",
+        "HP": "130",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047324_P_SHIRONANOMIROKAROSU.jpg",
+        "画像": "/assets/images/card_images/large/SV9a/047324_P_SHIRONANOMIROKAROSU.jpg",
         "レギュレーション": "SV9a",
         "カード番号": "029",
         "イラストレーター": "You Iribi",
@@ -950,13 +1036,16 @@
         "進化": [
             "シロナのミロカロス",
             "シロナのヒンバス"
-        ]
+        ],
+        "収録パック": "強化拡張パック「熱風のアリーナ」"
     },
     {
+        "id": "47325",
         "カード名": "ブイゼル",
         "カテゴリ": "ポケモン",
+        "HP": "70",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047325_P_BUIZERU.jpg",
+        "画像": "/assets/images/card_images/large/SV9a/047325_P_BUIZERU.jpg",
         "レギュレーション": "SV9a",
         "カード番号": "030",
         "イラストレーター": "Ayako Ozaki",
@@ -988,13 +1077,16 @@
         "進化": [
             "フローゼル",
             "ブイゼル"
-        ]
+        ],
+        "収録パック": "強化拡張パック「熱風のアリーナ」"
     },
     {
+        "id": "47326",
         "カード名": "フローゼル",
         "カテゴリ": "ポケモン",
+        "HP": "120",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047326_P_FUROZERU.jpg",
+        "画像": "/assets/images/card_images/large/SV9a/047326_P_FUROZERU.jpg",
         "レギュレーション": "SV9a",
         "カード番号": "031",
         "イラストレーター": "Shibuzoh.",
@@ -1027,13 +1119,16 @@
         "進化": [
             "フローゼル",
             "ブイゼル"
-        ]
+        ],
+        "収録パック": "強化拡張パック「熱風のアリーナ」"
     },
     {
+        "id": "47327",
         "カード名": "ヘイラッシャex",
         "カテゴリ": "ポケモン",
+        "HP": "260",
         "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047327_P_HEIRASSHIXYAEX.jpg",
+        "画像": "/assets/images/card_images/large/SV9a/047327_P_HEIRASSHIXYAEX.jpg",
         "レギュレーション": "SV9a",
         "カード番号": "032",
         "イラストレーター": "N-DESIGN Inc.",
@@ -1064,13 +1159,16 @@
         "弱点": "雷",
         "抵抗": "なし",
         "逃げるために必要なエネルギー": 4,
-        "進化": []
+        "進化": [],
+        "収録パック": "強化拡張パック「熱風のアリーナ」"
     },
     {
+        "id": "47328",
         "カード名": "オーガポン いどのめん",
         "カテゴリ": "ポケモン",
+        "HP": "110",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047328_P_OGAPONIDONOMEN.jpg",
+        "画像": "/assets/images/card_images/large/SV9a/047328_P_OGAPONIDONOMEN.jpg",
         "レギュレーション": "SV9a",
         "カード番号": "033",
         "イラストレーター": "rika",
@@ -1099,13 +1197,16 @@
         "弱点": "雷",
         "抵抗": "なし",
         "逃げるために必要なエネルギー": 1,
-        "進化": []
+        "進化": [],
+        "収録パック": "強化拡張パック「熱風のアリーナ」"
     },
     {
+        "id": "47329",
         "カード名": "エレブー",
         "カテゴリ": "ポケモン",
+        "HP": "90",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047329_P_EREBU.jpg",
+        "画像": "/assets/images/card_images/large/SV9a/047329_P_EREBU.jpg",
         "レギュレーション": "SV9a",
         "カード番号": "034",
         "イラストレーター": "Amelicart",
@@ -1129,13 +1230,16 @@
             "エレキブル",
             "エレキブルex",
             "エレブー"
-        ]
+        ],
+        "収録パック": "強化拡張パック「熱風のアリーナ」"
     },
     {
+        "id": "47330",
         "カード名": "エレキブルex",
         "カテゴリ": "ポケモン",
+        "HP": "280",
         "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047330_P_EREKIBURUEX.jpg",
+        "画像": "/assets/images/card_images/large/SV9a/047330_P_EREKIBURUEX.jpg",
         "レギュレーション": "SV9a",
         "カード番号": "035",
         "イラストレーター": "PLANETA Mochizuki",
@@ -1169,13 +1273,16 @@
             "エレキブル",
             "エレキブルex",
             "エレブー"
-        ]
+        ],
+        "収録パック": "強化拡張パック「熱風のアリーナ」"
     },
     {
+        "id": "47331",
         "カード名": "ヒビキのピチュー",
         "カテゴリ": "ポケモン",
+        "HP": "30",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047331_P_HIBIKINOPICHIXYU.jpg",
+        "画像": "/assets/images/card_images/large/SV9a/047331_P_HIBIKINOPICHIXYU.jpg",
         "レギュレーション": "SV9a",
         "カード番号": "036",
         "イラストレーター": "Narumi Sato",
@@ -1192,13 +1299,16 @@
         "弱点": "闘",
         "抵抗": "なし",
         "逃げるために必要なエネルギー": 0,
-        "進化": []
+        "進化": [],
+        "収録パック": "強化拡張パック「熱風のアリーナ」"
     },
     {
+        "id": "47332",
         "カード名": "ラクライ",
         "カテゴリ": "ポケモン",
+        "HP": "60",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047332_P_RAKURAI.jpg",
+        "画像": "/assets/images/card_images/large/SV9a/047332_P_RAKURAI.jpg",
         "レギュレーション": "SV9a",
         "カード番号": "037",
         "イラストレーター": "Narano",
@@ -1229,13 +1339,16 @@
         "進化": [
             "ライボルト",
             "ラクライ"
-        ]
+        ],
+        "収録パック": "強化拡張パック「熱風のアリーナ」"
     },
     {
+        "id": "47333",
         "カード名": "ライボルト",
         "カテゴリ": "ポケモン",
+        "HP": "120",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047333_P_RAIBORUTO.jpg",
+        "画像": "/assets/images/card_images/large/SV9a/047333_P_RAIBORUTO.jpg",
         "レギュレーション": "SV9a",
         "カード番号": "038",
         "イラストレーター": "Izucch",
@@ -1266,13 +1379,16 @@
         "進化": [
             "ライボルト",
             "ラクライ"
-        ]
+        ],
+        "収録パック": "強化拡張パック「熱風のアリーナ」"
     },
     {
+        "id": "47334",
         "カード名": "ロトム",
         "カテゴリ": "ポケモン",
+        "HP": "60",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047334_P_ROTOMU.jpg",
+        "画像": "/assets/images/card_images/large/SV9a/047334_P_ROTOMU.jpg",
         "レギュレーション": "SV9a",
         "カード番号": "039",
         "イラストレーター": "Yoshimi Miyoshi",
@@ -1300,13 +1416,16 @@
         "弱点": "闘",
         "抵抗": "なし",
         "逃げるために必要なエネルギー": 1,
-        "進化": []
+        "進化": [],
+        "収録パック": "強化拡張パック「熱風のアリーナ」"
     },
     {
+        "id": "47335",
         "カード名": "ゼラオラ",
         "カテゴリ": "ポケモン",
+        "HP": "100",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047335_P_ZERAORA.jpg",
+        "画像": "/assets/images/card_images/large/SV9a/047335_P_ZERAORA.jpg",
         "レギュレーション": "SV9a",
         "カード番号": "040",
         "イラストレーター": "Ryuta Fuse",
@@ -1335,13 +1454,16 @@
         "弱点": "闘",
         "抵抗": "なし",
         "逃げるために必要なエネルギー": 1,
-        "進化": []
+        "進化": [],
+        "収録パック": "強化拡張パック「熱風のアリーナ」"
     },
     {
+        "id": "47336",
         "カード名": "ヒビキのウソッキー",
         "カテゴリ": "ポケモン",
+        "HP": "110",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047336_P_HIBIKINOUSOKKI.jpg",
+        "画像": "/assets/images/card_images/large/SV9a/047336_P_HIBIKINOUSOKKI.jpg",
         "レギュレーション": "SV9a",
         "カード番号": "041",
         "イラストレーター": "OKACHEKE",
@@ -1369,13 +1491,16 @@
         "弱点": "草",
         "抵抗": "なし",
         "逃げるために必要なエネルギー": 1,
-        "進化": []
+        "進化": [],
+        "収録パック": "強化拡張パック「熱風のアリーナ」"
     },
     {
+        "id": "47337",
         "カード名": "シロナのフカマル",
         "カテゴリ": "ポケモン",
+        "HP": "70",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047337_P_SHIRONANOFUKAMARU.jpg",
+        "画像": "/assets/images/card_images/large/SV9a/047337_P_SHIRONANOFUKAMARU.jpg",
         "レギュレーション": "SV9a",
         "カード番号": "042",
         "イラストレーター": "Tomomi Ozaki",
@@ -1398,13 +1523,16 @@
             "シロナのガブリアスex",
             "シロナのガバイト",
             "シロナのフカマル"
-        ]
+        ],
+        "収録パック": "強化拡張パック「熱風のアリーナ」"
     },
     {
+        "id": "47338",
         "カード名": "シロナのガバイト",
         "カテゴリ": "ポケモン",
+        "HP": "100",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047338_P_SHIRONANOGABAITO.jpg",
+        "画像": "/assets/images/card_images/large/SV9a/047338_P_SHIRONANOGABAITO.jpg",
         "レギュレーション": "SV9a",
         "カード番号": "043",
         "イラストレーター": "Taira Akitsu",
@@ -1432,13 +1560,16 @@
             "シロナのガブリアスex",
             "シロナのガバイト",
             "シロナのフカマル"
-        ]
+        ],
+        "収録パック": "強化拡張パック「熱風のアリーナ」"
     },
     {
+        "id": "47339",
         "カード名": "シロナのガブリアスex",
         "カテゴリ": "ポケモン",
+        "HP": "330",
         "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047339_P_SHIRONANOGABURIASUEX.jpg",
+        "画像": "/assets/images/card_images/large/SV9a/047339_P_SHIRONANOGABURIASUEX.jpg",
         "レギュレーション": "SV9a",
         "カード番号": "044",
         "イラストレーター": "5ban Graphics",
@@ -1470,13 +1601,16 @@
             "シロナのガブリアスex",
             "シロナのガバイト",
             "シロナのフカマル"
-        ]
+        ],
+        "収録パック": "強化拡張パック「熱風のアリーナ」"
     },
     {
+        "id": "47340",
         "カード名": "ドロバンコ",
         "カテゴリ": "ポケモン",
+        "HP": "90",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047340_P_DOROBANKO.jpg",
+        "画像": "/assets/images/card_images/large/SV9a/047340_P_DOROBANKO.jpg",
         "レギュレーション": "SV9a",
         "カード番号": "045",
         "イラストレーター": "Aliya Chen",
@@ -1499,13 +1633,16 @@
         "進化": [
             "バンバドロ",
             "ドロバンコ"
-        ]
+        ],
+        "収録パック": "強化拡張パック「熱風のアリーナ」"
     },
     {
+        "id": "47341",
         "カード名": "バンバドロ",
         "カテゴリ": "ポケモン",
+        "HP": "150",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047341_P_BANBADORO.jpg",
+        "画像": "/assets/images/card_images/large/SV9a/047341_P_BANBADORO.jpg",
         "レギュレーション": "SV9a",
         "カード番号": "046",
         "イラストレーター": "Uta",
@@ -1534,13 +1671,16 @@
         "進化": [
             "バンバドロ",
             "ドロバンコ"
-        ]
+        ],
+        "収録パック": "強化拡張パック「熱風のアリーナ」"
     },
     {
+        "id": "47342",
         "カード名": "ペパーのノノクラゲ",
         "カテゴリ": "ポケモン",
+        "HP": "70",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047342_P_PEPANONONOKURAGE.jpg",
+        "画像": "/assets/images/card_images/large/SV9a/047342_P_PEPANONONOKURAGE.jpg",
         "レギュレーション": "SV9a",
         "カード番号": "047",
         "イラストレーター": "Fujimoto Gold",
@@ -1562,13 +1702,16 @@
         "進化": [
             "ペパーのリククラゲ",
             "ペパーのノノクラゲ"
-        ]
+        ],
+        "収録パック": "強化拡張パック「熱風のアリーナ」"
     },
     {
+        "id": "47343",
         "カード名": "ペパーのリククラゲ",
         "カテゴリ": "ポケモン",
+        "HP": "140",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047343_P_PEPANORIKUKURAGE.jpg",
+        "画像": "/assets/images/card_images/large/SV9a/047343_P_PEPANORIKUKURAGE.jpg",
         "レギュレーション": "SV9a",
         "カード番号": "048",
         "イラストレーター": "Yuya Oka",
@@ -1600,13 +1743,16 @@
         "進化": [
             "ペパーのリククラゲ",
             "ペパーのノノクラゲ"
-        ]
+        ],
+        "収録パック": "強化拡張パック「熱風のアリーナ」"
     },
     {
+        "id": "47344",
         "カード名": "オーガポン いしずえのめん",
         "カテゴリ": "ポケモン",
+        "HP": "110",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047344_P_OGAPONISHIZUENOMEN.jpg",
+        "画像": "/assets/images/card_images/large/SV9a/047344_P_OGAPONISHIZUENOMEN.jpg",
         "レギュレーション": "SV9a",
         "カード番号": "049",
         "イラストレーター": "Kazumasa Yasukuni",
@@ -1635,13 +1781,16 @@
         "弱点": "草",
         "抵抗": "なし",
         "逃げるために必要なエネルギー": 1,
-        "進化": []
+        "進化": [],
+        "収録パック": "強化拡張パック「熱風のアリーナ」"
     },
     {
+        "id": "47345",
         "カード名": "シロナのミカルゲ",
         "カテゴリ": "ポケモン",
+        "HP": "70",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047345_P_SHIRONANOMIKARUGE.jpg",
+        "画像": "/assets/images/card_images/large/SV9a/047345_P_SHIRONANOMIKARUGE.jpg",
         "レギュレーション": "SV9a",
         "カード番号": "050",
         "イラストレーター": "satoma",
@@ -1660,13 +1809,16 @@
         "弱点": "草",
         "抵抗": "なし",
         "逃げるために必要なエネルギー": 1,
-        "進化": []
+        "進化": [],
+        "収録パック": "強化拡張パック「熱風のアリーナ」"
     },
     {
+        "id": "47346",
         "カード名": "ペパーのオラチフ",
         "カテゴリ": "ポケモン",
+        "HP": "70",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047346_P_PEPANOORACHIFU.jpg",
+        "画像": "/assets/images/card_images/large/SV9a/047346_P_PEPANOORACHIFU.jpg",
         "レギュレーション": "SV9a",
         "カード番号": "051",
         "イラストレーター": "Mina Nakai",
@@ -1698,13 +1850,16 @@
         "進化": [
             "ペパーのマフィティフex",
             "ペパーのオラチフ"
-        ]
+        ],
+        "収録パック": "強化拡張パック「熱風のアリーナ」"
     },
     {
+        "id": "47347",
         "カード名": "ペパーのマフィティフex",
         "カテゴリ": "ポケモン",
+        "HP": "270",
         "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047347_P_PEPANOMAFUITEIFUEX.jpg",
+        "画像": "/assets/images/card_images/large/SV9a/047347_P_PEPANOMAFUITEIFUEX.jpg",
         "レギュレーション": "SV9a",
         "カード番号": "052",
         "イラストレーター": "akagi",
@@ -1736,13 +1891,16 @@
         "進化": [
             "ペパーのマフィティフex",
             "ペパーのオラチフ"
-        ]
+        ],
+        "収録パック": "強化拡張パック「熱風のアリーナ」"
     },
     {
+        "id": "47348",
         "カード名": "ケンタロス",
         "カテゴリ": "ポケモン",
+        "HP": "130",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047348_P_KENTAROSU.jpg",
+        "画像": "/assets/images/card_images/large/SV9a/047348_P_KENTAROSU.jpg",
         "レギュレーション": "SV9a",
         "カード番号": "053",
         "イラストレーター": "yuu",
@@ -1770,13 +1928,16 @@
         "弱点": "闘",
         "抵抗": "なし",
         "逃げるために必要なエネルギー": 2,
-        "進化": []
+        "進化": [],
+        "収録パック": "強化拡張パック「熱風のアリーナ」"
     },
     {
+        "id": "47349",
         "カード名": "ペパーのホシガリス",
         "カテゴリ": "ポケモン",
+        "HP": "60",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047349_P_PEPANOHOSHIGARISU.jpg",
+        "画像": "/assets/images/card_images/large/SV9a/047349_P_PEPANOHOSHIGARISU.jpg",
         "レギュレーション": "SV9a",
         "カード番号": "054",
         "イラストレーター": "Oswaldo KATO",
@@ -1798,13 +1959,16 @@
         "進化": [
             "ペパーのヨクバリス",
             "ペパーのホシガリス"
-        ]
+        ],
+        "収録パック": "強化拡張パック「熱風のアリーナ」"
     },
     {
+        "id": "47350",
         "カード名": "ペパーのヨクバリス",
         "カテゴリ": "ポケモン",
+        "HP": "120",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047350_P_PEPANOYOKUBARISU.jpg",
+        "画像": "/assets/images/card_images/large/SV9a/047350_P_PEPANOYOKUBARISU.jpg",
         "レギュレーション": "SV9a",
         "カード番号": "055",
         "イラストレーター": "Akira Komayama",
@@ -1832,285 +1996,16 @@
         "進化": [
             "ペパーのヨクバリス",
             "ペパーのホシガリス"
-        ]
+        ],
+        "収録パック": "強化拡張パック「熱風のアリーナ」"
     },
     {
-        "カード名": "ペパーのヨクバリス",
-        "カテゴリ": "ポケモン",
-        "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047350_P_PEPANOYOKUBARISU.jpg",
-        "レギュレーション": "SV9a",
-        "カード番号": "055",
-        "イラストレーター": "Akira Komayama",
-        "ポケモンのタイプ": "無色",
-        "特性": [
-            {
-                "名前": "よくばりオーダー",
-                "効果": "自分の番に、このカードを手札から出して進化させたとき、1回使える。自分のトラッシュから「ペパーのサンドウィッチ」を2枚まで選び、相手に見せて、手札に加える。"
-            }
-        ],
-        "ワザ": [
-            {
-                "名前": "ころがりタックル50",
-                "必要エネルギー": [
-                    "無色",
-                    "無色"
-                ],
-                "ダメージ": "50",
-                "効果": ""
-            }
-        ],
-        "弱点": "闘",
-        "抵抗": "なし",
-        "逃げるために必要なエネルギー": 2,
-        "進化": [
-            "ペパーのヨクバリス",
-            "ペパーのホシガリス"
-        ]
-    },
-    {
-        "カード名": "ペパーのヨクバリス",
-        "カテゴリ": "ポケモン",
-        "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047350_P_PEPANOYOKUBARISU.jpg",
-        "レギュレーション": "SV9a",
-        "カード番号": "055",
-        "イラストレーター": "Akira Komayama",
-        "ポケモンのタイプ": "無色",
-        "特性": [
-            {
-                "名前": "よくばりオーダー",
-                "効果": "自分の番に、このカードを手札から出して進化させたとき、1回使える。自分のトラッシュから「ペパーのサンドウィッチ」を2枚まで選び、相手に見せて、手札に加える。"
-            }
-        ],
-        "ワザ": [
-            {
-                "名前": "ころがりタックル50",
-                "必要エネルギー": [
-                    "無色",
-                    "無色"
-                ],
-                "ダメージ": "50",
-                "効果": ""
-            }
-        ],
-        "弱点": "闘",
-        "抵抗": "なし",
-        "逃げるために必要なエネルギー": 2,
-        "進化": [
-            "ペパーのヨクバリス",
-            "ペパーのホシガリス"
-        ]
-    },
-    {
-        "カード名": "ペパーのヨクバリス",
-        "カテゴリ": "ポケモン",
-        "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047350_P_PEPANOYOKUBARISU.jpg",
-        "レギュレーション": "SV9a",
-        "カード番号": "055",
-        "イラストレーター": "Akira Komayama",
-        "ポケモンのタイプ": "無色",
-        "特性": [
-            {
-                "名前": "よくばりオーダー",
-                "効果": "自分の番に、このカードを手札から出して進化させたとき、1回使える。自分のトラッシュから「ペパーのサンドウィッチ」を2枚まで選び、相手に見せて、手札に加える。"
-            }
-        ],
-        "ワザ": [
-            {
-                "名前": "ころがりタックル50",
-                "必要エネルギー": [
-                    "無色",
-                    "無色"
-                ],
-                "ダメージ": "50",
-                "効果": ""
-            }
-        ],
-        "弱点": "闘",
-        "抵抗": "なし",
-        "逃げるために必要なエネルギー": 2,
-        "進化": [
-            "ペパーのヨクバリス",
-            "ペパーのホシガリス"
-        ]
-    },
-    {
-        "カード名": "ペパーのヨクバリス",
-        "カテゴリ": "ポケモン",
-        "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047350_P_PEPANOYOKUBARISU.jpg",
-        "レギュレーション": "SV9a",
-        "カード番号": "055",
-        "イラストレーター": "Akira Komayama",
-        "ポケモンのタイプ": "無色",
-        "特性": [
-            {
-                "名前": "よくばりオーダー",
-                "効果": "自分の番に、このカードを手札から出して進化させたとき、1回使える。自分のトラッシュから「ペパーのサンドウィッチ」を2枚まで選び、相手に見せて、手札に加える。"
-            }
-        ],
-        "ワザ": [
-            {
-                "名前": "ころがりタックル50",
-                "必要エネルギー": [
-                    "無色",
-                    "無色"
-                ],
-                "ダメージ": "50",
-                "効果": ""
-            }
-        ],
-        "弱点": "闘",
-        "抵抗": "なし",
-        "逃げるために必要なエネルギー": 2,
-        "進化": [
-            "ペパーのヨクバリス",
-            "ペパーのホシガリス"
-        ]
-    },
-    {
-        "カード名": "ペパーのヨクバリス",
-        "カテゴリ": "ポケモン",
-        "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047350_P_PEPANOYOKUBARISU.jpg",
-        "レギュレーション": "SV9a",
-        "カード番号": "055",
-        "イラストレーター": "Akira Komayama",
-        "ポケモンのタイプ": "無色",
-        "特性": [
-            {
-                "名前": "よくばりオーダー",
-                "効果": "自分の番に、このカードを手札から出して進化させたとき、1回使える。自分のトラッシュから「ペパーのサンドウィッチ」を2枚まで選び、相手に見せて、手札に加える。"
-            }
-        ],
-        "ワザ": [
-            {
-                "名前": "ころがりタックル50",
-                "必要エネルギー": [
-                    "無色",
-                    "無色"
-                ],
-                "ダメージ": "50",
-                "効果": ""
-            }
-        ],
-        "弱点": "闘",
-        "抵抗": "なし",
-        "逃げるために必要なエネルギー": 2,
-        "進化": [
-            "ペパーのヨクバリス",
-            "ペパーのホシガリス"
-        ]
-    },
-    {
-        "カード名": "ペパーのヨクバリス",
-        "カテゴリ": "ポケモン",
-        "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047350_P_PEPANOYOKUBARISU.jpg",
-        "レギュレーション": "SV9a",
-        "カード番号": "055",
-        "イラストレーター": "Akira Komayama",
-        "ポケモンのタイプ": "無色",
-        "特性": [
-            {
-                "名前": "よくばりオーダー",
-                "効果": "自分の番に、このカードを手札から出して進化させたとき、1回使える。自分のトラッシュから「ペパーのサンドウィッチ」を2枚まで選び、相手に見せて、手札に加える。"
-            }
-        ],
-        "ワザ": [
-            {
-                "名前": "ころがりタックル50",
-                "必要エネルギー": [
-                    "無色",
-                    "無色"
-                ],
-                "ダメージ": "50",
-                "効果": ""
-            }
-        ],
-        "弱点": "闘",
-        "抵抗": "なし",
-        "逃げるために必要なエネルギー": 2,
-        "進化": [
-            "ペパーのヨクバリス",
-            "ペパーのホシガリス"
-        ]
-    },
-    {
-        "カード名": "ペパーのヨクバリス",
-        "カテゴリ": "ポケモン",
-        "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047350_P_PEPANOYOKUBARISU.jpg",
-        "レギュレーション": "SV9a",
-        "カード番号": "055",
-        "イラストレーター": "Akira Komayama",
-        "ポケモンのタイプ": "無色",
-        "特性": [
-            {
-                "名前": "よくばりオーダー",
-                "効果": "自分の番に、このカードを手札から出して進化させたとき、1回使える。自分のトラッシュから「ペパーのサンドウィッチ」を2枚まで選び、相手に見せて、手札に加える。"
-            }
-        ],
-        "ワザ": [
-            {
-                "名前": "ころがりタックル50",
-                "必要エネルギー": [
-                    "無色",
-                    "無色"
-                ],
-                "ダメージ": "50",
-                "効果": ""
-            }
-        ],
-        "弱点": "闘",
-        "抵抗": "なし",
-        "逃げるために必要なエネルギー": 2,
-        "進化": [
-            "ペパーのヨクバリス",
-            "ペパーのホシガリス"
-        ]
-    },
-    {
-        "カード名": "ペパーのヨクバリス",
-        "カテゴリ": "ポケモン",
-        "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9a/047350_P_PEPANOYOKUBARISU.jpg",
-        "レギュレーション": "SV9a",
-        "カード番号": "055",
-        "イラストレーター": "Akira Komayama",
-        "ポケモンのタイプ": "無色",
-        "特性": [
-            {
-                "名前": "よくばりオーダー",
-                "効果": "自分の番に、このカードを手札から出して進化させたとき、1回使える。自分のトラッシュから「ペパーのサンドウィッチ」を2枚まで選び、相手に見せて、手札に加える。"
-            }
-        ],
-        "ワザ": [
-            {
-                "名前": "ころがりタックル50",
-                "必要エネルギー": [
-                    "無色",
-                    "無色"
-                ],
-                "ダメージ": "50",
-                "効果": ""
-            }
-        ],
-        "弱点": "闘",
-        "抵抗": "なし",
-        "逃げるために必要なエネルギー": 2,
-        "進化": [
-            "ペパーのヨクバリス",
-            "ペパーのホシガリス"
-        ]
-    },
-    {
+        "id": "47272",
         "カード名": "ダイゴのヤジロン",
         "カテゴリ": "ポケモン",
+        "HP": "60",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVOD/047272_P_DAIGONOYAJIRON.jpg",
+        "画像": "/assets/images/card_images/large/SVOD/047272_P_DAIGONOYAJIRON.jpg",
         "レギュレーション": "SVOD",
         "カード番号": "001",
         "イラストレーター": "Tonji Matsuno",
@@ -2140,13 +2035,16 @@
         "進化": [
             "ダイゴのネンドール",
             "ダイゴのヤジロン"
-        ]
+        ],
+        "収録パック": "スターターセットex ダイゴのダンバル＆メタグロスex"
     },
     {
+        "id": "47273",
         "カード名": "ダイゴのネンドール",
         "カテゴリ": "ポケモン",
+        "HP": "120",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVOD/047273_P_DAIGONONENDORU.jpg",
+        "画像": "/assets/images/card_images/large/SVOD/047273_P_DAIGONONENDORU.jpg",
         "レギュレーション": "SVOD",
         "カード番号": "002",
         "イラストレーター": "nagimiso",
@@ -2178,13 +2076,16 @@
         "進化": [
             "ダイゴのネンドール",
             "ダイゴのヤジロン"
-        ]
+        ],
+        "収録パック": "スターターセットex ダイゴのダンバル＆メタグロスex"
     },
     {
+        "id": "47274",
         "カード名": "ダイゴのメレシー",
         "カテゴリ": "ポケモン",
+        "HP": "80",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVOD/047274_P_DAIGONOMERESHI.jpg",
+        "画像": "/assets/images/card_images/large/SVOD/047274_P_DAIGONOMERESHI.jpg",
         "レギュレーション": "SVOD",
         "カード番号": "003",
         "イラストレーター": "Ligton",
@@ -2210,13 +2111,16 @@
         "弱点": "鋼",
         "抵抗": "なし",
         "逃げるために必要なエネルギー": 2,
-        "進化": []
+        "進化": [],
+        "収録パック": "スターターセットex ダイゴのダンバル＆メタグロスex"
     },
     {
+        "id": "47275",
         "カード名": "ダイゴのエアームド",
         "カテゴリ": "ポケモン",
+        "HP": "120",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVOD/047275_P_DAIGONOEAMUDO.jpg",
+        "画像": "/assets/images/card_images/large/SVOD/047275_P_DAIGONOEAMUDO.jpg",
         "レギュレーション": "SVOD",
         "カード番号": "004",
         "イラストレーター": "Nisota Niso",
@@ -2246,13 +2150,16 @@
         "弱点": "雷",
         "抵抗": "闘",
         "逃げるために必要なエネルギー": 1,
-        "進化": []
+        "進化": [],
+        "収録パック": "スターターセットex ダイゴのダンバル＆メタグロスex"
     },
     {
+        "id": "47276",
         "カード名": "ダイゴのダンバル",
         "カテゴリ": "ポケモン",
+        "HP": "70",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVOD/047276_P_DAIGONODANBARU.jpg",
+        "画像": "/assets/images/card_images/large/SVOD/047276_P_DAIGONODANBARU.jpg",
         "レギュレーション": "SVOD",
         "カード番号": "005",
         "イラストレーター": "Takeshi Nakamura",
@@ -2276,13 +2183,19 @@
             "ダイゴのメタグロスex",
             "ダイゴのメタング",
             "ダイゴのダンバル"
+        ],
+        "収録パック": "スターターセットex ダイゴのダンバル＆メタグロスex",
+        "同じカードid": [
+            "47291"
         ]
     },
     {
+        "id": "47277",
         "カード名": "ダイゴのメタング",
         "カテゴリ": "ポケモン",
+        "HP": "100",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVOD/047277_P_DAIGONOMETANGU.jpg",
+        "画像": "/assets/images/card_images/large/SVOD/047277_P_DAIGONOMETANGU.jpg",
         "レギュレーション": "SVOD",
         "カード番号": "006",
         "イラストレーター": "Anesaki Dynamic",
@@ -2306,13 +2219,16 @@
             "ダイゴのメタグロスex",
             "ダイゴのメタング",
             "ダイゴのダンバル"
-        ]
+        ],
+        "収録パック": "スターターセットex ダイゴのダンバル＆メタグロスex"
     },
     {
+        "id": "47278",
         "カード名": "ダイゴのメタグロスex",
         "カテゴリ": "ポケモン",
+        "HP": "340",
         "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVOD/047278_P_DAIGONOMETAGUROSUEX.jpg",
+        "画像": "/assets/images/card_images/large/SVOD/047278_P_DAIGONOMETAGUROSUEX.jpg",
         "レギュレーション": "SVOD",
         "カード番号": "007",
         "イラストレーター": "PLANETA Mochizuki",
@@ -2342,13 +2258,16 @@
             "ダイゴのメタグロスex",
             "ダイゴのメタング",
             "ダイゴのダンバル"
-        ]
+        ],
+        "収録パック": "スターターセットex ダイゴのダンバル＆メタグロスex"
     },
     {
+        "id": "47291",
         "カード名": "ダイゴのダンバル",
         "カテゴリ": "ポケモン",
+        "HP": "70",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVOD/047291_P_DAIGONODANBARU.jpg",
+        "画像": "/assets/images/card_images/large/SVOD/047291_P_DAIGONODANBARU.jpg",
         "レギュレーション": "SVOD",
         "カード番号": "019",
         "イラストレーター": "hncl",
@@ -2372,343 +2291,19 @@
             "ダイゴのメタグロスex",
             "ダイゴのメタング",
             "ダイゴのダンバル"
-        ]
-    },
-    {
-        "カード名": "ダイゴのダンバル",
-        "カテゴリ": "ポケモン",
-        "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVOD/047291_P_DAIGONODANBARU.jpg",
-        "レギュレーション": "SVOD",
-        "カード番号": "019",
-        "イラストレーター": "hncl",
-        "ポケモンのタイプ": "鋼",
-        "特性": [],
-        "ワザ": [
-            {
-                "名前": "ぶつかる30",
-                "必要エネルギー": [
-                    "鋼",
-                    "無色"
-                ],
-                "ダメージ": "30",
-                "効果": ""
-            }
         ],
-        "弱点": "炎",
-        "抵抗": "草",
-        "逃げるために必要なエネルギー": 1,
-        "進化": [
-            "ダイゴのメタグロスex",
-            "ダイゴのメタング",
-            "ダイゴのダンバル"
+        "収録パック": "スターターセットex ダイゴのダンバル＆メタグロスex",
+        "同じカードid": [
+            "47276"
         ]
     },
     {
-        "カード名": "ダイゴのダンバル",
-        "カテゴリ": "ポケモン",
-        "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVOD/047291_P_DAIGONODANBARU.jpg",
-        "レギュレーション": "SVOD",
-        "カード番号": "019",
-        "イラストレーター": "hncl",
-        "ポケモンのタイプ": "鋼",
-        "特性": [],
-        "ワザ": [
-            {
-                "名前": "ぶつかる30",
-                "必要エネルギー": [
-                    "鋼",
-                    "無色"
-                ],
-                "ダメージ": "30",
-                "効果": ""
-            }
-        ],
-        "弱点": "炎",
-        "抵抗": "草",
-        "逃げるために必要なエネルギー": 1,
-        "進化": [
-            "ダイゴのメタグロスex",
-            "ダイゴのメタング",
-            "ダイゴのダンバル"
-        ]
-    },
-    {
-        "カード名": "ダイゴのダンバル",
-        "カテゴリ": "ポケモン",
-        "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVOD/047291_P_DAIGONODANBARU.jpg",
-        "レギュレーション": "SVOD",
-        "カード番号": "019",
-        "イラストレーター": "hncl",
-        "ポケモンのタイプ": "鋼",
-        "特性": [],
-        "ワザ": [
-            {
-                "名前": "ぶつかる30",
-                "必要エネルギー": [
-                    "鋼",
-                    "無色"
-                ],
-                "ダメージ": "30",
-                "効果": ""
-            }
-        ],
-        "弱点": "炎",
-        "抵抗": "草",
-        "逃げるために必要なエネルギー": 1,
-        "進化": [
-            "ダイゴのメタグロスex",
-            "ダイゴのメタング",
-            "ダイゴのダンバル"
-        ]
-    },
-    {
-        "カード名": "ダイゴのダンバル",
-        "カテゴリ": "ポケモン",
-        "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVOD/047291_P_DAIGONODANBARU.jpg",
-        "レギュレーション": "SVOD",
-        "カード番号": "019",
-        "イラストレーター": "hncl",
-        "ポケモンのタイプ": "鋼",
-        "特性": [],
-        "ワザ": [
-            {
-                "名前": "ぶつかる30",
-                "必要エネルギー": [
-                    "鋼",
-                    "無色"
-                ],
-                "ダメージ": "30",
-                "効果": ""
-            }
-        ],
-        "弱点": "炎",
-        "抵抗": "草",
-        "逃げるために必要なエネルギー": 1,
-        "進化": [
-            "ダイゴのメタグロスex",
-            "ダイゴのメタング",
-            "ダイゴのダンバル"
-        ]
-    },
-    {
-        "カード名": "ダイゴのダンバル",
-        "カテゴリ": "ポケモン",
-        "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVOD/047291_P_DAIGONODANBARU.jpg",
-        "レギュレーション": "SVOD",
-        "カード番号": "019",
-        "イラストレーター": "hncl",
-        "ポケモンのタイプ": "鋼",
-        "特性": [],
-        "ワザ": [
-            {
-                "名前": "ぶつかる30",
-                "必要エネルギー": [
-                    "鋼",
-                    "無色"
-                ],
-                "ダメージ": "30",
-                "効果": ""
-            }
-        ],
-        "弱点": "炎",
-        "抵抗": "草",
-        "逃げるために必要なエネルギー": 1,
-        "進化": [
-            "ダイゴのメタグロスex",
-            "ダイゴのメタング",
-            "ダイゴのダンバル"
-        ]
-    },
-    {
-        "カード名": "ダイゴのダンバル",
-        "カテゴリ": "ポケモン",
-        "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVOD/047291_P_DAIGONODANBARU.jpg",
-        "レギュレーション": "SVOD",
-        "カード番号": "019",
-        "イラストレーター": "hncl",
-        "ポケモンのタイプ": "鋼",
-        "特性": [],
-        "ワザ": [
-            {
-                "名前": "ぶつかる30",
-                "必要エネルギー": [
-                    "鋼",
-                    "無色"
-                ],
-                "ダメージ": "30",
-                "効果": ""
-            }
-        ],
-        "弱点": "炎",
-        "抵抗": "草",
-        "逃げるために必要なエネルギー": 1,
-        "進化": [
-            "ダイゴのメタグロスex",
-            "ダイゴのメタング",
-            "ダイゴのダンバル"
-        ]
-    },
-    {
-        "カード名": "ダイゴのダンバル",
-        "カテゴリ": "ポケモン",
-        "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVOD/047291_P_DAIGONODANBARU.jpg",
-        "レギュレーション": "SVOD",
-        "カード番号": "019",
-        "イラストレーター": "hncl",
-        "ポケモンのタイプ": "鋼",
-        "特性": [],
-        "ワザ": [
-            {
-                "名前": "ぶつかる30",
-                "必要エネルギー": [
-                    "鋼",
-                    "無色"
-                ],
-                "ダメージ": "30",
-                "効果": ""
-            }
-        ],
-        "弱点": "炎",
-        "抵抗": "草",
-        "逃げるために必要なエネルギー": 1,
-        "進化": [
-            "ダイゴのメタグロスex",
-            "ダイゴのメタング",
-            "ダイゴのダンバル"
-        ]
-    },
-    {
-        "カード名": "ダイゴのダンバル",
-        "カテゴリ": "ポケモン",
-        "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVOD/047291_P_DAIGONODANBARU.jpg",
-        "レギュレーション": "SVOD",
-        "カード番号": "019",
-        "イラストレーター": "hncl",
-        "ポケモンのタイプ": "鋼",
-        "特性": [],
-        "ワザ": [
-            {
-                "名前": "ぶつかる30",
-                "必要エネルギー": [
-                    "鋼",
-                    "無色"
-                ],
-                "ダメージ": "30",
-                "効果": ""
-            }
-        ],
-        "弱点": "炎",
-        "抵抗": "草",
-        "逃げるために必要なエネルギー": 1,
-        "進化": [
-            "ダイゴのメタグロスex",
-            "ダイゴのメタング",
-            "ダイゴのダンバル"
-        ]
-    },
-    {
-        "カード名": "ダイゴのダンバル",
-        "カテゴリ": "ポケモン",
-        "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVOD/047291_P_DAIGONODANBARU.jpg",
-        "レギュレーション": "SVOD",
-        "カード番号": "019",
-        "イラストレーター": "hncl",
-        "ポケモンのタイプ": "鋼",
-        "特性": [],
-        "ワザ": [
-            {
-                "名前": "ぶつかる30",
-                "必要エネルギー": [
-                    "鋼",
-                    "無色"
-                ],
-                "ダメージ": "30",
-                "効果": ""
-            }
-        ],
-        "弱点": "炎",
-        "抵抗": "草",
-        "逃げるために必要なエネルギー": 1,
-        "進化": [
-            "ダイゴのメタグロスex",
-            "ダイゴのメタング",
-            "ダイゴのダンバル"
-        ]
-    },
-    {
-        "カード名": "ダイゴのダンバル",
-        "カテゴリ": "ポケモン",
-        "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVOD/047291_P_DAIGONODANBARU.jpg",
-        "レギュレーション": "SVOD",
-        "カード番号": "019",
-        "イラストレーター": "hncl",
-        "ポケモンのタイプ": "鋼",
-        "特性": [],
-        "ワザ": [
-            {
-                "名前": "ぶつかる30",
-                "必要エネルギー": [
-                    "鋼",
-                    "無色"
-                ],
-                "ダメージ": "30",
-                "効果": ""
-            }
-        ],
-        "弱点": "炎",
-        "抵抗": "草",
-        "逃げるために必要なエネルギー": 1,
-        "進化": [
-            "ダイゴのメタグロスex",
-            "ダイゴのメタング",
-            "ダイゴのダンバル"
-        ]
-    },
-    {
-        "カード名": "ダイゴのダンバル",
-        "カテゴリ": "ポケモン",
-        "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVOD/047291_P_DAIGONODANBARU.jpg",
-        "レギュレーション": "SVOD",
-        "カード番号": "019",
-        "イラストレーター": "hncl",
-        "ポケモンのタイプ": "鋼",
-        "特性": [],
-        "ワザ": [
-            {
-                "名前": "ぶつかる30",
-                "必要エネルギー": [
-                    "鋼",
-                    "無色"
-                ],
-                "ダメージ": "30",
-                "効果": ""
-            }
-        ],
-        "弱点": "炎",
-        "抵抗": "草",
-        "逃げるために必要なエネルギー": 1,
-        "進化": [
-            "ダイゴのメタグロスex",
-            "ダイゴのメタング",
-            "ダイゴのダンバル"
-        ]
-    },
-    {
+        "id": "47253",
         "カード名": "マリィのチョロネコ",
         "カテゴリ": "ポケモン",
+        "HP": "60",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVOM/047253_P_MARIINOCHIXYORONEKO.jpg",
+        "画像": "/assets/images/card_images/large/SVOM/047253_P_MARIINOCHIXYORONEKO.jpg",
         "レギュレーション": "SVOM",
         "カード番号": "001",
         "イラストレーター": "REND",
@@ -2730,13 +2325,16 @@
         "進化": [
             "マリィのレパルダス",
             "マリィのチョロネコ"
-        ]
+        ],
+        "収録パック": "スターターセットex マリィのモルペコ＆オーロンゲex"
     },
     {
+        "id": "47254",
         "カード名": "マリィのレパルダス",
         "カテゴリ": "ポケモン",
+        "HP": "100",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVOM/047254_P_MARIINOREPARUDASU.jpg",
+        "画像": "/assets/images/card_images/large/SVOM/047254_P_MARIINOREPARUDASU.jpg",
         "レギュレーション": "SVOM",
         "カード番号": "002",
         "イラストレーター": "Hasuno",
@@ -2759,13 +2357,16 @@
         "進化": [
             "マリィのレパルダス",
             "マリィのチョロネコ"
-        ]
+        ],
+        "収録パック": "スターターセットex マリィのモルペコ＆オーロンゲex"
     },
     {
+        "id": "47255",
         "カード名": "マリィのズルッグ",
         "カテゴリ": "ポケモン",
+        "HP": "70",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVOM/047255_P_MARIINOZURUGGU.jpg",
+        "画像": "/assets/images/card_images/large/SVOM/047255_P_MARIINOZURUGGU.jpg",
         "レギュレーション": "SVOM",
         "カード番号": "003",
         "イラストレーター": "Teeziro",
@@ -2789,13 +2390,16 @@
         "進化": [
             "マリィのズルズキン",
             "マリィのズルッグ"
-        ]
+        ],
+        "収録パック": "スターターセットex マリィのモルペコ＆オーロンゲex"
     },
     {
+        "id": "47256",
         "カード名": "マリィのズルズキン",
         "カテゴリ": "ポケモン",
+        "HP": "120",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVOM/047256_P_MARIINOZURUZUKIN.jpg",
+        "画像": "/assets/images/card_images/large/SVOM/047256_P_MARIINOZURUZUKIN.jpg",
         "レギュレーション": "SVOM",
         "カード番号": "004",
         "イラストレーター": "Kazumasa Yasukuni",
@@ -2827,13 +2431,16 @@
         "進化": [
             "マリィのズルズキン",
             "マリィのズルッグ"
-        ]
+        ],
+        "収録パック": "スターターセットex マリィのモルペコ＆オーロンゲex"
     },
     {
+        "id": "47257",
         "カード名": "マリィのベロバー",
         "カテゴリ": "ポケモン",
+        "HP": "70",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVOM/047257_P_MARIINOBEROBA.jpg",
+        "画像": "/assets/images/card_images/large/SVOM/047257_P_MARIINOBEROBA.jpg",
         "レギュレーション": "SVOM",
         "カード番号": "005",
         "イラストレーター": "KEIICHIRO ITO",
@@ -2864,13 +2471,16 @@
             "マリィのオーロンゲex",
             "マリィのギモー",
             "マリィのベロバー"
-        ]
+        ],
+        "収録パック": "スターターセットex マリィのモルペコ＆オーロンゲex"
     },
     {
+        "id": "47258",
         "カード名": "マリィのギモー",
         "カテゴリ": "ポケモン",
+        "HP": "100",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVOM/047258_P_MARIINOGIMO.jpg",
+        "画像": "/assets/images/card_images/large/SVOM/047258_P_MARIINOGIMO.jpg",
         "レギュレーション": "SVOM",
         "カード番号": "006",
         "イラストレーター": "NC Empire",
@@ -2894,13 +2504,16 @@
             "マリィのオーロンゲex",
             "マリィのギモー",
             "マリィのベロバー"
-        ]
+        ],
+        "収録パック": "スターターセットex マリィのモルペコ＆オーロンゲex"
     },
     {
+        "id": "47259",
         "カード名": "マリィのオーロンゲex",
         "カテゴリ": "ポケモン",
+        "HP": "320",
         "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVOM/047259_P_MARIINOORONGEEX.jpg",
+        "画像": "/assets/images/card_images/large/SVOM/047259_P_MARIINOORONGEEX.jpg",
         "レギュレーション": "SVOM",
         "カード番号": "007",
         "イラストレーター": "PLANETA Mochizuki",
@@ -2929,13 +2542,16 @@
             "マリィのオーロンゲex",
             "マリィのギモー",
             "マリィのベロバー"
-        ]
+        ],
+        "収録パック": "スターターセットex マリィのモルペコ＆オーロンゲex"
     },
     {
+        "id": "47260",
         "カード名": "マリィのモルペコ",
         "カテゴリ": "ポケモン",
+        "HP": "70",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVOM/047260_P_MARIINOMORUPEKO.jpg",
+        "画像": "/assets/images/card_images/large/SVOM/047260_P_MARIINOMORUPEKO.jpg",
         "レギュレーション": "SVOM",
         "カード番号": "008",
         "イラストレーター": "Mina Nakai",
@@ -2956,13 +2572,19 @@
         "弱点": "草",
         "抵抗": "なし",
         "逃げるために必要なエネルギー": 0,
-        "進化": []
+        "進化": [],
+        "収録パック": "スターターセットex マリィのモルペコ＆オーロンゲex",
+        "同じカードid": [
+            "47290"
+        ]
     },
     {
+        "id": "47290",
         "カード名": "マリィのモルペコ",
         "カテゴリ": "ポケモン",
+        "HP": "70",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVOM/047290_P_MARIINOMORUPEKO.jpg",
+        "画像": "/assets/images/card_images/large/SVOM/047290_P_MARIINOMORUPEKO.jpg",
         "レギュレーション": "SVOM",
         "カード番号": "020",
         "イラストレーター": "Susumu Maeya",
@@ -2983,310 +2605,19 @@
         "弱点": "草",
         "抵抗": "なし",
         "逃げるために必要なエネルギー": 0,
-        "進化": []
+        "進化": [],
+        "収録パック": "スターターセットex マリィのモルペコ＆オーロンゲex",
+        "同じカードid": [
+            "47260"
+        ]
     },
     {
-        "カード名": "マリィのモルペコ",
-        "カテゴリ": "ポケモン",
-        "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVOM/047290_P_MARIINOMORUPEKO.jpg",
-        "レギュレーション": "SVOM",
-        "カード番号": "020",
-        "イラストレーター": "Susumu Maeya",
-        "ポケモンのタイプ": "悪",
-        "特性": [],
-        "ワザ": [
-            {
-                "名前": "スパイクホイール20＋",
-                "必要エネルギー": [
-                    "無色",
-                    "無色",
-                    "無色"
-                ],
-                "ダメージ": "20＋",
-                "効果": "このポケモンについているエネルギーの数×40ダメージ追加。"
-            }
-        ],
-        "弱点": "草",
-        "抵抗": "なし",
-        "逃げるために必要なエネルギー": 0,
-        "進化": []
-    },
-    {
-        "カード名": "マリィのモルペコ",
-        "カテゴリ": "ポケモン",
-        "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVOM/047290_P_MARIINOMORUPEKO.jpg",
-        "レギュレーション": "SVOM",
-        "カード番号": "020",
-        "イラストレーター": "Susumu Maeya",
-        "ポケモンのタイプ": "悪",
-        "特性": [],
-        "ワザ": [
-            {
-                "名前": "スパイクホイール20＋",
-                "必要エネルギー": [
-                    "無色",
-                    "無色",
-                    "無色"
-                ],
-                "ダメージ": "20＋",
-                "効果": "このポケモンについているエネルギーの数×40ダメージ追加。"
-            }
-        ],
-        "弱点": "草",
-        "抵抗": "なし",
-        "逃げるために必要なエネルギー": 0,
-        "進化": []
-    },
-    {
-        "カード名": "マリィのモルペコ",
-        "カテゴリ": "ポケモン",
-        "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVOM/047290_P_MARIINOMORUPEKO.jpg",
-        "レギュレーション": "SVOM",
-        "カード番号": "020",
-        "イラストレーター": "Susumu Maeya",
-        "ポケモンのタイプ": "悪",
-        "特性": [],
-        "ワザ": [
-            {
-                "名前": "スパイクホイール20＋",
-                "必要エネルギー": [
-                    "無色",
-                    "無色",
-                    "無色"
-                ],
-                "ダメージ": "20＋",
-                "効果": "このポケモンについているエネルギーの数×40ダメージ追加。"
-            }
-        ],
-        "弱点": "草",
-        "抵抗": "なし",
-        "逃げるために必要なエネルギー": 0,
-        "進化": []
-    },
-    {
-        "カード名": "マリィのモルペコ",
-        "カテゴリ": "ポケモン",
-        "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVOM/047290_P_MARIINOMORUPEKO.jpg",
-        "レギュレーション": "SVOM",
-        "カード番号": "020",
-        "イラストレーター": "Susumu Maeya",
-        "ポケモンのタイプ": "悪",
-        "特性": [],
-        "ワザ": [
-            {
-                "名前": "スパイクホイール20＋",
-                "必要エネルギー": [
-                    "無色",
-                    "無色",
-                    "無色"
-                ],
-                "ダメージ": "20＋",
-                "効果": "このポケモンについているエネルギーの数×40ダメージ追加。"
-            }
-        ],
-        "弱点": "草",
-        "抵抗": "なし",
-        "逃げるために必要なエネルギー": 0,
-        "進化": []
-    },
-    {
-        "カード名": "マリィのモルペコ",
-        "カテゴリ": "ポケモン",
-        "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVOM/047290_P_MARIINOMORUPEKO.jpg",
-        "レギュレーション": "SVOM",
-        "カード番号": "020",
-        "イラストレーター": "Susumu Maeya",
-        "ポケモンのタイプ": "悪",
-        "特性": [],
-        "ワザ": [
-            {
-                "名前": "スパイクホイール20＋",
-                "必要エネルギー": [
-                    "無色",
-                    "無色",
-                    "無色"
-                ],
-                "ダメージ": "20＋",
-                "効果": "このポケモンについているエネルギーの数×40ダメージ追加。"
-            }
-        ],
-        "弱点": "草",
-        "抵抗": "なし",
-        "逃げるために必要なエネルギー": 0,
-        "進化": []
-    },
-    {
-        "カード名": "マリィのモルペコ",
-        "カテゴリ": "ポケモン",
-        "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVOM/047290_P_MARIINOMORUPEKO.jpg",
-        "レギュレーション": "SVOM",
-        "カード番号": "020",
-        "イラストレーター": "Susumu Maeya",
-        "ポケモンのタイプ": "悪",
-        "特性": [],
-        "ワザ": [
-            {
-                "名前": "スパイクホイール20＋",
-                "必要エネルギー": [
-                    "無色",
-                    "無色",
-                    "無色"
-                ],
-                "ダメージ": "20＋",
-                "効果": "このポケモンについているエネルギーの数×40ダメージ追加。"
-            }
-        ],
-        "弱点": "草",
-        "抵抗": "なし",
-        "逃げるために必要なエネルギー": 0,
-        "進化": []
-    },
-    {
-        "カード名": "マリィのモルペコ",
-        "カテゴリ": "ポケモン",
-        "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVOM/047290_P_MARIINOMORUPEKO.jpg",
-        "レギュレーション": "SVOM",
-        "カード番号": "020",
-        "イラストレーター": "Susumu Maeya",
-        "ポケモンのタイプ": "悪",
-        "特性": [],
-        "ワザ": [
-            {
-                "名前": "スパイクホイール20＋",
-                "必要エネルギー": [
-                    "無色",
-                    "無色",
-                    "無色"
-                ],
-                "ダメージ": "20＋",
-                "効果": "このポケモンについているエネルギーの数×40ダメージ追加。"
-            }
-        ],
-        "弱点": "草",
-        "抵抗": "なし",
-        "逃げるために必要なエネルギー": 0,
-        "進化": []
-    },
-    {
-        "カード名": "マリィのモルペコ",
-        "カテゴリ": "ポケモン",
-        "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVOM/047290_P_MARIINOMORUPEKO.jpg",
-        "レギュレーション": "SVOM",
-        "カード番号": "020",
-        "イラストレーター": "Susumu Maeya",
-        "ポケモンのタイプ": "悪",
-        "特性": [],
-        "ワザ": [
-            {
-                "名前": "スパイクホイール20＋",
-                "必要エネルギー": [
-                    "無色",
-                    "無色",
-                    "無色"
-                ],
-                "ダメージ": "20＋",
-                "効果": "このポケモンについているエネルギーの数×40ダメージ追加。"
-            }
-        ],
-        "弱点": "草",
-        "抵抗": "なし",
-        "逃げるために必要なエネルギー": 0,
-        "進化": []
-    },
-    {
-        "カード名": "マリィのモルペコ",
-        "カテゴリ": "ポケモン",
-        "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVOM/047290_P_MARIINOMORUPEKO.jpg",
-        "レギュレーション": "SVOM",
-        "カード番号": "020",
-        "イラストレーター": "Susumu Maeya",
-        "ポケモンのタイプ": "悪",
-        "特性": [],
-        "ワザ": [
-            {
-                "名前": "スパイクホイール20＋",
-                "必要エネルギー": [
-                    "無色",
-                    "無色",
-                    "無色"
-                ],
-                "ダメージ": "20＋",
-                "効果": "このポケモンについているエネルギーの数×40ダメージ追加。"
-            }
-        ],
-        "弱点": "草",
-        "抵抗": "なし",
-        "逃げるために必要なエネルギー": 0,
-        "進化": []
-    },
-    {
-        "カード名": "マリィのモルペコ",
-        "カテゴリ": "ポケモン",
-        "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVOM/047290_P_MARIINOMORUPEKO.jpg",
-        "レギュレーション": "SVOM",
-        "カード番号": "020",
-        "イラストレーター": "Susumu Maeya",
-        "ポケモンのタイプ": "悪",
-        "特性": [],
-        "ワザ": [
-            {
-                "名前": "スパイクホイール20＋",
-                "必要エネルギー": [
-                    "無色",
-                    "無色",
-                    "無色"
-                ],
-                "ダメージ": "20＋",
-                "効果": "このポケモンについているエネルギーの数×40ダメージ追加。"
-            }
-        ],
-        "弱点": "草",
-        "抵抗": "なし",
-        "逃げるために必要なエネルギー": 0,
-        "進化": []
-    },
-    {
-        "カード名": "マリィのモルペコ",
-        "カテゴリ": "ポケモン",
-        "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVOM/047290_P_MARIINOMORUPEKO.jpg",
-        "レギュレーション": "SVOM",
-        "カード番号": "020",
-        "イラストレーター": "Susumu Maeya",
-        "ポケモンのタイプ": "悪",
-        "特性": [],
-        "ワザ": [
-            {
-                "名前": "スパイクホイール20＋",
-                "必要エネルギー": [
-                    "無色",
-                    "無色",
-                    "無色"
-                ],
-                "ダメージ": "20＋",
-                "効果": "このポケモンについているエネルギーの数×40ダメージ追加。"
-            }
-        ],
-        "弱点": "草",
-        "抵抗": "なし",
-        "逃げるために必要なエネルギー": 0,
-        "進化": []
-    },
-    {
+        "id": "47009",
         "カード名": "キャタピー",
         "カテゴリ": "ポケモン",
+        "HP": "50",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047009_P_KIXYATAPI.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047009_P_KIXYATAPI.jpg",
         "レギュレーション": "SV9",
         "カード番号": "001",
         "イラストレーター": "Shimaris Yukichi",
@@ -3309,13 +2640,16 @@
             "バタフリー",
             "トランセル",
             "キャタピー"
-        ]
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47010",
         "カード名": "トランセル",
         "カテゴリ": "ポケモン",
+        "HP": "90",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047010_P_TORANSERU.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047010_P_TORANSERU.jpg",
         "レギュレーション": "SV9",
         "カード番号": "002",
         "イラストレーター": "OKUBO",
@@ -3338,13 +2672,16 @@
             "バタフリー",
             "トランセル",
             "キャタピー"
-        ]
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47011",
         "カード名": "バタフリー",
         "カテゴリ": "ポケモン",
+        "HP": "120",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047011_P_BATAFURI.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047011_P_BATAFURI.jpg",
         "レギュレーション": "SV9",
         "カード番号": "003",
         "イラストレーター": "satoma",
@@ -3367,13 +2704,16 @@
             "バタフリー",
             "トランセル",
             "キャタピー"
-        ]
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47012",
         "カード名": "パラス",
         "カテゴリ": "ポケモン",
+        "HP": "70",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047012_P_PARASU.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047012_P_PARASU.jpg",
         "レギュレーション": "SV9",
         "カード番号": "004",
         "イラストレーター": "Ayako Ozaki",
@@ -3395,13 +2735,16 @@
         "進化": [
             "パラセクト",
             "パラス"
-        ]
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47013",
         "カード名": "パラセクト",
         "カテゴリ": "ポケモン",
+        "HP": "120",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047013_P_PARASEKUTO.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047013_P_PARASEKUTO.jpg",
         "レギュレーション": "SV9",
         "カード番号": "005",
         "イラストレーター": "Tetsu Kayama",
@@ -3432,13 +2775,16 @@
         "進化": [
             "パラセクト",
             "パラス"
-        ]
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47014",
         "カード名": "マラカッチ",
         "カテゴリ": "ポケモン",
+        "HP": "110",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047014_P_MARAKATCHI.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047014_P_MARAKATCHI.jpg",
         "レギュレーション": "SV9",
         "カード番号": "006",
         "イラストレーター": "Dsuke",
@@ -3462,13 +2808,19 @@
         "弱点": "炎",
         "抵抗": "なし",
         "逃げるために必要なエネルギー": 2,
-        "進化": []
+        "進化": [],
+        "収録パック": "拡張パック「バトルパートナーズ」",
+        "同じカードid": [
+            "47221"
+        ]
     },
     {
+        "id": "47015",
         "カード名": "カブルモ",
         "カテゴリ": "ポケモン",
+        "HP": "60",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047015_P_KABURUMO.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047015_P_KABURUMO.jpg",
         "レギュレーション": "SV9",
         "カード番号": "007",
         "イラストレーター": "Yuka Morii",
@@ -3490,13 +2842,16 @@
         "進化": [
             "シュバルゴ",
             "カブルモ"
-        ]
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47016",
         "カード名": "チョボマキ",
         "カテゴリ": "ポケモン",
+        "HP": "70",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047016_P_CHIXYOBOMAKI.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047016_P_CHIXYOBOMAKI.jpg",
         "レギュレーション": "SV9",
         "カード番号": "008",
         "イラストレーター": "Toshinao Aoki",
@@ -3519,13 +2874,16 @@
         "進化": [
             "アギルダー",
             "チョボマキ"
-        ]
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47017",
         "カード名": "アギルダー",
         "カテゴリ": "ポケモン",
+        "HP": "100",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047017_P_AGIRUDA.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047017_P_AGIRUDA.jpg",
         "レギュレーション": "SV9",
         "カード番号": "009",
         "イラストレーター": "Kazumasa Yasukuni",
@@ -3548,13 +2906,16 @@
         "進化": [
             "アギルダー",
             "チョボマキ"
-        ]
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47018",
         "カード名": "ニャオハ",
         "カテゴリ": "ポケモン",
+        "HP": "60",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047018_P_NIXYAOHA.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047018_P_NIXYAOHA.jpg",
         "レギュレーション": "SV9",
         "カード番号": "010",
         "イラストレーター": "Mina Nakai",
@@ -3578,13 +2939,16 @@
             "マスカーニャex",
             "ニャローテ",
             "ニャオハ"
-        ]
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47019",
         "カード名": "ニャローテ",
         "カテゴリ": "ポケモン",
+        "HP": "90",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047019_P_NIXYAROTE.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047019_P_NIXYAROTE.jpg",
         "レギュレーション": "SV9",
         "カード番号": "011",
         "イラストレーター": "Felicia Chen",
@@ -3609,13 +2973,16 @@
             "マスカーニャex",
             "ニャローテ",
             "ニャオハ"
-        ]
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47020",
         "カード名": "マスカーニャ",
         "カテゴリ": "ポケモン",
+        "HP": "160",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047020_P_MASUKANIXYA.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047020_P_MASUKANIXYA.jpg",
         "レギュレーション": "SV9",
         "カード番号": "012",
         "イラストレーター": "kodama",
@@ -3645,13 +3012,16 @@
             "マスカーニャex",
             "ニャローテ",
             "ニャオハ"
-        ]
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47021",
         "カード名": "ブーバー",
         "カテゴリ": "ポケモン",
+        "HP": "80",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047021_P_BUBA.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047021_P_BUBA.jpg",
         "レギュレーション": "SV9",
         "カード番号": "013",
         "イラストレーター": "Naoyo Kimura",
@@ -3674,13 +3044,16 @@
         "進化": [
             "ブーバーン",
             "ブーバー"
-        ]
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47022",
         "カード名": "ブーバーン",
         "カテゴリ": "ポケモン",
+        "HP": "130",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047022_P_BUBAN.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047022_P_BUBAN.jpg",
         "レギュレーション": "SV9",
         "カード番号": "014",
         "イラストレーター": "Tonji Matsuno",
@@ -3709,13 +3082,16 @@
         "進化": [
             "ブーバーン",
             "ブーバー"
-        ]
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47023",
         "カード名": "Nのダルマッカ",
         "カテゴリ": "ポケモン",
+        "HP": "80",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047023_P_NNODARUMAKKA.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047023_P_NNODARUMAKKA.jpg",
         "レギュレーション": "SV9",
         "カード番号": "015",
         "イラストレーター": "Gemi",
@@ -3748,13 +3124,16 @@
         "進化": [
             "Nのヒヒダルマ",
             "Nのダルマッカ"
-        ]
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47024",
         "カード名": "Nのヒヒダルマ",
         "カテゴリ": "ポケモン",
+        "HP": "140",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047024_P_NNOHIHIDARUMA.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047024_P_NNOHIHIDARUMA.jpg",
         "レギュレーション": "SV9",
         "カード番号": "016",
         "イラストレーター": "nagimiso",
@@ -3787,13 +3166,16 @@
         "進化": [
             "Nのヒヒダルマ",
             "Nのダルマッカ"
-        ]
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47025",
         "カード名": "ボルケニオンex",
         "カテゴリ": "ポケモン",
+        "HP": "220",
         "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047025_P_BORUKENIONEX.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047025_P_BORUKENIONEX.jpg",
         "レギュレーション": "SV9",
         "カード番号": "017",
         "イラストレーター": "5ban Graphics",
@@ -3819,13 +3201,20 @@
         "弱点": "水",
         "抵抗": "なし",
         "逃げるために必要なエネルギー": 3,
-        "進化": []
+        "進化": [],
+        "収録パック": "拡張パック「バトルパートナーズ」",
+        "同じカードid": [
+            "47233",
+            "47244"
+        ]
     },
     {
+        "id": "47026",
         "カード名": "フリーザー",
         "カテゴリ": "ポケモン",
+        "HP": "110",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047026_P_FURIZA.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047026_P_FURIZA.jpg",
         "レギュレーション": "SV9",
         "カード番号": "018",
         "イラストレーター": "Takumi Wada",
@@ -3854,13 +3243,19 @@
         "弱点": "雷",
         "抵抗": "闘",
         "逃げるために必要なエネルギー": 1,
-        "進化": []
+        "進化": [],
+        "収録パック": "拡張パック「バトルパートナーズ」",
+        "同じカードid": [
+            "47222"
+        ]
     },
     {
+        "id": "47027",
         "カード名": "テッポウオ",
         "カテゴリ": "ポケモン",
+        "HP": "60",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047027_P_TEPPOUO.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047027_P_TEPPOUO.jpg",
         "レギュレーション": "SV9",
         "カード番号": "019",
         "イラストレーター": "Minahamu",
@@ -3891,13 +3286,16 @@
         "進化": [
             "オクタン",
             "テッポウオ"
-        ]
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47028",
         "カード名": "オクタン",
         "カテゴリ": "ポケモン",
+        "HP": "110",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047028_P_OKUTAN.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047028_P_OKUTAN.jpg",
         "レギュレーション": "SV9",
         "カード番号": "020",
         "イラストレーター": "Toshinao Aoki",
@@ -3929,13 +3327,16 @@
         "進化": [
             "オクタン",
             "テッポウオ"
-        ]
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47029",
         "カード名": "ハスボー",
         "カテゴリ": "ポケモン",
+        "HP": "60",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047029_P_HASUBO.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047029_P_HASUBO.jpg",
         "レギュレーション": "SV9",
         "カード番号": "021",
         "イラストレーター": "Ayako Ozaki",
@@ -3958,13 +3359,16 @@
             "ルンパッパ",
             "ハスブレロ",
             "ハスボー"
-        ]
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47030",
         "カード名": "ハスブレロ",
         "カテゴリ": "ポケモン",
+        "HP": "90",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047030_P_HASUBURERO.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047030_P_HASUBURERO.jpg",
         "レギュレーション": "SV9",
         "カード番号": "022",
         "イラストレーター": "Mousho",
@@ -3988,13 +3392,16 @@
             "ルンパッパ",
             "ハスブレロ",
             "ハスボー"
-        ]
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47031",
         "カード名": "ルンパッパ",
         "カテゴリ": "ポケモン",
+        "HP": "140",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047031_P_RUNPAPPA.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047031_P_RUNPAPPA.jpg",
         "レギュレーション": "SV9",
         "カード番号": "023",
         "イラストレーター": "Jerky",
@@ -4024,13 +3431,16 @@
             "ルンパッパ",
             "ハスブレロ",
             "ハスボー"
-        ]
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47032",
         "カード名": "ホエルコ",
         "カテゴリ": "ポケモン",
+        "HP": "130",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047032_P_HOERUKO.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047032_P_HOERUKO.jpg",
         "レギュレーション": "SV9",
         "カード番号": "024",
         "イラストレーター": "Shinya Mizuno",
@@ -4054,13 +3464,16 @@
         "進化": [
             "ホエルオー",
             "ホエルコ"
-        ]
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47033",
         "カード名": "ホエルオー",
         "カテゴリ": "ポケモン",
+        "HP": "240",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047033_P_HOERUO.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047033_P_HOERUO.jpg",
         "レギュレーション": "SV9",
         "カード番号": "025",
         "イラストレーター": "Takeshi Nakamura",
@@ -4085,13 +3498,19 @@
         "進化": [
             "ホエルオー",
             "ホエルコ"
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」",
+        "同じカードid": [
+            "47223"
         ]
     },
     {
+        "id": "47034",
         "カード名": "ナンジャモのビリリダマ",
         "カテゴリ": "ポケモン",
+        "HP": "70",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047034_P_NANJIXYAMONOBIRIRIDAMA.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047034_P_NANJIXYAMONOBIRIRIDAMA.jpg",
         "レギュレーション": "SV9",
         "カード番号": "026",
         "イラストレーター": "Kazumasa Yasukuni",
@@ -4114,13 +3533,16 @@
         "進化": [
             "ナンジャモのマルマイン",
             "ナンジャモのビリリダマ"
-        ]
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47035",
         "カード名": "ナンジャモのマルマイン",
         "カテゴリ": "ポケモン",
+        "HP": "100",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047035_P_NANJIXYAMONOMARUMAIN.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047035_P_NANJIXYAMONOMARUMAIN.jpg",
         "レギュレーション": "SV9",
         "カード番号": "027",
         "イラストレーター": "GOTO minori",
@@ -4153,13 +3575,16 @@
         "進化": [
             "ナンジャモのマルマイン",
             "ナンジャモのビリリダマ"
-        ]
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47036",
         "カード名": "Nのバチュル",
         "カテゴリ": "ポケモン",
+        "HP": "40",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047036_P_NNOBACHIXYURU.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047036_P_NNOBACHIXYURU.jpg",
         "レギュレーション": "SV9",
         "カード番号": "028",
         "イラストレーター": "Iori Suzuki",
@@ -4179,13 +3604,16 @@
         "弱点": "闘",
         "抵抗": "なし",
         "逃げるために必要なエネルギー": 1,
-        "進化": []
+        "進化": [],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47037",
         "カード名": "ナンジャモのズピカ",
         "カテゴリ": "ポケモン",
+        "HP": "60",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047037_P_NANJIXYAMONOZUPIKA.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047037_P_NANJIXYAMONOZUPIKA.jpg",
         "レギュレーション": "SV9",
         "カード番号": "029",
         "イラストレーター": "kurumitsu",
@@ -4208,13 +3636,16 @@
         "進化": [
             "ナンジャモのハラバリーex",
             "ナンジャモのズピカ"
-        ]
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47038",
         "カード名": "ナンジャモのハラバリーex",
         "カテゴリ": "ポケモン",
+        "HP": "280",
         "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047038_P_NANJIXYAMONOHARABARIEX.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047038_P_NANJIXYAMONOHARABARIEX.jpg",
         "レギュレーション": "SV9",
         "カード番号": "030",
         "イラストレーター": "5ban Graphics",
@@ -4244,13 +3675,21 @@
         "進化": [
             "ナンジャモのハラバリーex",
             "ナンジャモのズピカ"
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」",
+        "同じカードid": [
+            "47234",
+            "47245",
+            "47250"
         ]
     },
     {
+        "id": "47039",
         "カード名": "ナンジャモのカイデン",
         "カテゴリ": "ポケモン",
+        "HP": "60",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047039_P_NANJIXYAMONOKAIDEN.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047039_P_NANJIXYAMONOKAIDEN.jpg",
         "レギュレーション": "SV9",
         "カード番号": "031",
         "イラストレーター": "Akira Komayama",
@@ -4272,13 +3711,16 @@
         "進化": [
             "ナンジャモのタイカイデン",
             "ナンジャモのカイデン"
-        ]
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47040",
         "カード名": "ナンジャモのタイカイデン",
         "カテゴリ": "ポケモン",
+        "HP": "120",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047040_P_NANJIXYAMONOTAIKAIDEN.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047040_P_NANJIXYAMONOTAIKAIDEN.jpg",
         "レギュレーション": "SV9",
         "カード番号": "032",
         "イラストレーター": "chibi",
@@ -4307,13 +3749,19 @@
         "進化": [
             "ナンジャモのタイカイデン",
             "ナンジャモのカイデン"
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」",
+        "同じカードid": [
+            "47224"
         ]
     },
     {
+        "id": "47041",
         "カード名": "リーリエのピッピex",
         "カテゴリ": "ポケモン",
+        "HP": "190",
         "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047041_P_RIRIENOPIPPIEX.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047041_P_RIRIENOPIPPIEX.jpg",
         "レギュレーション": "SV9",
         "カード番号": "033",
         "イラストレーター": "5ban Graphics",
@@ -4338,13 +3786,20 @@
         "弱点": "鋼",
         "抵抗": "なし",
         "逃げるために必要なエネルギー": 1,
-        "進化": []
+        "進化": [],
+        "収録パック": "拡張パック「バトルパートナーズ」",
+        "同じカードid": [
+            "47235",
+            "47246"
+        ]
     },
     {
+        "id": "47042",
         "カード名": "バリヤード",
         "カテゴリ": "ポケモン",
+        "HP": "90",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047042_P_BARIYADO.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047042_P_BARIYADO.jpg",
         "レギュレーション": "SV9",
         "カード番号": "034",
         "イラストレーター": "GOTO minori",
@@ -4372,13 +3827,16 @@
         "弱点": "悪",
         "抵抗": "闘",
         "逃げるために必要なエネルギー": 1,
-        "進化": []
+        "進化": [],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47043",
         "カード名": "カゲボウズ",
         "カテゴリ": "ポケモン",
+        "HP": "60",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047043_P_KAGEBOUZU.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047043_P_KAGEBOUZU.jpg",
         "レギュレーション": "SV9",
         "カード番号": "035",
         "イラストレーター": "miki kudo",
@@ -4402,13 +3860,16 @@
             "ジュペッタGX",
             "ジュペッタex",
             "カゲボウズ"
-        ]
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47044",
         "カード名": "ジュペッタ",
         "カテゴリ": "ポケモン",
+        "HP": "90",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047044_P_JIXYUPETTA.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047044_P_JIXYUPETTA.jpg",
         "レギュレーション": "SV9",
         "カード番号": "036",
         "イラストレーター": "Anesaki Dynamic",
@@ -4441,13 +3902,16 @@
             "ジュペッタGX",
             "ジュペッタex",
             "カゲボウズ"
-        ]
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47045",
         "カード名": "ダンバル",
         "カテゴリ": "ポケモン",
+        "HP": "60",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047045_P_DANBARU.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047045_P_DANBARU.jpg",
         "レギュレーション": "SV9",
         "カード番号": "037",
         "イラストレーター": "Izucch",
@@ -4480,13 +3944,16 @@
             "メタグロス",
             "メタング",
             "ダンバル"
-        ]
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47046",
         "カード名": "メタング",
         "カテゴリ": "ポケモン",
+        "HP": "100",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047046_P_METANGU.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047046_P_METANGU.jpg",
         "レギュレーション": "SV9",
         "カード番号": "038",
         "イラストレーター": "Oswaldo KATO",
@@ -4519,13 +3986,16 @@
             "メタグロス",
             "メタング",
             "ダンバル"
-        ]
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47047",
         "カード名": "メタグロス",
         "カテゴリ": "ポケモン",
+        "HP": "170",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047047_P_METAGUROSU.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047047_P_METAGUROSU.jpg",
         "レギュレーション": "SV9",
         "カード番号": "039",
         "イラストレーター": "Mitsuhiro Arita",
@@ -4558,13 +4028,16 @@
             "メタグロス",
             "メタング",
             "ダンバル"
-        ]
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47048",
         "カード名": "Nのシンボラー",
         "カテゴリ": "ポケモン",
+        "HP": "110",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047048_P_NNOSHINBORA.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047048_P_NNOSHINBORA.jpg",
         "レギュレーション": "SV9",
         "カード番号": "040",
         "イラストレーター": "Shiburingaru",
@@ -4593,13 +4066,16 @@
         "弱点": "雷",
         "抵抗": "闘",
         "逃げるために必要なエネルギー": 1,
-        "進化": []
+        "進化": [],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47049",
         "カード名": "リーリエのアブリー",
         "カテゴリ": "ポケモン",
+        "HP": "30",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047049_P_RIRIENOABURI.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047049_P_RIRIENOABURI.jpg",
         "レギュレーション": "SV9",
         "カード番号": "041",
         "イラストレーター": "Saya Tsuruta",
@@ -4621,13 +4097,16 @@
         "進化": [
             "リーリエのアブリボン",
             "リーリエのアブリー"
-        ]
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47050",
         "カード名": "リーリエのアブリボン",
         "カテゴリ": "ポケモン",
+        "HP": "70",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047050_P_RIRIENOABURIBON.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047050_P_RIRIENOABURIBON.jpg",
         "レギュレーション": "SV9",
         "カード番号": "042",
         "イラストレーター": "mashu",
@@ -4654,13 +4133,19 @@
         "進化": [
             "リーリエのアブリボン",
             "リーリエのアブリー"
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」",
+        "同じカードid": [
+            "47225"
         ]
     },
     {
+        "id": "47051",
         "カード名": "リーリエのキュワワー",
         "カテゴリ": "ポケモン",
+        "HP": "70",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047051_P_RIRIENOKIXYUWAWA.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047051_P_RIRIENOKIXYUWAWA.jpg",
         "レギュレーション": "SV9",
         "カード番号": "043",
         "イラストレーター": "Narumi Sato",
@@ -4687,13 +4172,16 @@
         "弱点": "鋼",
         "抵抗": "なし",
         "逃げるために必要なエネルギー": 1,
-        "進化": []
+        "進化": [],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47052",
         "カード名": "ウリムー",
         "カテゴリ": "ポケモン",
+        "HP": "70",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047052_P_URIMU.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047052_P_URIMU.jpg",
         "レギュレーション": "SV9",
         "カード番号": "044",
         "イラストレーター": "REND",
@@ -4725,13 +4213,19 @@
             "マンムーex",
             "イノムー",
             "ウリムー"
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」",
+        "同じカードid": [
+            "47226"
         ]
     },
     {
+        "id": "47053",
         "カード名": "イノムー",
         "カテゴリ": "ポケモン",
+        "HP": "100",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047053_P_INOMU.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047053_P_INOMU.jpg",
         "レギュレーション": "SV9",
         "カード番号": "045",
         "イラストレーター": "Aliya Chen",
@@ -4764,13 +4258,16 @@
             "マンムーex",
             "イノムー",
             "ウリムー"
-        ]
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47054",
         "カード名": "マンムーex",
         "カテゴリ": "ポケモン",
+        "HP": "340",
         "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047054_P_MANMUEX.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047054_P_MANMUEX.jpg",
         "レギュレーション": "SV9",
         "カード番号": "046",
         "イラストレーター": "Nisota Niso",
@@ -4800,13 +4297,19 @@
             "マンムーex",
             "イノムー",
             "ウリムー"
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」",
+        "同じカードid": [
+            "47236"
         ]
     },
     {
+        "id": "47055",
         "カード名": "ヨーギラス",
         "カテゴリ": "ポケモン",
+        "HP": "70",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047055_P_YOGIRASU.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047055_P_YOGIRASU.jpg",
         "レギュレーション": "SV9",
         "カード番号": "047",
         "イラストレーター": "Dsuke",
@@ -4832,13 +4335,16 @@
             "バンギラスex",
             "サナギラス",
             "ヨーギラス"
-        ]
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47056",
         "カード名": "サナギラス",
         "カテゴリ": "ポケモン",
+        "HP": "90",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047056_P_SANAGIRASU.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047056_P_SANAGIRASU.jpg",
         "レギュレーション": "SV9",
         "カード番号": "048",
         "イラストレーター": "Scav",
@@ -4864,13 +4370,16 @@
             "バンギラスex",
             "サナギラス",
             "ヨーギラス"
-        ]
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47057",
         "カード名": "レジロック",
         "カテゴリ": "ポケモン",
+        "HP": "130",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047057_P_REJIROKKU.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047057_P_REJIROKKU.jpg",
         "レギュレーション": "SV9",
         "カード番号": "049",
         "イラストレーター": "Uta",
@@ -4896,13 +4405,16 @@
         "弱点": "草",
         "抵抗": "なし",
         "逃げるために必要なエネルギー": 3,
-        "進化": []
+        "進化": [],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47058",
         "カード名": "ヤンチャム",
         "カテゴリ": "ポケモン",
+        "HP": "60",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047058_P_YANCHIXYAMU.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047058_P_YANCHIXYAMU.jpg",
         "レギュレーション": "SV9",
         "カード番号": "050",
         "イラストレーター": "Yuriko Akase",
@@ -4934,13 +4446,16 @@
         "進化": [
             "ゴロンダ",
             "ヤンチャム"
-        ]
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47059",
         "カード名": "イワンコ",
         "カテゴリ": "ポケモン",
+        "HP": "70",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047059_P_IWANKO.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047059_P_IWANKO.jpg",
         "レギュレーション": "SV9",
         "カード番号": "051",
         "イラストレーター": "Yoshimi Miyoshi",
@@ -4973,13 +4488,16 @@
             "ルガルガン",
             "ルガルガンex",
             "イワンコ"
-        ]
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47060",
         "カード名": "ルガルガン",
         "カテゴリ": "ポケモン",
+        "HP": "120",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047060_P_RUGARUGAN.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047060_P_RUGARUGAN.jpg",
         "レギュレーション": "SV9",
         "カード番号": "052",
         "イラストレーター": "Shiburingaru",
@@ -5010,13 +4528,19 @@
             "ルガルガン",
             "ルガルガンex",
             "イワンコ"
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」",
+        "同じカードid": [
+            "47227"
         ]
     },
     {
+        "id": "47061",
         "カード名": "ホップのスナヘビ",
         "カテゴリ": "ポケモン",
+        "HP": "80",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047061_P_HOPPUNOSUNAHEBI.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047061_P_HOPPUNOSUNAHEBI.jpg",
         "レギュレーション": "SV9",
         "カード番号": "053",
         "イラストレーター": "aspara",
@@ -5047,13 +4571,16 @@
         "進化": [
             "ホップのサダイジャ",
             "ホップのスナヘビ"
-        ]
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47062",
         "カード名": "ホップのサダイジャ",
         "カテゴリ": "ポケモン",
+        "HP": "140",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047062_P_HOPPUNOSADAIJIXYA.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047062_P_HOPPUNOSADAIJIXYA.jpg",
         "レギュレーション": "SV9",
         "カード番号": "054",
         "イラストレーター": "Sanosuke Sakuma",
@@ -5086,13 +4613,16 @@
         "進化": [
             "ホップのサダイジャ",
             "ホップのスナヘビ"
-        ]
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47063",
         "カード名": "ガケガニ",
         "カテゴリ": "ポケモン",
+        "HP": "120",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047063_P_GAKEGANI.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047063_P_GAKEGANI.jpg",
         "レギュレーション": "SV9",
         "カード番号": "055",
         "イラストレーター": "Shinya Komatsu",
@@ -5122,13 +4652,16 @@
         "弱点": "草",
         "抵抗": "なし",
         "逃げるために必要なエネルギー": 3,
-        "進化": []
+        "進化": [],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47064",
         "カード名": "ドガース",
         "カテゴリ": "ポケモン",
+        "HP": "60",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047064_P_DOGASU.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047064_P_DOGASU.jpg",
         "レギュレーション": "SV9",
         "カード番号": "056",
         "イラストレーター": "Rond",
@@ -5160,13 +4693,16 @@
             "マタドガス",
             "ガラル マタドガス",
             "ドガース"
-        ]
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47065",
         "カード名": "マタドガス",
         "カテゴリ": "ポケモン",
+        "HP": "130",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047065_P_MATADOGASU.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047065_P_MATADOGASU.jpg",
         "レギュレーション": "SV9",
         "カード番号": "057",
         "イラストレーター": "KEIICHIRO ITO",
@@ -5198,13 +4734,16 @@
             "マタドガス",
             "ガラル マタドガス",
             "ドガース"
-        ]
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47066",
         "カード名": "バンギラス",
         "カテゴリ": "ポケモン",
+        "HP": "190",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047066_P_BANGIRASU.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047066_P_BANGIRASU.jpg",
         "レギュレーション": "SV9",
         "カード番号": "058",
         "イラストレーター": "AKIRA EGAWA",
@@ -5235,13 +4774,16 @@
             "バンギラスex",
             "サナギラス",
             "ヨーギラス"
-        ]
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47067",
         "カード名": "Nのチョロネコ",
         "カテゴリ": "ポケモン",
+        "HP": "70",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047067_P_NNOCHIXYORONEKO.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047067_P_NNOCHIXYORONEKO.jpg",
         "レギュレーション": "SV9",
         "カード番号": "059",
         "イラストレーター": "Keisin",
@@ -5261,13 +4803,16 @@
         "弱点": "草",
         "抵抗": "なし",
         "逃げるために必要なエネルギー": 1,
-        "進化": []
+        "進化": [],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47068",
         "カード名": "Nのゾロア",
         "カテゴリ": "ポケモン",
+        "HP": "70",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047068_P_NNOZOROA.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047068_P_NNOZOROA.jpg",
         "レギュレーション": "SV9",
         "カード番号": "060",
         "イラストレーター": "Jiro Sasumo",
@@ -5289,13 +4834,19 @@
         "進化": [
             "Nのゾロアークex",
             "Nのゾロア"
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」",
+        "同じカードid": [
+            "47228"
         ]
     },
     {
+        "id": "47069",
         "カード名": "Nのゾロアークex",
         "カテゴリ": "ポケモン",
+        "HP": "280",
         "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047069_P_NNOZOROAKUEX.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047069_P_NNOZOROAKUEX.jpg",
         "レギュレーション": "SV9",
         "カード番号": "061",
         "イラストレーター": "takuyoa",
@@ -5323,13 +4874,21 @@
         "進化": [
             "Nのゾロアークex",
             "Nのゾロア"
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」",
+        "同じカードid": [
+            "47237",
+            "47247",
+            "47251"
         ]
     },
     {
+        "id": "47070",
         "カード名": "ゴロンダ",
         "カテゴリ": "ポケモン",
+        "HP": "140",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047070_P_GORONDA.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047070_P_GORONDA.jpg",
         "レギュレーション": "SV9",
         "カード番号": "062",
         "イラストレーター": "nagimiso",
@@ -5361,13 +4920,16 @@
         "進化": [
             "ゴロンダ",
             "ヤンチャム"
-        ]
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47071",
         "カード名": "シュバルゴ",
         "カテゴリ": "ポケモン",
+        "HP": "120",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047071_P_SHIXYUBARUGO.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047071_P_SHIXYUBARUGO.jpg",
         "レギュレーション": "SV9",
         "カード番号": "063",
         "イラストレーター": "Takumi Wada",
@@ -5398,13 +4960,16 @@
         "進化": [
             "シュバルゴ",
             "カブルモ"
-        ]
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47072",
         "カード名": "Nのギアル",
         "カテゴリ": "ポケモン",
+        "HP": "60",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047072_P_NNOGIARU.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047072_P_NNOGIARU.jpg",
         "レギュレーション": "SV9",
         "カード番号": "064",
         "イラストレーター": "Saboteri",
@@ -5427,13 +4992,16 @@
             "Nのギギギアル",
             "Nのギギアル",
             "Nのギアル"
-        ]
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47073",
         "カード名": "Nのギギアル",
         "カテゴリ": "ポケモン",
+        "HP": "90",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047073_P_NNOGIGIARU.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047073_P_NNOGIGIARU.jpg",
         "レギュレーション": "SV9",
         "カード番号": "065",
         "イラストレーター": "KEIICHIRO ITO",
@@ -5465,13 +5033,16 @@
             "Nのギギギアル",
             "Nのギギアル",
             "Nのギアル"
-        ]
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47074",
         "カード名": "Nのギギギアル",
         "カテゴリ": "ポケモン",
+        "HP": "160",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047074_P_NNOGIGIGIARU.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047074_P_NNOGIGIGIARU.jpg",
         "レギュレーション": "SV9",
         "カード番号": "066",
         "イラストレーター": "matazo",
@@ -5504,13 +5075,16 @@
             "Nのギギギアル",
             "Nのギギアル",
             "Nのギアル"
-        ]
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47075",
         "カード名": "マギアナ",
         "カテゴリ": "ポケモン",
+        "HP": "90",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047075_P_MAGIANA.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047075_P_MAGIANA.jpg",
         "レギュレーション": "SV9",
         "カード番号": "067",
         "イラストレーター": "rika",
@@ -5534,13 +5108,16 @@
         "弱点": "炎",
         "抵抗": "草",
         "逃げるために必要なエネルギー": 1,
-        "進化": []
+        "進化": [],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47076",
         "カード名": "ホップのアーマーガア",
         "カテゴリ": "ポケモン",
+        "HP": "170",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047076_P_HOPPUNOAMAGAA.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047076_P_HOPPUNOAMAGAA.jpg",
         "レギュレーション": "SV9",
         "カード番号": "068",
         "イラストレーター": "GIDORA",
@@ -5573,13 +5150,16 @@
             "ホップのアーマーガア",
             "ホップのアオガラス",
             "ホップのココガラ"
-        ]
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47077",
         "カード名": "ホップのザシアンex",
         "カテゴリ": "ポケモン",
+        "HP": "230",
         "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047077_P_HOPPUNOZASHIANEX.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047077_P_HOPPUNOZASHIANEX.jpg",
         "レギュレーション": "SV9",
         "カード番号": "069",
         "イラストレーター": "aky CG Works",
@@ -5609,13 +5189,20 @@
         "弱点": "炎",
         "抵抗": "草",
         "逃げるために必要なエネルギー": 2,
-        "進化": []
+        "進化": [],
+        "収録パック": "拡張パック「バトルパートナーズ」",
+        "同じカードid": [
+            "47238",
+            "47248"
+        ]
     },
     {
+        "id": "47078",
         "カード名": "タツベイ",
         "カテゴリ": "ポケモン",
+        "HP": "70",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047078_P_TATSUBEI.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047078_P_TATSUBEI.jpg",
         "レギュレーション": "SV9",
         "カード番号": "070",
         "イラストレーター": "Miki Tanaka",
@@ -5649,13 +5236,16 @@
             "ボーマンダex",
             "コモルー",
             "タツベイ"
-        ]
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47079",
         "カード名": "コモルー",
         "カテゴリ": "ポケモン",
+        "HP": "100",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047079_P_KOMORU.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047079_P_KOMORU.jpg",
         "レギュレーション": "SV9",
         "カード番号": "071",
         "イラストレーター": "Julie Hang",
@@ -5691,13 +5281,16 @@
             "ボーマンダex",
             "コモルー",
             "タツベイ"
-        ]
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47080",
         "カード名": "ボーマンダex",
         "カテゴリ": "ポケモン",
+        "HP": "320",
         "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047080_P_BOMANDAEX.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047080_P_BOMANDAEX.jpg",
         "レギュレーション": "SV9",
         "カード番号": "072",
         "イラストレーター": "toriyufu",
@@ -5735,13 +5328,20 @@
             "ボーマンダex",
             "コモルー",
             "タツベイ"
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」",
+        "同じカードid": [
+            "47239",
+            "47249"
         ]
     },
     {
+        "id": "47081",
         "カード名": "クリムガン",
         "カテゴリ": "ポケモン",
+        "HP": "120",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047081_P_KURIMUGAN.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047081_P_KURIMUGAN.jpg",
         "レギュレーション": "SV9",
         "カード番号": "073",
         "イラストレーター": "kawayoo",
@@ -5770,13 +5370,16 @@
         "弱点": "なし",
         "抵抗": "なし",
         "逃げるために必要なエネルギー": 2,
-        "進化": []
+        "進化": [],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47082",
         "カード名": "Nのレシラム",
         "カテゴリ": "ポケモン",
+        "HP": "130",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047082_P_NNORESHIRAMU.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047082_P_NNORESHIRAMU.jpg",
         "レギュレーション": "SV9",
         "カード番号": "074",
         "イラストレーター": "rika",
@@ -5807,13 +5410,19 @@
         "弱点": "なし",
         "抵抗": "なし",
         "逃げるために必要なエネルギー": 2,
-        "進化": []
+        "進化": [],
+        "収録パック": "拡張パック「バトルパートナーズ」",
+        "同じカードid": [
+            "47229"
+        ]
     },
     {
+        "id": "47083",
         "カード名": "ホップのカビゴン",
         "カテゴリ": "ポケモン",
+        "HP": "150",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047083_P_HOPPUNOKABIGON.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047083_P_HOPPUNOKABIGON.jpg",
         "レギュレーション": "SV9",
         "カード番号": "075",
         "イラストレーター": "GOSSAN",
@@ -5839,13 +5448,16 @@
         "弱点": "闘",
         "抵抗": "なし",
         "逃げるために必要なエネルギー": 4,
-        "進化": []
+        "進化": [],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47084",
         "カード名": "オタチ",
         "カテゴリ": "ポケモン",
+        "HP": "60",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047084_P_OTACHI.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047084_P_OTACHI.jpg",
         "レギュレーション": "SV9",
         "カード番号": "076",
         "イラストレーター": "Taiga Kayama",
@@ -5867,13 +5479,16 @@
         "進化": [
             "オオタチ",
             "オタチ"
-        ]
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47085",
         "カード名": "オオタチ",
         "カテゴリ": "ポケモン",
+        "HP": "120",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047085_P_OOTACHI.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047085_P_OOTACHI.jpg",
         "レギュレーション": "SV9",
         "カード番号": "077",
         "イラストレーター": "Tomomi Ozaki",
@@ -5904,13 +5519,19 @@
         "進化": [
             "オオタチ",
             "オタチ"
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」",
+        "同じカードid": [
+            "47230"
         ]
     },
     {
+        "id": "47086",
         "カード名": "ノコッチ",
         "カテゴリ": "ポケモン",
+        "HP": "70",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047086_P_NOKOTCHI.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047086_P_NOKOTCHI.jpg",
         "レギュレーション": "SV9",
         "カード番号": "078",
         "イラストレーター": "Asako Ito",
@@ -5942,13 +5563,16 @@
             "ノココッチ",
             "ノココッチex",
             "ノコッチ"
-        ]
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47087",
         "カード名": "ノココッチex",
         "カテゴリ": "ポケモン",
+        "HP": "270",
         "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047087_P_NOKOKOTCHIEX.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047087_P_NOKOKOTCHIEX.jpg",
         "レギュレーション": "SV9",
         "カード番号": "079",
         "イラストレーター": "5ban Graphics",
@@ -5981,13 +5605,19 @@
             "ノココッチ",
             "ノココッチex",
             "ノコッチ"
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」",
+        "同じカードid": [
+            "47240"
         ]
     },
     {
+        "id": "47088",
         "カード名": "オンバット",
         "カテゴリ": "ポケモン",
+        "HP": "60",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047088_P_ONBATTO.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047088_P_ONBATTO.jpg",
         "レギュレーション": "SV9",
         "カード番号": "080",
         "イラストレーター": "Tomokazu Komiya",
@@ -6012,13 +5642,19 @@
             "オンバーンGX",
             "オンバーンex",
             "オンバット"
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」",
+        "同じカードid": [
+            "47231"
         ]
     },
     {
+        "id": "47089",
         "カード名": "オンバーン",
         "カテゴリ": "ポケモン",
+        "HP": "110",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047089_P_ONBAN.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047089_P_ONBAN.jpg",
         "レギュレーション": "SV9",
         "カード番号": "081",
         "イラストレーター": "Anesaki Dynamic",
@@ -6050,13 +5686,16 @@
             "オンバーンGX",
             "オンバーンex",
             "オンバット"
-        ]
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47090",
         "カード名": "ネッコアラ",
         "カテゴリ": "ポケモン",
+        "HP": "100",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047090_P_NEKKOARA.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047090_P_NEKKOARA.jpg",
         "レギュレーション": "SV9",
         "カード番号": "082",
         "イラストレーター": "Natsumi Yoshida",
@@ -6075,13 +5714,16 @@
         "弱点": "闘",
         "抵抗": "なし",
         "逃げるために必要なエネルギー": 2,
-        "進化": []
+        "進化": [],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47091",
         "カード名": "ホップのココガラ",
         "カテゴリ": "ポケモン",
+        "HP": "60",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047091_P_HOPPUNOKOKOGARA.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047091_P_HOPPUNOKOKOGARA.jpg",
         "レギュレーション": "SV9",
         "カード番号": "083",
         "イラストレーター": "Shinya Mizuno",
@@ -6113,13 +5755,16 @@
             "ホップのアーマーガア",
             "ホップのアオガラス",
             "ホップのココガラ"
-        ]
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47092",
         "カード名": "ホップのアオガラス",
         "カテゴリ": "ポケモン",
+        "HP": "90",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047092_P_HOPPUNOAOGARASU.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047092_P_HOPPUNOAOGARASU.jpg",
         "レギュレーション": "SV9",
         "カード番号": "084",
         "イラストレーター": "Souichirou Gunjima",
@@ -6152,13 +5797,16 @@
             "ホップのアーマーガア",
             "ホップのアオガラス",
             "ホップのココガラ"
-        ]
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47093",
         "カード名": "ホップのウールー",
         "カテゴリ": "ポケモン",
+        "HP": "70",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047093_P_HOPPUNOURU.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047093_P_HOPPUNOURU.jpg",
         "レギュレーション": "SV9",
         "カード番号": "085",
         "イラストレーター": "Tomomi Ozaki",
@@ -6182,13 +5830,19 @@
         "進化": [
             "ホップのバイウールー",
             "ホップのウールー"
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」",
+        "同じカードid": [
+            "47232"
         ]
     },
     {
+        "id": "47094",
         "カード名": "ホップのバイウールー",
         "カテゴリ": "ポケモン",
+        "HP": "120",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047094_P_HOPPUNOBAIURU.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047094_P_HOPPUNOBAIURU.jpg",
         "レギュレーション": "SV9",
         "カード番号": "086",
         "イラストレーター": "Ryota Murayama",
@@ -6217,13 +5871,16 @@
         "進化": [
             "ホップのバイウールー",
             "ホップのウールー"
-        ]
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47095",
         "カード名": "ホップのウッウ",
         "カテゴリ": "ポケモン",
+        "HP": "110",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047095_P_HOPPUNOUUU.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047095_P_HOPPUNOUUU.jpg",
         "レギュレーション": "SV9",
         "カード番号": "087",
         "イラストレーター": "Saboteri",
@@ -6242,13 +5899,16 @@
         "弱点": "雷",
         "抵抗": "闘",
         "逃げるために必要なエネルギー": 1,
-        "進化": []
+        "進化": [],
+        "収録パック": "拡張パック「バトルパートナーズ」"
     },
     {
+        "id": "47221",
         "カード名": "マラカッチ",
         "カテゴリ": "ポケモン",
+        "HP": "110",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047221_P_MARAKATCHI.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047221_P_MARAKATCHI.jpg",
         "レギュレーション": "SV9",
         "カード番号": "101",
         "イラストレーター": "Ounishi",
@@ -6272,13 +5932,19 @@
         "弱点": "炎",
         "抵抗": "なし",
         "逃げるために必要なエネルギー": 2,
-        "進化": []
+        "進化": [],
+        "収録パック": "拡張パック「バトルパートナーズ」",
+        "同じカードid": [
+            "47014"
+        ]
     },
     {
+        "id": "47222",
         "カード名": "フリーザー",
         "カテゴリ": "ポケモン",
+        "HP": "110",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047222_P_FURIZA.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047222_P_FURIZA.jpg",
         "レギュレーション": "SV9",
         "カード番号": "102",
         "イラストレーター": "Kuroimori",
@@ -6307,13 +5973,19 @@
         "弱点": "雷",
         "抵抗": "闘",
         "逃げるために必要なエネルギー": 1,
-        "進化": []
+        "進化": [],
+        "収録パック": "拡張パック「バトルパートナーズ」",
+        "同じカードid": [
+            "47026"
+        ]
     },
     {
+        "id": "47223",
         "カード名": "ホエルオー",
         "カテゴリ": "ポケモン",
+        "HP": "240",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047223_P_HOERUO.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047223_P_HOERUO.jpg",
         "レギュレーション": "SV9",
         "カード番号": "103",
         "イラストレーター": "Katsunori Sato",
@@ -6338,13 +6010,19 @@
         "進化": [
             "ホエルオー",
             "ホエルコ"
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」",
+        "同じカードid": [
+            "47033"
         ]
     },
     {
+        "id": "47224",
         "カード名": "ナンジャモのタイカイデン",
         "カテゴリ": "ポケモン",
+        "HP": "120",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047224_P_NANJIXYAMONOTAIKAIDEN.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047224_P_NANJIXYAMONOTAIKAIDEN.jpg",
         "レギュレーション": "SV9",
         "カード番号": "104",
         "イラストレーター": "Terada Tera",
@@ -6373,13 +6051,19 @@
         "進化": [
             "ナンジャモのタイカイデン",
             "ナンジャモのカイデン"
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」",
+        "同じカードid": [
+            "47040"
         ]
     },
     {
+        "id": "47225",
         "カード名": "リーリエのアブリボン",
         "カテゴリ": "ポケモン",
+        "HP": "70",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047225_P_RIRIENOABURIBON.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047225_P_RIRIENOABURIBON.jpg",
         "レギュレーション": "SV9",
         "カード番号": "105",
         "イラストレーター": "saino misaki",
@@ -6406,13 +6090,19 @@
         "進化": [
             "リーリエのアブリボン",
             "リーリエのアブリー"
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」",
+        "同じカードid": [
+            "47050"
         ]
     },
     {
+        "id": "47226",
         "カード名": "ウリムー",
         "カテゴリ": "ポケモン",
+        "HP": "70",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047226_P_URIMU.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047226_P_URIMU.jpg",
         "レギュレーション": "SV9",
         "カード番号": "106",
         "イラストレーター": "Nakamura Ippan",
@@ -6444,13 +6134,19 @@
             "マンムーex",
             "イノムー",
             "ウリムー"
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」",
+        "同じカードid": [
+            "47052"
         ]
     },
     {
+        "id": "47227",
         "カード名": "ルガルガン",
         "カテゴリ": "ポケモン",
+        "HP": "120",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047227_P_RUGARUGAN.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047227_P_RUGARUGAN.jpg",
         "レギュレーション": "SV9",
         "カード番号": "107",
         "イラストレーター": "GIDORA",
@@ -6481,13 +6177,19 @@
             "ルガルガン",
             "ルガルガンex",
             "イワンコ"
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」",
+        "同じカードid": [
+            "47060"
         ]
     },
     {
+        "id": "47228",
         "カード名": "Nのゾロア",
         "カテゴリ": "ポケモン",
+        "HP": "70",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047228_P_NNOZOROA.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047228_P_NNOZOROA.jpg",
         "レギュレーション": "SV9",
         "カード番号": "108",
         "イラストレーター": "Megumi Mizutani",
@@ -6509,13 +6211,19 @@
         "進化": [
             "Nのゾロアークex",
             "Nのゾロア"
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」",
+        "同じカードid": [
+            "47068"
         ]
     },
     {
+        "id": "47229",
         "カード名": "Nのレシラム",
         "カテゴリ": "ポケモン",
+        "HP": "130",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047229_P_NNORESHIRAMU.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047229_P_NNORESHIRAMU.jpg",
         "レギュレーション": "SV9",
         "カード番号": "109",
         "イラストレーター": "Bun Toujo",
@@ -6546,13 +6254,19 @@
         "弱点": "なし",
         "抵抗": "なし",
         "逃げるために必要なエネルギー": 2,
-        "進化": []
+        "進化": [],
+        "収録パック": "拡張パック「バトルパートナーズ」",
+        "同じカードid": [
+            "47082"
+        ]
     },
     {
+        "id": "47230",
         "カード名": "オオタチ",
         "カテゴリ": "ポケモン",
+        "HP": "120",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047230_P_OOTACHI.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047230_P_OOTACHI.jpg",
         "レギュレーション": "SV9",
         "カード番号": "110",
         "イラストレーター": "REND",
@@ -6583,13 +6297,19 @@
         "進化": [
             "オオタチ",
             "オタチ"
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」",
+        "同じカードid": [
+            "47085"
         ]
     },
     {
+        "id": "47231",
         "カード名": "オンバット",
         "カテゴリ": "ポケモン",
+        "HP": "60",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047231_P_ONBATTO.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047231_P_ONBATTO.jpg",
         "レギュレーション": "SV9",
         "カード番号": "111",
         "イラストレーター": "sowsow",
@@ -6614,13 +6334,19 @@
             "オンバーンGX",
             "オンバーンex",
             "オンバット"
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」",
+        "同じカードid": [
+            "47088"
         ]
     },
     {
+        "id": "47232",
         "カード名": "ホップのウールー",
         "カテゴリ": "ポケモン",
+        "HP": "70",
         "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047232_P_HOPPUNOURU.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047232_P_HOPPUNOURU.jpg",
         "レギュレーション": "SV9",
         "カード番号": "112",
         "イラストレーター": "MINAMINAMI Take",
@@ -6644,13 +6370,19 @@
         "進化": [
             "ホップのバイウールー",
             "ホップのウールー"
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」",
+        "同じカードid": [
+            "47093"
         ]
     },
     {
+        "id": "47233",
         "カード名": "ボルケニオンex",
         "カテゴリ": "ポケモン",
+        "HP": "220",
         "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047233_P_BORUKENIONEX.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047233_P_BORUKENIONEX.jpg",
         "レギュレーション": "SV9",
         "カード番号": "113",
         "イラストレーター": "5ban Graphics",
@@ -6676,13 +6408,20 @@
         "弱点": "水",
         "抵抗": "なし",
         "逃げるために必要なエネルギー": 3,
-        "進化": []
+        "進化": [],
+        "収録パック": "拡張パック「バトルパートナーズ」",
+        "同じカードid": [
+            "47025",
+            "47244"
+        ]
     },
     {
+        "id": "47234",
         "カード名": "ナンジャモのハラバリーex",
         "カテゴリ": "ポケモン",
+        "HP": "280",
         "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047234_P_NANJIXYAMONOHARABARIEX.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047234_P_NANJIXYAMONOHARABARIEX.jpg",
         "レギュレーション": "SV9",
         "カード番号": "114",
         "イラストレーター": "5ban Graphics",
@@ -6712,13 +6451,21 @@
         "進化": [
             "ナンジャモのハラバリーex",
             "ナンジャモのズピカ"
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」",
+        "同じカードid": [
+            "47038",
+            "47245",
+            "47250"
         ]
     },
     {
+        "id": "47235",
         "カード名": "リーリエのピッピex",
         "カテゴリ": "ポケモン",
+        "HP": "190",
         "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047235_P_RIRIENOPIPPIEX.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047235_P_RIRIENOPIPPIEX.jpg",
         "レギュレーション": "SV9",
         "カード番号": "115",
         "イラストレーター": "5ban Graphics",
@@ -6743,13 +6490,20 @@
         "弱点": "鋼",
         "抵抗": "なし",
         "逃げるために必要なエネルギー": 1,
-        "進化": []
+        "進化": [],
+        "収録パック": "拡張パック「バトルパートナーズ」",
+        "同じカードid": [
+            "47041",
+            "47246"
+        ]
     },
     {
+        "id": "47236",
         "カード名": "マンムーex",
         "カテゴリ": "ポケモン",
+        "HP": "340",
         "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047236_P_MANMUEX.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047236_P_MANMUEX.jpg",
         "レギュレーション": "SV9",
         "カード番号": "116",
         "イラストレーター": "N-DESIGN Inc.",
@@ -6779,13 +6533,19 @@
             "マンムーex",
             "イノムー",
             "ウリムー"
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」",
+        "同じカードid": [
+            "47054"
         ]
     },
     {
+        "id": "47237",
         "カード名": "Nのゾロアークex",
         "カテゴリ": "ポケモン",
+        "HP": "280",
         "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047237_P_NNOZOROAKUEX.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047237_P_NNOZOROAKUEX.jpg",
         "レギュレーション": "SV9",
         "カード番号": "117",
         "イラストレーター": "takuyoa",
@@ -6813,13 +6573,21 @@
         "進化": [
             "Nのゾロアークex",
             "Nのゾロア"
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」",
+        "同じカードid": [
+            "47069",
+            "47247",
+            "47251"
         ]
     },
     {
+        "id": "47238",
         "カード名": "ホップのザシアンex",
         "カテゴリ": "ポケモン",
+        "HP": "230",
         "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047238_P_HOPPUNOZASHIANEX.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047238_P_HOPPUNOZASHIANEX.jpg",
         "レギュレーション": "SV9",
         "カード番号": "118",
         "イラストレーター": "aky CG Works",
@@ -6849,13 +6617,20 @@
         "弱点": "炎",
         "抵抗": "草",
         "逃げるために必要なエネルギー": 2,
-        "進化": []
+        "進化": [],
+        "収録パック": "拡張パック「バトルパートナーズ」",
+        "同じカードid": [
+            "47077",
+            "47248"
+        ]
     },
     {
+        "id": "47239",
         "カード名": "ボーマンダex",
         "カテゴリ": "ポケモン",
+        "HP": "320",
         "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047239_P_BOMANDAEX.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047239_P_BOMANDAEX.jpg",
         "レギュレーション": "SV9",
         "カード番号": "119",
         "イラストレーター": "5ban Graphics",
@@ -6893,13 +6668,20 @@
             "ボーマンダex",
             "コモルー",
             "タツベイ"
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」",
+        "同じカードid": [
+            "47080",
+            "47249"
         ]
     },
     {
+        "id": "47240",
         "カード名": "ノココッチex",
         "カテゴリ": "ポケモン",
+        "HP": "270",
         "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047240_P_NOKOKOTCHIEX.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047240_P_NOKOKOTCHIEX.jpg",
         "レギュレーション": "SV9",
         "カード番号": "120",
         "イラストレーター": "5ban Graphics",
@@ -6932,13 +6714,19 @@
             "ノココッチ",
             "ノココッチex",
             "ノコッチ"
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」",
+        "同じカードid": [
+            "47087"
         ]
     },
     {
+        "id": "47244",
         "カード名": "ボルケニオンex",
         "カテゴリ": "ポケモン",
+        "HP": "220",
         "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047244_P_BORUKENIONEX.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047244_P_BORUKENIONEX.jpg",
         "レギュレーション": "SV9",
         "カード番号": "124",
         "イラストレーター": "akagi",
@@ -6964,13 +6752,20 @@
         "弱点": "水",
         "抵抗": "なし",
         "逃げるために必要なエネルギー": 3,
-        "進化": []
+        "進化": [],
+        "収録パック": "拡張パック「バトルパートナーズ」",
+        "同じカードid": [
+            "47025",
+            "47233"
+        ]
     },
     {
+        "id": "47245",
         "カード名": "ナンジャモのハラバリーex",
         "カテゴリ": "ポケモン",
+        "HP": "280",
         "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047245_P_NANJIXYAMONOHARABARIEX.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047245_P_NANJIXYAMONOHARABARIEX.jpg",
         "レギュレーション": "SV9",
         "カード番号": "125",
         "イラストレーター": "Yuu Nishida",
@@ -7000,13 +6795,21 @@
         "進化": [
             "ナンジャモのハラバリーex",
             "ナンジャモのズピカ"
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」",
+        "同じカードid": [
+            "47038",
+            "47234",
+            "47250"
         ]
     },
     {
+        "id": "47246",
         "カード名": "リーリエのピッピex",
         "カテゴリ": "ポケモン",
+        "HP": "190",
         "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047246_P_RIRIENOPIPPIEX.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047246_P_RIRIENOPIPPIEX.jpg",
         "レギュレーション": "SV9",
         "カード番号": "126",
         "イラストレーター": "Susumu Maeya",
@@ -7031,13 +6834,20 @@
         "弱点": "鋼",
         "抵抗": "なし",
         "逃げるために必要なエネルギー": 1,
-        "進化": []
+        "進化": [],
+        "収録パック": "拡張パック「バトルパートナーズ」",
+        "同じカードid": [
+            "47041",
+            "47235"
+        ]
     },
     {
+        "id": "47247",
         "カード名": "Nのゾロアークex",
         "カテゴリ": "ポケモン",
+        "HP": "280",
         "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047247_P_NNOZOROAKUEX.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047247_P_NNOZOROAKUEX.jpg",
         "レギュレーション": "SV9",
         "カード番号": "127",
         "イラストレーター": "Megumi Mizutani",
@@ -7065,13 +6875,21 @@
         "進化": [
             "Nのゾロアークex",
             "Nのゾロア"
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」",
+        "同じカードid": [
+            "47069",
+            "47237",
+            "47251"
         ]
     },
     {
+        "id": "47248",
         "カード名": "ホップのザシアンex",
         "カテゴリ": "ポケモン",
+        "HP": "230",
         "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047248_P_HOPPUNOZASHIANEX.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047248_P_HOPPUNOZASHIANEX.jpg",
         "レギュレーション": "SV9",
         "カード番号": "128",
         "イラストレーター": "DOM",
@@ -7101,13 +6919,20 @@
         "弱点": "炎",
         "抵抗": "草",
         "逃げるために必要なエネルギー": 2,
-        "進化": []
+        "進化": [],
+        "収録パック": "拡張パック「バトルパートナーズ」",
+        "同じカードid": [
+            "47077",
+            "47238"
+        ]
     },
     {
+        "id": "47249",
         "カード名": "ボーマンダex",
         "カテゴリ": "ポケモン",
+        "HP": "320",
         "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047249_P_BOMANDAEX.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047249_P_BOMANDAEX.jpg",
         "レギュレーション": "SV9",
         "カード番号": "129",
         "イラストレーター": "Tsuyoshi Nagano",
@@ -7145,13 +6970,20 @@
             "ボーマンダex",
             "コモルー",
             "タツベイ"
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」",
+        "同じカードid": [
+            "47080",
+            "47239"
         ]
     },
     {
+        "id": "47250",
         "カード名": "ナンジャモのハラバリーex",
         "カテゴリ": "ポケモン",
+        "HP": "280",
         "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047250_P_NANJIXYAMONOHARABARIEX.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047250_P_NANJIXYAMONOHARABARIEX.jpg",
         "レギュレーション": "SV9",
         "カード番号": "130",
         "イラストレーター": "5ban Graphics",
@@ -7181,13 +7013,21 @@
         "進化": [
             "ナンジャモのハラバリーex",
             "ナンジャモのズピカ"
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」",
+        "同じカードid": [
+            "47038",
+            "47234",
+            "47245"
         ]
     },
     {
+        "id": "47251",
         "カード名": "Nのゾロアークex",
         "カテゴリ": "ポケモン",
+        "HP": "280",
         "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047251_P_NNOZOROAKUEX.jpg",
+        "画像": "/assets/images/card_images/large/SV9/047251_P_NNOZOROAKUEX.jpg",
         "レギュレーション": "SV9",
         "カード番号": "131",
         "イラストレーター": "takuyoa",
@@ -7215,1448 +7055,12 @@
         "進化": [
             "Nのゾロアークex",
             "Nのゾロア"
+        ],
+        "収録パック": "拡張パック「バトルパートナーズ」",
+        "同じカードid": [
+            "47069",
+            "47237",
+            "47247"
         ]
-    },
-    {
-        "カード名": "Nのゾロアークex",
-        "カテゴリ": "ポケモン",
-        "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047251_P_NNOZOROAKUEX.jpg",
-        "レギュレーション": "SV9",
-        "カード番号": "131",
-        "イラストレーター": "takuyoa",
-        "ポケモンのタイプ": "悪",
-        "特性": [
-            {
-                "名前": "とりひき",
-                "効果": "自分の番に、自分の手札を1枚トラッシュするなら、1回使える。自分の山札を2枚引く。"
-            }
-        ],
-        "ワザ": [
-            {
-                "名前": "ナイトジョーカー",
-                "必要エネルギー": [
-                    "悪",
-                    "悪"
-                ],
-                "ダメージ": "なし",
-                "効果": "自分のベンチの「Nのポケモン」が持つワザを1つ選び、このワザとして使う。"
-            }
-        ],
-        "弱点": "草",
-        "抵抗": "なし",
-        "逃げるために必要なエネルギー": 2,
-        "進化": [
-            "Nのゾロアークex",
-            "Nのゾロア"
-        ]
-    },
-    {
-        "カード名": "Nのゾロアークex",
-        "カテゴリ": "ポケモン",
-        "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047251_P_NNOZOROAKUEX.jpg",
-        "レギュレーション": "SV9",
-        "カード番号": "131",
-        "イラストレーター": "takuyoa",
-        "ポケモンのタイプ": "悪",
-        "特性": [
-            {
-                "名前": "とりひき",
-                "効果": "自分の番に、自分の手札を1枚トラッシュするなら、1回使える。自分の山札を2枚引く。"
-            }
-        ],
-        "ワザ": [
-            {
-                "名前": "ナイトジョーカー",
-                "必要エネルギー": [
-                    "悪",
-                    "悪"
-                ],
-                "ダメージ": "なし",
-                "効果": "自分のベンチの「Nのポケモン」が持つワザを1つ選び、このワザとして使う。"
-            }
-        ],
-        "弱点": "草",
-        "抵抗": "なし",
-        "逃げるために必要なエネルギー": 2,
-        "進化": [
-            "Nのゾロアークex",
-            "Nのゾロア"
-        ]
-    },
-    {
-        "カード名": "Nのゾロアークex",
-        "カテゴリ": "ポケモン",
-        "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047251_P_NNOZOROAKUEX.jpg",
-        "レギュレーション": "SV9",
-        "カード番号": "131",
-        "イラストレーター": "takuyoa",
-        "ポケモンのタイプ": "悪",
-        "特性": [
-            {
-                "名前": "とりひき",
-                "効果": "自分の番に、自分の手札を1枚トラッシュするなら、1回使える。自分の山札を2枚引く。"
-            }
-        ],
-        "ワザ": [
-            {
-                "名前": "ナイトジョーカー",
-                "必要エネルギー": [
-                    "悪",
-                    "悪"
-                ],
-                "ダメージ": "なし",
-                "効果": "自分のベンチの「Nのポケモン」が持つワザを1つ選び、このワザとして使う。"
-            }
-        ],
-        "弱点": "草",
-        "抵抗": "なし",
-        "逃げるために必要なエネルギー": 2,
-        "進化": [
-            "Nのゾロアークex",
-            "Nのゾロア"
-        ]
-    },
-    {
-        "カード名": "Nのゾロアークex",
-        "カテゴリ": "ポケモン",
-        "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047251_P_NNOZOROAKUEX.jpg",
-        "レギュレーション": "SV9",
-        "カード番号": "131",
-        "イラストレーター": "takuyoa",
-        "ポケモンのタイプ": "悪",
-        "特性": [
-            {
-                "名前": "とりひき",
-                "効果": "自分の番に、自分の手札を1枚トラッシュするなら、1回使える。自分の山札を2枚引く。"
-            }
-        ],
-        "ワザ": [
-            {
-                "名前": "ナイトジョーカー",
-                "必要エネルギー": [
-                    "悪",
-                    "悪"
-                ],
-                "ダメージ": "なし",
-                "効果": "自分のベンチの「Nのポケモン」が持つワザを1つ選び、このワザとして使う。"
-            }
-        ],
-        "弱点": "草",
-        "抵抗": "なし",
-        "逃げるために必要なエネルギー": 2,
-        "進化": [
-            "Nのゾロアークex",
-            "Nのゾロア"
-        ]
-    },
-    {
-        "カード名": "Nのゾロアークex",
-        "カテゴリ": "ポケモン",
-        "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047251_P_NNOZOROAKUEX.jpg",
-        "レギュレーション": "SV9",
-        "カード番号": "131",
-        "イラストレーター": "takuyoa",
-        "ポケモンのタイプ": "悪",
-        "特性": [
-            {
-                "名前": "とりひき",
-                "効果": "自分の番に、自分の手札を1枚トラッシュするなら、1回使える。自分の山札を2枚引く。"
-            }
-        ],
-        "ワザ": [
-            {
-                "名前": "ナイトジョーカー",
-                "必要エネルギー": [
-                    "悪",
-                    "悪"
-                ],
-                "ダメージ": "なし",
-                "効果": "自分のベンチの「Nのポケモン」が持つワザを1つ選び、このワザとして使う。"
-            }
-        ],
-        "弱点": "草",
-        "抵抗": "なし",
-        "逃げるために必要なエネルギー": 2,
-        "進化": [
-            "Nのゾロアークex",
-            "Nのゾロア"
-        ]
-    },
-    {
-        "カード名": "Nのゾロアークex",
-        "カテゴリ": "ポケモン",
-        "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047251_P_NNOZOROAKUEX.jpg",
-        "レギュレーション": "SV9",
-        "カード番号": "131",
-        "イラストレーター": "takuyoa",
-        "ポケモンのタイプ": "悪",
-        "特性": [
-            {
-                "名前": "とりひき",
-                "効果": "自分の番に、自分の手札を1枚トラッシュするなら、1回使える。自分の山札を2枚引く。"
-            }
-        ],
-        "ワザ": [
-            {
-                "名前": "ナイトジョーカー",
-                "必要エネルギー": [
-                    "悪",
-                    "悪"
-                ],
-                "ダメージ": "なし",
-                "効果": "自分のベンチの「Nのポケモン」が持つワザを1つ選び、このワザとして使う。"
-            }
-        ],
-        "弱点": "草",
-        "抵抗": "なし",
-        "逃げるために必要なエネルギー": 2,
-        "進化": [
-            "Nのゾロアークex",
-            "Nのゾロア"
-        ]
-    },
-    {
-        "カード名": "Nのゾロアークex",
-        "カテゴリ": "ポケモン",
-        "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047251_P_NNOZOROAKUEX.jpg",
-        "レギュレーション": "SV9",
-        "カード番号": "131",
-        "イラストレーター": "takuyoa",
-        "ポケモンのタイプ": "悪",
-        "特性": [
-            {
-                "名前": "とりひき",
-                "効果": "自分の番に、自分の手札を1枚トラッシュするなら、1回使える。自分の山札を2枚引く。"
-            }
-        ],
-        "ワザ": [
-            {
-                "名前": "ナイトジョーカー",
-                "必要エネルギー": [
-                    "悪",
-                    "悪"
-                ],
-                "ダメージ": "なし",
-                "効果": "自分のベンチの「Nのポケモン」が持つワザを1つ選び、このワザとして使う。"
-            }
-        ],
-        "弱点": "草",
-        "抵抗": "なし",
-        "逃げるために必要なエネルギー": 2,
-        "進化": [
-            "Nのゾロアークex",
-            "Nのゾロア"
-        ]
-    },
-    {
-        "カード名": "Nのゾロアークex",
-        "カテゴリ": "ポケモン",
-        "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047251_P_NNOZOROAKUEX.jpg",
-        "レギュレーション": "SV9",
-        "カード番号": "131",
-        "イラストレーター": "takuyoa",
-        "ポケモンのタイプ": "悪",
-        "特性": [
-            {
-                "名前": "とりひき",
-                "効果": "自分の番に、自分の手札を1枚トラッシュするなら、1回使える。自分の山札を2枚引く。"
-            }
-        ],
-        "ワザ": [
-            {
-                "名前": "ナイトジョーカー",
-                "必要エネルギー": [
-                    "悪",
-                    "悪"
-                ],
-                "ダメージ": "なし",
-                "効果": "自分のベンチの「Nのポケモン」が持つワザを1つ選び、このワザとして使う。"
-            }
-        ],
-        "弱点": "草",
-        "抵抗": "なし",
-        "逃げるために必要なエネルギー": 2,
-        "進化": [
-            "Nのゾロアークex",
-            "Nのゾロア"
-        ]
-    },
-    {
-        "カード名": "Nのゾロアークex",
-        "カテゴリ": "ポケモン",
-        "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047251_P_NNOZOROAKUEX.jpg",
-        "レギュレーション": "SV9",
-        "カード番号": "131",
-        "イラストレーター": "takuyoa",
-        "ポケモンのタイプ": "悪",
-        "特性": [
-            {
-                "名前": "とりひき",
-                "効果": "自分の番に、自分の手札を1枚トラッシュするなら、1回使える。自分の山札を2枚引く。"
-            }
-        ],
-        "ワザ": [
-            {
-                "名前": "ナイトジョーカー",
-                "必要エネルギー": [
-                    "悪",
-                    "悪"
-                ],
-                "ダメージ": "なし",
-                "効果": "自分のベンチの「Nのポケモン」が持つワザを1つ選び、このワザとして使う。"
-            }
-        ],
-        "弱点": "草",
-        "抵抗": "なし",
-        "逃げるために必要なエネルギー": 2,
-        "進化": [
-            "Nのゾロアークex",
-            "Nのゾロア"
-        ]
-    },
-    {
-        "カード名": "Nのゾロアークex",
-        "カテゴリ": "ポケモン",
-        "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047251_P_NNOZOROAKUEX.jpg",
-        "レギュレーション": "SV9",
-        "カード番号": "131",
-        "イラストレーター": "takuyoa",
-        "ポケモンのタイプ": "悪",
-        "特性": [
-            {
-                "名前": "とりひき",
-                "効果": "自分の番に、自分の手札を1枚トラッシュするなら、1回使える。自分の山札を2枚引く。"
-            }
-        ],
-        "ワザ": [
-            {
-                "名前": "ナイトジョーカー",
-                "必要エネルギー": [
-                    "悪",
-                    "悪"
-                ],
-                "ダメージ": "なし",
-                "効果": "自分のベンチの「Nのポケモン」が持つワザを1つ選び、このワザとして使う。"
-            }
-        ],
-        "弱点": "草",
-        "抵抗": "なし",
-        "逃げるために必要なエネルギー": 2,
-        "進化": [
-            "Nのゾロアークex",
-            "Nのゾロア"
-        ]
-    },
-    {
-        "カード名": "Nのゾロアークex",
-        "カテゴリ": "ポケモン",
-        "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047251_P_NNOZOROAKUEX.jpg",
-        "レギュレーション": "SV9",
-        "カード番号": "131",
-        "イラストレーター": "takuyoa",
-        "ポケモンのタイプ": "悪",
-        "特性": [
-            {
-                "名前": "とりひき",
-                "効果": "自分の番に、自分の手札を1枚トラッシュするなら、1回使える。自分の山札を2枚引く。"
-            }
-        ],
-        "ワザ": [
-            {
-                "名前": "ナイトジョーカー",
-                "必要エネルギー": [
-                    "悪",
-                    "悪"
-                ],
-                "ダメージ": "なし",
-                "効果": "自分のベンチの「Nのポケモン」が持つワザを1つ選び、このワザとして使う。"
-            }
-        ],
-        "弱点": "草",
-        "抵抗": "なし",
-        "逃げるために必要なエネルギー": 2,
-        "進化": [
-            "Nのゾロアークex",
-            "Nのゾロア"
-        ]
-    },
-    {
-        "カード名": "Nのゾロアークex",
-        "カテゴリ": "ポケモン",
-        "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047251_P_NNOZOROAKUEX.jpg",
-        "レギュレーション": "SV9",
-        "カード番号": "131",
-        "イラストレーター": "takuyoa",
-        "ポケモンのタイプ": "悪",
-        "特性": [
-            {
-                "名前": "とりひき",
-                "効果": "自分の番に、自分の手札を1枚トラッシュするなら、1回使える。自分の山札を2枚引く。"
-            }
-        ],
-        "ワザ": [
-            {
-                "名前": "ナイトジョーカー",
-                "必要エネルギー": [
-                    "悪",
-                    "悪"
-                ],
-                "ダメージ": "なし",
-                "効果": "自分のベンチの「Nのポケモン」が持つワザを1つ選び、このワザとして使う。"
-            }
-        ],
-        "弱点": "草",
-        "抵抗": "なし",
-        "逃げるために必要なエネルギー": 2,
-        "進化": [
-            "Nのゾロアークex",
-            "Nのゾロア"
-        ]
-    },
-    {
-        "カード名": "Nのゾロアークex",
-        "カテゴリ": "ポケモン",
-        "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047251_P_NNOZOROAKUEX.jpg",
-        "レギュレーション": "SV9",
-        "カード番号": "131",
-        "イラストレーター": "takuyoa",
-        "ポケモンのタイプ": "悪",
-        "特性": [
-            {
-                "名前": "とりひき",
-                "効果": "自分の番に、自分の手札を1枚トラッシュするなら、1回使える。自分の山札を2枚引く。"
-            }
-        ],
-        "ワザ": [
-            {
-                "名前": "ナイトジョーカー",
-                "必要エネルギー": [
-                    "悪",
-                    "悪"
-                ],
-                "ダメージ": "なし",
-                "効果": "自分のベンチの「Nのポケモン」が持つワザを1つ選び、このワザとして使う。"
-            }
-        ],
-        "弱点": "草",
-        "抵抗": "なし",
-        "逃げるために必要なエネルギー": 2,
-        "進化": [
-            "Nのゾロアークex",
-            "Nのゾロア"
-        ]
-    },
-    {
-        "カード名": "Nのゾロアークex",
-        "カテゴリ": "ポケモン",
-        "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047251_P_NNOZOROAKUEX.jpg",
-        "レギュレーション": "SV9",
-        "カード番号": "131",
-        "イラストレーター": "takuyoa",
-        "ポケモンのタイプ": "悪",
-        "特性": [
-            {
-                "名前": "とりひき",
-                "効果": "自分の番に、自分の手札を1枚トラッシュするなら、1回使える。自分の山札を2枚引く。"
-            }
-        ],
-        "ワザ": [
-            {
-                "名前": "ナイトジョーカー",
-                "必要エネルギー": [
-                    "悪",
-                    "悪"
-                ],
-                "ダメージ": "なし",
-                "効果": "自分のベンチの「Nのポケモン」が持つワザを1つ選び、このワザとして使う。"
-            }
-        ],
-        "弱点": "草",
-        "抵抗": "なし",
-        "逃げるために必要なエネルギー": 2,
-        "進化": [
-            "Nのゾロアークex",
-            "Nのゾロア"
-        ]
-    },
-    {
-        "カード名": "Nのゾロアークex",
-        "カテゴリ": "ポケモン",
-        "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047251_P_NNOZOROAKUEX.jpg",
-        "レギュレーション": "SV9",
-        "カード番号": "131",
-        "イラストレーター": "takuyoa",
-        "ポケモンのタイプ": "悪",
-        "特性": [
-            {
-                "名前": "とりひき",
-                "効果": "自分の番に、自分の手札を1枚トラッシュするなら、1回使える。自分の山札を2枚引く。"
-            }
-        ],
-        "ワザ": [
-            {
-                "名前": "ナイトジョーカー",
-                "必要エネルギー": [
-                    "悪",
-                    "悪"
-                ],
-                "ダメージ": "なし",
-                "効果": "自分のベンチの「Nのポケモン」が持つワザを1つ選び、このワザとして使う。"
-            }
-        ],
-        "弱点": "草",
-        "抵抗": "なし",
-        "逃げるために必要なエネルギー": 2,
-        "進化": [
-            "Nのゾロアークex",
-            "Nのゾロア"
-        ]
-    },
-    {
-        "カード名": "Nのゾロアークex",
-        "カテゴリ": "ポケモン",
-        "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047251_P_NNOZOROAKUEX.jpg",
-        "レギュレーション": "SV9",
-        "カード番号": "131",
-        "イラストレーター": "takuyoa",
-        "ポケモンのタイプ": "悪",
-        "特性": [
-            {
-                "名前": "とりひき",
-                "効果": "自分の番に、自分の手札を1枚トラッシュするなら、1回使える。自分の山札を2枚引く。"
-            }
-        ],
-        "ワザ": [
-            {
-                "名前": "ナイトジョーカー",
-                "必要エネルギー": [
-                    "悪",
-                    "悪"
-                ],
-                "ダメージ": "なし",
-                "効果": "自分のベンチの「Nのポケモン」が持つワザを1つ選び、このワザとして使う。"
-            }
-        ],
-        "弱点": "草",
-        "抵抗": "なし",
-        "逃げるために必要なエネルギー": 2,
-        "進化": [
-            "Nのゾロアークex",
-            "Nのゾロア"
-        ]
-    },
-    {
-        "カード名": "Nのゾロアークex",
-        "カテゴリ": "ポケモン",
-        "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SV9/047251_P_NNOZOROAKUEX.jpg",
-        "レギュレーション": "SV9",
-        "カード番号": "131",
-        "イラストレーター": "takuyoa",
-        "ポケモンのタイプ": "悪",
-        "特性": [
-            {
-                "名前": "とりひき",
-                "効果": "自分の番に、自分の手札を1枚トラッシュするなら、1回使える。自分の山札を2枚引く。"
-            }
-        ],
-        "ワザ": [
-            {
-                "名前": "ナイトジョーカー",
-                "必要エネルギー": [
-                    "悪",
-                    "悪"
-                ],
-                "ダメージ": "なし",
-                "効果": "自分のベンチの「Nのポケモン」が持つワザを1つ選び、このワザとして使う。"
-            }
-        ],
-        "弱点": "草",
-        "抵抗": "なし",
-        "逃げるために必要なエネルギー": 2,
-        "進化": [
-            "Nのゾロアークex",
-            "Nのゾロア"
-        ]
-    },
-    {
-        "カード名": "ミュウex",
-        "カテゴリ": "ポケモン",
-        "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVN/047176_P_MIXYUUEX.jpg",
-        "レギュレーション": "SVN",
-        "カード番号": "001",
-        "イラストレーター": "aky CG Works",
-        "ポケモンのタイプ": "超",
-        "特性": [
-            {
-                "名前": "リスタート",
-                "効果": "自分の番に1回使える。自分の手札が3枚になるように、山札を引く。"
-            }
-        ],
-        "ワザ": [
-            {
-                "名前": "ゲノムハック",
-                "必要エネルギー": [
-                    "無色",
-                    "無色",
-                    "無色"
-                ],
-                "ダメージ": "なし",
-                "効果": "相手のバトルポケモンが持っているワザを1つ選び、このワザとして使う。"
-            }
-        ],
-        "弱点": "悪",
-        "抵抗": "闘",
-        "逃げるために必要なエネルギー": 0,
-        "進化": []
-    },
-    {
-        "カード名": "キチキギスex",
-        "カテゴリ": "ポケモン",
-        "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVN/047177_P_KICHIKIGISUEX.jpg",
-        "レギュレーション": "SVN",
-        "カード番号": "002",
-        "イラストレーター": "takuyoa",
-        "ポケモンのタイプ": "悪",
-        "特性": [
-            {
-                "名前": "さかてにとる",
-                "効果": "前の相手の番に、自分のポケモンがきぜつしていたなら、自分の番に1回使える。自分の山札を3枚引く。この番、すでに別の「さかてにとる」を使っていたなら、この特性は使えない。"
-            }
-        ],
-        "ワザ": [
-            {
-                "名前": "クルーエルアロー",
-                "必要エネルギー": [
-                    "無色",
-                    "無色",
-                    "無色"
-                ],
-                "ダメージ": "なし",
-                "効果": "相手のポケモン1匹に、100ダメージ。［ベンチは弱点・抵抗力を計算しない。］"
-            }
-        ],
-        "弱点": "闘",
-        "抵抗": "なし",
-        "逃げるために必要なエネルギー": 1,
-        "進化": []
-    },
-    {
-        "カード名": "シャリタツ",
-        "カテゴリ": "ポケモン",
-        "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVN/047178_P_SHIXYARITATSU.jpg",
-        "レギュレーション": "SVN",
-        "カード番号": "003",
-        "イラストレーター": "Jerky",
-        "ポケモンのタイプ": "ドラゴン",
-        "特性": [
-            {
-                "名前": "きゃくよせ",
-                "効果": "このポケモンがバトル場にいるなら、自分の番に1回使える。自分の山札を上から6枚見て、その中からサポートを1枚選び、相手に見せて、手札に加える。残りのカードは山札にもどして切る。"
-            }
-        ],
-        "ワザ": [
-            {
-                "名前": "なみのり50",
-                "必要エネルギー": [
-                    "炎",
-                    "水"
-                ],
-                "ダメージ": "50",
-                "効果": ""
-            }
-        ],
-        "弱点": "なし",
-        "抵抗": "なし",
-        "逃げるために必要なエネルギー": 1,
-        "進化": []
-    },
-    {
-        "カード名": "ポッポ",
-        "カテゴリ": "ポケモン",
-        "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVN/047179_P_POPPO.jpg",
-        "レギュレーション": "SVN",
-        "カード番号": "004",
-        "イラストレーター": "Oswaldo KATO",
-        "ポケモンのタイプ": "無色",
-        "特性": [],
-        "ワザ": [
-            {
-                "名前": "なかまをよぶ",
-                "必要エネルギー": [
-                    "無色"
-                ],
-                "ダメージ": "なし",
-                "効果": "自分の山札からたねポケモンを2枚まで選び、ベンチに出す。そして山札を切る。"
-            },
-            {
-                "名前": "たいあたり20",
-                "必要エネルギー": [
-                    "無色",
-                    "無色"
-                ],
-                "ダメージ": "20",
-                "効果": ""
-            }
-        ],
-        "弱点": "雷",
-        "抵抗": "闘",
-        "逃げるために必要なエネルギー": 1,
-        "進化": [
-            "ピジョット",
-            "ピジョットex",
-            "ピジョン",
-            "ポッポ"
-        ]
-    },
-    {
-        "カード名": "ピジョン",
-        "カテゴリ": "ポケモン",
-        "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVN/047180_P_PIJIXYON.jpg",
-        "レギュレーション": "SVN",
-        "カード番号": "005",
-        "イラストレーター": "Oswaldo KATO",
-        "ポケモンのタイプ": "無色",
-        "特性": [],
-        "ワザ": [
-            {
-                "名前": "はばたく20",
-                "必要エネルギー": [
-                    "無色"
-                ],
-                "ダメージ": "20",
-                "効果": ""
-            }
-        ],
-        "弱点": "雷",
-        "抵抗": "闘",
-        "逃げるために必要なエネルギー": 0,
-        "進化": [
-            "ピジョット",
-            "ピジョットex",
-            "ピジョン",
-            "ポッポ"
-        ]
-    },
-    {
-        "カード名": "ピジョットex",
-        "カテゴリ": "ポケモン",
-        "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVN/047181_P_PIJIXYOTTOEX.jpg",
-        "レギュレーション": "SVN",
-        "カード番号": "006",
-        "イラストレーター": "takuyoa",
-        "ポケモンのタイプ": "無色",
-        "特性": [
-            {
-                "名前": "マッハサーチ",
-                "効果": "自分の番に1回使える。自分の山札から好きなカードを1枚選び、手札に加える。そして山札を切る。この番、すでに別の「マッハサーチ」を使っていたなら、この特性は使えない。"
-            }
-        ],
-        "ワザ": [
-            {
-                "名前": "ふきすさぶ120",
-                "必要エネルギー": [
-                    "無色",
-                    "無色"
-                ],
-                "ダメージ": "120",
-                "効果": "のぞむなら、場に出ているスタジアムをトラッシュする。"
-            }
-        ],
-        "弱点": "雷",
-        "抵抗": "闘",
-        "逃げるために必要なエネルギー": 0,
-        "進化": [
-            "ピジョット",
-            "ピジョットex",
-            "ピジョン",
-            "ポッポ"
-        ]
-    },
-    {
-        "カード名": "ホーホー",
-        "カテゴリ": "ポケモン",
-        "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVN/047182_P_HOHO.jpg",
-        "レギュレーション": "SVN",
-        "カード番号": "007",
-        "イラストレーター": "Yukihiro Tada",
-        "ポケモンのタイプ": "無色",
-        "特性": [],
-        "ワザ": [
-            {
-                "名前": "さんどづき10×",
-                "必要エネルギー": [
-                    "無色"
-                ],
-                "ダメージ": "10×",
-                "効果": "コインを3回投げ、オモテの数×10ダメージ。"
-            }
-        ],
-        "弱点": "雷",
-        "抵抗": "闘",
-        "逃げるために必要なエネルギー": 1,
-        "進化": [
-            "ヨルノズクBREAK",
-            "ヨルノズク",
-            "ホーホー"
-        ]
-    },
-    {
-        "カード名": "ヨルノズク",
-        "カテゴリ": "ポケモン",
-        "特別なルール": null,
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVN/047183_P_YORUNOZUKU.jpg",
-        "レギュレーション": "SVN",
-        "カード番号": "008",
-        "イラストレーター": "matazo",
-        "ポケモンのタイプ": "無色",
-        "特性": [
-            {
-                "名前": "ほうせきさがし",
-                "効果": "自分の番に、このカードを手札から出して進化させたとき、自分の場に「テラスタル」のポケモンがいるなら、1回使える。自分の山札からトレーナーズを2枚まで選び、相手に見せて、手札に加える。そして山札を切る。"
-            }
-        ],
-        "ワザ": [
-            {
-                "名前": "スピードウイング60",
-                "必要エネルギー": [
-                    "無色",
-                    "無色"
-                ],
-                "ダメージ": "60",
-                "効果": ""
-            }
-        ],
-        "弱点": "雷",
-        "抵抗": "闘",
-        "逃げるために必要なエネルギー": 1,
-        "進化": [
-            "ヨルノズクBREAK",
-            "ヨルノズク",
-            "ホーホー"
-        ]
-    },
-    {
-        "カード名": "イキリンコex",
-        "カテゴリ": "ポケモン",
-        "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVN/047184_P_IKIRINKOEX.jpg",
-        "レギュレーション": "SVN",
-        "カード番号": "009",
-        "イラストレーター": "PLANETA Mochizuki",
-        "ポケモンのタイプ": "無色",
-        "特性": [
-            {
-                "名前": "イキリテイク",
-                "効果": "最初の自分の番にだけ1回使える。自分の手札をすべてトラッシュし、山札を6枚引く。この番、すでに別の「イキリテイク」を使っていたなら、この特性は使えない。"
-            }
-        ],
-        "ワザ": [
-            {
-                "名前": "きあいをいれる20",
-                "必要エネルギー": [
-                    "無色"
-                ],
-                "ダメージ": "20",
-                "効果": "自分のトラッシュから基本エネルギーを2枚まで選び、ベンチポケモン1匹につける。"
-            }
-        ],
-        "弱点": "雷",
-        "抵抗": "闘",
-        "逃げるために必要なエネルギー": 1,
-        "進化": []
-    },
-    {
-        "カード名": "イキリンコex",
-        "カテゴリ": "ポケモン",
-        "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVN/047184_P_IKIRINKOEX.jpg",
-        "レギュレーション": "SVN",
-        "カード番号": "009",
-        "イラストレーター": "PLANETA Mochizuki",
-        "ポケモンのタイプ": "無色",
-        "特性": [
-            {
-                "名前": "イキリテイク",
-                "効果": "最初の自分の番にだけ1回使える。自分の手札をすべてトラッシュし、山札を6枚引く。この番、すでに別の「イキリテイク」を使っていたなら、この特性は使えない。"
-            }
-        ],
-        "ワザ": [
-            {
-                "名前": "きあいをいれる20",
-                "必要エネルギー": [
-                    "無色"
-                ],
-                "ダメージ": "20",
-                "効果": "自分のトラッシュから基本エネルギーを2枚まで選び、ベンチポケモン1匹につける。"
-            }
-        ],
-        "弱点": "雷",
-        "抵抗": "闘",
-        "逃げるために必要なエネルギー": 1,
-        "進化": []
-    },
-    {
-        "カード名": "イキリンコex",
-        "カテゴリ": "ポケモン",
-        "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVN/047184_P_IKIRINKOEX.jpg",
-        "レギュレーション": "SVN",
-        "カード番号": "009",
-        "イラストレーター": "PLANETA Mochizuki",
-        "ポケモンのタイプ": "無色",
-        "特性": [
-            {
-                "名前": "イキリテイク",
-                "効果": "最初の自分の番にだけ1回使える。自分の手札をすべてトラッシュし、山札を6枚引く。この番、すでに別の「イキリテイク」を使っていたなら、この特性は使えない。"
-            }
-        ],
-        "ワザ": [
-            {
-                "名前": "きあいをいれる20",
-                "必要エネルギー": [
-                    "無色"
-                ],
-                "ダメージ": "20",
-                "効果": "自分のトラッシュから基本エネルギーを2枚まで選び、ベンチポケモン1匹につける。"
-            }
-        ],
-        "弱点": "雷",
-        "抵抗": "闘",
-        "逃げるために必要なエネルギー": 1,
-        "進化": []
-    },
-    {
-        "カード名": "イキリンコex",
-        "カテゴリ": "ポケモン",
-        "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVN/047184_P_IKIRINKOEX.jpg",
-        "レギュレーション": "SVN",
-        "カード番号": "009",
-        "イラストレーター": "PLANETA Mochizuki",
-        "ポケモンのタイプ": "無色",
-        "特性": [
-            {
-                "名前": "イキリテイク",
-                "効果": "最初の自分の番にだけ1回使える。自分の手札をすべてトラッシュし、山札を6枚引く。この番、すでに別の「イキリテイク」を使っていたなら、この特性は使えない。"
-            }
-        ],
-        "ワザ": [
-            {
-                "名前": "きあいをいれる20",
-                "必要エネルギー": [
-                    "無色"
-                ],
-                "ダメージ": "20",
-                "効果": "自分のトラッシュから基本エネルギーを2枚まで選び、ベンチポケモン1匹につける。"
-            }
-        ],
-        "弱点": "雷",
-        "抵抗": "闘",
-        "逃げるために必要なエネルギー": 1,
-        "進化": []
-    },
-    {
-        "カード名": "イキリンコex",
-        "カテゴリ": "ポケモン",
-        "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVN/047184_P_IKIRINKOEX.jpg",
-        "レギュレーション": "SVN",
-        "カード番号": "009",
-        "イラストレーター": "PLANETA Mochizuki",
-        "ポケモンのタイプ": "無色",
-        "特性": [
-            {
-                "名前": "イキリテイク",
-                "効果": "最初の自分の番にだけ1回使える。自分の手札をすべてトラッシュし、山札を6枚引く。この番、すでに別の「イキリテイク」を使っていたなら、この特性は使えない。"
-            }
-        ],
-        "ワザ": [
-            {
-                "名前": "きあいをいれる20",
-                "必要エネルギー": [
-                    "無色"
-                ],
-                "ダメージ": "20",
-                "効果": "自分のトラッシュから基本エネルギーを2枚まで選び、ベンチポケモン1匹につける。"
-            }
-        ],
-        "弱点": "雷",
-        "抵抗": "闘",
-        "逃げるために必要なエネルギー": 1,
-        "進化": []
-    },
-    {
-        "カード名": "イキリンコex",
-        "カテゴリ": "ポケモン",
-        "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVN/047184_P_IKIRINKOEX.jpg",
-        "レギュレーション": "SVN",
-        "カード番号": "009",
-        "イラストレーター": "PLANETA Mochizuki",
-        "ポケモンのタイプ": "無色",
-        "特性": [
-            {
-                "名前": "イキリテイク",
-                "効果": "最初の自分の番にだけ1回使える。自分の手札をすべてトラッシュし、山札を6枚引く。この番、すでに別の「イキリテイク」を使っていたなら、この特性は使えない。"
-            }
-        ],
-        "ワザ": [
-            {
-                "名前": "きあいをいれる20",
-                "必要エネルギー": [
-                    "無色"
-                ],
-                "ダメージ": "20",
-                "効果": "自分のトラッシュから基本エネルギーを2枚まで選び、ベンチポケモン1匹につける。"
-            }
-        ],
-        "弱点": "雷",
-        "抵抗": "闘",
-        "逃げるために必要なエネルギー": 1,
-        "進化": []
-    },
-    {
-        "カード名": "イキリンコex",
-        "カテゴリ": "ポケモン",
-        "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVN/047184_P_IKIRINKOEX.jpg",
-        "レギュレーション": "SVN",
-        "カード番号": "009",
-        "イラストレーター": "PLANETA Mochizuki",
-        "ポケモンのタイプ": "無色",
-        "特性": [
-            {
-                "名前": "イキリテイク",
-                "効果": "最初の自分の番にだけ1回使える。自分の手札をすべてトラッシュし、山札を6枚引く。この番、すでに別の「イキリテイク」を使っていたなら、この特性は使えない。"
-            }
-        ],
-        "ワザ": [
-            {
-                "名前": "きあいをいれる20",
-                "必要エネルギー": [
-                    "無色"
-                ],
-                "ダメージ": "20",
-                "効果": "自分のトラッシュから基本エネルギーを2枚まで選び、ベンチポケモン1匹につける。"
-            }
-        ],
-        "弱点": "雷",
-        "抵抗": "闘",
-        "逃げるために必要なエネルギー": 1,
-        "進化": []
-    },
-    {
-        "カード名": "イキリンコex",
-        "カテゴリ": "ポケモン",
-        "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVN/047184_P_IKIRINKOEX.jpg",
-        "レギュレーション": "SVN",
-        "カード番号": "009",
-        "イラストレーター": "PLANETA Mochizuki",
-        "ポケモンのタイプ": "無色",
-        "特性": [
-            {
-                "名前": "イキリテイク",
-                "効果": "最初の自分の番にだけ1回使える。自分の手札をすべてトラッシュし、山札を6枚引く。この番、すでに別の「イキリテイク」を使っていたなら、この特性は使えない。"
-            }
-        ],
-        "ワザ": [
-            {
-                "名前": "きあいをいれる20",
-                "必要エネルギー": [
-                    "無色"
-                ],
-                "ダメージ": "20",
-                "効果": "自分のトラッシュから基本エネルギーを2枚まで選び、ベンチポケモン1匹につける。"
-            }
-        ],
-        "弱点": "雷",
-        "抵抗": "闘",
-        "逃げるために必要なエネルギー": 1,
-        "進化": []
-    },
-    {
-        "カード名": "イキリンコex",
-        "カテゴリ": "ポケモン",
-        "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVN/047184_P_IKIRINKOEX.jpg",
-        "レギュレーション": "SVN",
-        "カード番号": "009",
-        "イラストレーター": "PLANETA Mochizuki",
-        "ポケモンのタイプ": "無色",
-        "特性": [
-            {
-                "名前": "イキリテイク",
-                "効果": "最初の自分の番にだけ1回使える。自分の手札をすべてトラッシュし、山札を6枚引く。この番、すでに別の「イキリテイク」を使っていたなら、この特性は使えない。"
-            }
-        ],
-        "ワザ": [
-            {
-                "名前": "きあいをいれる20",
-                "必要エネルギー": [
-                    "無色"
-                ],
-                "ダメージ": "20",
-                "効果": "自分のトラッシュから基本エネルギーを2枚まで選び、ベンチポケモン1匹につける。"
-            }
-        ],
-        "弱点": "雷",
-        "抵抗": "闘",
-        "逃げるために必要なエネルギー": 1,
-        "進化": []
-    },
-    {
-        "カード名": "イキリンコex",
-        "カテゴリ": "ポケモン",
-        "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVN/047184_P_IKIRINKOEX.jpg",
-        "レギュレーション": "SVN",
-        "カード番号": "009",
-        "イラストレーター": "PLANETA Mochizuki",
-        "ポケモンのタイプ": "無色",
-        "特性": [
-            {
-                "名前": "イキリテイク",
-                "効果": "最初の自分の番にだけ1回使える。自分の手札をすべてトラッシュし、山札を6枚引く。この番、すでに別の「イキリテイク」を使っていたなら、この特性は使えない。"
-            }
-        ],
-        "ワザ": [
-            {
-                "名前": "きあいをいれる20",
-                "必要エネルギー": [
-                    "無色"
-                ],
-                "ダメージ": "20",
-                "効果": "自分のトラッシュから基本エネルギーを2枚まで選び、ベンチポケモン1匹につける。"
-            }
-        ],
-        "弱点": "雷",
-        "抵抗": "闘",
-        "逃げるために必要なエネルギー": 1,
-        "進化": []
-    },
-    {
-        "カード名": "イキリンコex",
-        "カテゴリ": "ポケモン",
-        "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVN/047184_P_IKIRINKOEX.jpg",
-        "レギュレーション": "SVN",
-        "カード番号": "009",
-        "イラストレーター": "PLANETA Mochizuki",
-        "ポケモンのタイプ": "無色",
-        "特性": [
-            {
-                "名前": "イキリテイク",
-                "効果": "最初の自分の番にだけ1回使える。自分の手札をすべてトラッシュし、山札を6枚引く。この番、すでに別の「イキリテイク」を使っていたなら、この特性は使えない。"
-            }
-        ],
-        "ワザ": [
-            {
-                "名前": "きあいをいれる20",
-                "必要エネルギー": [
-                    "無色"
-                ],
-                "ダメージ": "20",
-                "効果": "自分のトラッシュから基本エネルギーを2枚まで選び、ベンチポケモン1匹につける。"
-            }
-        ],
-        "弱点": "雷",
-        "抵抗": "闘",
-        "逃げるために必要なエネルギー": 1,
-        "進化": []
-    },
-    {
-        "カード名": "イキリンコex",
-        "カテゴリ": "ポケモン",
-        "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVN/047184_P_IKIRINKOEX.jpg",
-        "レギュレーション": "SVN",
-        "カード番号": "009",
-        "イラストレーター": "PLANETA Mochizuki",
-        "ポケモンのタイプ": "無色",
-        "特性": [
-            {
-                "名前": "イキリテイク",
-                "効果": "最初の自分の番にだけ1回使える。自分の手札をすべてトラッシュし、山札を6枚引く。この番、すでに別の「イキリテイク」を使っていたなら、この特性は使えない。"
-            }
-        ],
-        "ワザ": [
-            {
-                "名前": "きあいをいれる20",
-                "必要エネルギー": [
-                    "無色"
-                ],
-                "ダメージ": "20",
-                "効果": "自分のトラッシュから基本エネルギーを2枚まで選び、ベンチポケモン1匹につける。"
-            }
-        ],
-        "弱点": "雷",
-        "抵抗": "闘",
-        "逃げるために必要なエネルギー": 1,
-        "進化": []
-    },
-    {
-        "カード名": "イキリンコex",
-        "カテゴリ": "ポケモン",
-        "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVN/047184_P_IKIRINKOEX.jpg",
-        "レギュレーション": "SVN",
-        "カード番号": "009",
-        "イラストレーター": "PLANETA Mochizuki",
-        "ポケモンのタイプ": "無色",
-        "特性": [
-            {
-                "名前": "イキリテイク",
-                "効果": "最初の自分の番にだけ1回使える。自分の手札をすべてトラッシュし、山札を6枚引く。この番、すでに別の「イキリテイク」を使っていたなら、この特性は使えない。"
-            }
-        ],
-        "ワザ": [
-            {
-                "名前": "きあいをいれる20",
-                "必要エネルギー": [
-                    "無色"
-                ],
-                "ダメージ": "20",
-                "効果": "自分のトラッシュから基本エネルギーを2枚まで選び、ベンチポケモン1匹につける。"
-            }
-        ],
-        "弱点": "雷",
-        "抵抗": "闘",
-        "逃げるために必要なエネルギー": 1,
-        "進化": []
-    },
-    {
-        "カード名": "イキリンコex",
-        "カテゴリ": "ポケモン",
-        "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVN/047184_P_IKIRINKOEX.jpg",
-        "レギュレーション": "SVN",
-        "カード番号": "009",
-        "イラストレーター": "PLANETA Mochizuki",
-        "ポケモンのタイプ": "無色",
-        "特性": [
-            {
-                "名前": "イキリテイク",
-                "効果": "最初の自分の番にだけ1回使える。自分の手札をすべてトラッシュし、山札を6枚引く。この番、すでに別の「イキリテイク」を使っていたなら、この特性は使えない。"
-            }
-        ],
-        "ワザ": [
-            {
-                "名前": "きあいをいれる20",
-                "必要エネルギー": [
-                    "無色"
-                ],
-                "ダメージ": "20",
-                "効果": "自分のトラッシュから基本エネルギーを2枚まで選び、ベンチポケモン1匹につける。"
-            }
-        ],
-        "弱点": "雷",
-        "抵抗": "闘",
-        "逃げるために必要なエネルギー": 1,
-        "進化": []
-    },
-    {
-        "カード名": "イキリンコex",
-        "カテゴリ": "ポケモン",
-        "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVN/047184_P_IKIRINKOEX.jpg",
-        "レギュレーション": "SVN",
-        "カード番号": "009",
-        "イラストレーター": "PLANETA Mochizuki",
-        "ポケモンのタイプ": "無色",
-        "特性": [
-            {
-                "名前": "イキリテイク",
-                "効果": "最初の自分の番にだけ1回使える。自分の手札をすべてトラッシュし、山札を6枚引く。この番、すでに別の「イキリテイク」を使っていたなら、この特性は使えない。"
-            }
-        ],
-        "ワザ": [
-            {
-                "名前": "きあいをいれる20",
-                "必要エネルギー": [
-                    "無色"
-                ],
-                "ダメージ": "20",
-                "効果": "自分のトラッシュから基本エネルギーを2枚まで選び、ベンチポケモン1匹につける。"
-            }
-        ],
-        "弱点": "雷",
-        "抵抗": "闘",
-        "逃げるために必要なエネルギー": 1,
-        "進化": []
-    },
-    {
-        "カード名": "イキリンコex",
-        "カテゴリ": "ポケモン",
-        "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVN/047184_P_IKIRINKOEX.jpg",
-        "レギュレーション": "SVN",
-        "カード番号": "009",
-        "イラストレーター": "PLANETA Mochizuki",
-        "ポケモンのタイプ": "無色",
-        "特性": [
-            {
-                "名前": "イキリテイク",
-                "効果": "最初の自分の番にだけ1回使える。自分の手札をすべてトラッシュし、山札を6枚引く。この番、すでに別の「イキリテイク」を使っていたなら、この特性は使えない。"
-            }
-        ],
-        "ワザ": [
-            {
-                "名前": "きあいをいれる20",
-                "必要エネルギー": [
-                    "無色"
-                ],
-                "ダメージ": "20",
-                "効果": "自分のトラッシュから基本エネルギーを2枚まで選び、ベンチポケモン1匹につける。"
-            }
-        ],
-        "弱点": "雷",
-        "抵抗": "闘",
-        "逃げるために必要なエネルギー": 1,
-        "進化": []
-    },
-    {
-        "カード名": "イキリンコex",
-        "カテゴリ": "ポケモン",
-        "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVN/047184_P_IKIRINKOEX.jpg",
-        "レギュレーション": "SVN",
-        "カード番号": "009",
-        "イラストレーター": "PLANETA Mochizuki",
-        "ポケモンのタイプ": "無色",
-        "特性": [
-            {
-                "名前": "イキリテイク",
-                "効果": "最初の自分の番にだけ1回使える。自分の手札をすべてトラッシュし、山札を6枚引く。この番、すでに別の「イキリテイク」を使っていたなら、この特性は使えない。"
-            }
-        ],
-        "ワザ": [
-            {
-                "名前": "きあいをいれる20",
-                "必要エネルギー": [
-                    "無色"
-                ],
-                "ダメージ": "20",
-                "効果": "自分のトラッシュから基本エネルギーを2枚まで選び、ベンチポケモン1匹につける。"
-            }
-        ],
-        "弱点": "雷",
-        "抵抗": "闘",
-        "逃げるために必要なエネルギー": 1,
-        "進化": []
-    },
-    {
-        "カード名": "イキリンコex",
-        "カテゴリ": "ポケモン",
-        "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVN/047184_P_IKIRINKOEX.jpg",
-        "レギュレーション": "SVN",
-        "カード番号": "009",
-        "イラストレーター": "PLANETA Mochizuki",
-        "ポケモンのタイプ": "無色",
-        "特性": [
-            {
-                "名前": "イキリテイク",
-                "効果": "最初の自分の番にだけ1回使える。自分の手札をすべてトラッシュし、山札を6枚引く。この番、すでに別の「イキリテイク」を使っていたなら、この特性は使えない。"
-            }
-        ],
-        "ワザ": [
-            {
-                "名前": "きあいをいれる20",
-                "必要エネルギー": [
-                    "無色"
-                ],
-                "ダメージ": "20",
-                "効果": "自分のトラッシュから基本エネルギーを2枚まで選び、ベンチポケモン1匹につける。"
-            }
-        ],
-        "弱点": "雷",
-        "抵抗": "闘",
-        "逃げるために必要なエネルギー": 1,
-        "進化": []
-    },
-    {
-        "カード名": "イキリンコex",
-        "カテゴリ": "ポケモン",
-        "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVN/047184_P_IKIRINKOEX.jpg",
-        "レギュレーション": "SVN",
-        "カード番号": "009",
-        "イラストレーター": "PLANETA Mochizuki",
-        "ポケモンのタイプ": "無色",
-        "特性": [
-            {
-                "名前": "イキリテイク",
-                "効果": "最初の自分の番にだけ1回使える。自分の手札をすべてトラッシュし、山札を6枚引く。この番、すでに別の「イキリテイク」を使っていたなら、この特性は使えない。"
-            }
-        ],
-        "ワザ": [
-            {
-                "名前": "きあいをいれる20",
-                "必要エネルギー": [
-                    "無色"
-                ],
-                "ダメージ": "20",
-                "効果": "自分のトラッシュから基本エネルギーを2枚まで選び、ベンチポケモン1匹につける。"
-            }
-        ],
-        "弱点": "雷",
-        "抵抗": "闘",
-        "逃げるために必要なエネルギー": 1,
-        "進化": []
-    },
-    {
-        "カード名": "イキリンコex",
-        "カテゴリ": "ポケモン",
-        "特別なルール": "ex",
-        "画像": "https://www.pokemon-card.com//assets/images/card_images/large/SVN/047184_P_IKIRINKOEX.jpg",
-        "レギュレーション": "SVN",
-        "カード番号": "009",
-        "イラストレーター": "PLANETA Mochizuki",
-        "ポケモンのタイプ": "無色",
-        "特性": [
-            {
-                "名前": "イキリテイク",
-                "効果": "最初の自分の番にだけ1回使える。自分の手札をすべてトラッシュし、山札を6枚引く。この番、すでに別の「イキリテイク」を使っていたなら、この特性は使えない。"
-            }
-        ],
-        "ワザ": [
-            {
-                "名前": "きあいをいれる20",
-                "必要エネルギー": [
-                    "無色"
-                ],
-                "ダメージ": "20",
-                "効果": "自分のトラッシュから基本エネルギーを2枚まで選び、ベンチポケモン1匹につける。"
-            }
-        ],
-        "弱点": "雷",
-        "抵抗": "闘",
-        "逃げるために必要なエネルギー": 1,
-        "進化": []
     }
 ]
