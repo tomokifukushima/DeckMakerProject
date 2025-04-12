@@ -179,7 +179,7 @@ def is_pokemon_card(category_text):
 
 
 # 非ポケモンカード情報を取得する関数
-def get_non_pokemon_card_info(detail_soup, card_id, category_text, image_url, regulation, card_number, illustrator, pack_name):
+def get_non_pokemon_card_info(detail_soup, card_id, category_text, image_url, regulation, card_number, illustrator, pack_name, card_rarity):
     """
     非ポケモンカードの詳細情報を取得する。
     """
@@ -193,6 +193,7 @@ def get_non_pokemon_card_info(detail_soup, card_id, category_text, image_url, re
         "画像": image_url,
         "レギュレーション": regulation,
         "カード番号": card_number,
+        "レアリティ": card_rarity,
         "イラストレーター": illustrator,
         "効果": effects,
         "収録パック": pack_name
@@ -200,7 +201,7 @@ def get_non_pokemon_card_info(detail_soup, card_id, category_text, image_url, re
 
 
 # ポケモンカード情報を取得する関数
-def get_pokemon_card_info(detail_soup, card_id, pack_name, image_url, regulation, card_number, illustrator):
+def get_pokemon_card_info(detail_soup, card_id, pack_name, image_url, regulation, card_number, illustrator, card_rarity):
     """
     ポケモンカードの詳細情報を取得する。
     """
@@ -213,7 +214,7 @@ def get_pokemon_card_info(detail_soup, card_id, pack_name, image_url, regulation
     evolution = [a.text.strip() for a in detail_soup.find_all("a", href=lambda x: x and "pokemon=" in x)]
     abilities = get_abilities(detail_soup)
     attacks = get_attacks(detail_soup)
-    
+
     return {
         "id": card_id,
         "カード名": detail_soup.find("h1", class_="Heading1").text.strip(),
@@ -223,6 +224,7 @@ def get_pokemon_card_info(detail_soup, card_id, pack_name, image_url, regulation
         "画像": image_url,
         "レギュレーション": regulation,
         "カード番号": card_number,
+        "レアリティ": card_rarity,
         "イラストレーター": illustrator,
         "ポケモンのタイプ": pokemon_type,
         "特性": abilities,
@@ -266,15 +268,20 @@ def fetch_pokemon_data(base_url, max_page, headers,pack_flag):
             illustrator = detail_soup.find("a", href=lambda x: x and "regulation_illust" in x)
             illustrator = illustrator.text.strip() if illustrator else "なし"
             pack_name = get_pack_name(detail_soup)
+            rarity_img = detail_soup.find("img", src=lambda x: x and "/assets/images/card/rarity/" in x)
+            if rarity_img:
+                card_rarity = rarity_img["src"].split("ic_rare_")[-1].split(".")[0]
+            else:
+                card_rarity = "なし"
 
             if exit_loop:
                 break
 
             if is_pokemon_card(category_text):
-                pokemon_cards.append(get_pokemon_card_info(detail_soup, card_id, pack_name, image_url, regulation, card_number, illustrator))
+                pokemon_cards.append(get_pokemon_card_info(detail_soup, card_id, pack_name, image_url, regulation, card_number, illustrator, card_rarity))
                 print(pokemon_cards[-1]["カード名"])
             else:
-                non_pokemon_cards.append(get_non_pokemon_card_info(detail_soup, card_id, category_text, image_url, regulation, card_number, illustrator, pack_name))
+                non_pokemon_cards.append(get_non_pokemon_card_info(detail_soup, card_id, category_text, image_url, regulation, card_number, illustrator, pack_name, card_rarity))
                 print(non_pokemon_cards[-1]["カード名"])
 
             if(pack_flag):
@@ -284,6 +291,7 @@ def fetch_pokemon_data(base_url, max_page, headers,pack_flag):
                     previous = pokemon_cards[-2]
                     if current["収録パック"] != previous["収録パック"] or current["id"] == previous["id"]:
                         del pokemon_cards[-1]
+                        print("収録パックが変わった or 同じカードが続く")
                         exit_loop = True
                         break
 
