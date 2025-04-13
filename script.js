@@ -123,10 +123,29 @@ document.addEventListener("DOMContentLoaded", () => {
         // ボタンを4つ作成して追加
         const buttonNames = ["イラスト\n変更", "進化系統\nカード", "関連タグ", "関連情報"]; // ボタンの名前をリストで指定
 
-        buttonNames.forEach(name => {
+        buttonNames.forEach((name, index) => {
             const button = document.createElement("button");
             button.textContent = name; // 指定した名前をボタンに設定
             button.classList.add("popup-button");
+
+            // 最初のボタン（"イラスト\n変更"）を押された状態にする
+            if (index === 0) {
+                button.classList.add("active");
+            }
+
+            // ボタンをクリックしたときの動作
+            button.addEventListener("click", () => {
+                // 他のボタンの "active" クラスを解除
+                const allButtons = document.querySelectorAll(".popup-button");
+                allButtons.forEach(btn => btn.classList.remove("active"));
+
+                // 押されたボタンに "active" クラスを追加
+                button.classList.add("active");
+
+                // 押されたボタンに応じた処理を実行
+                handleButtonClick(name);
+            });
+
             buttonContainer.appendChild(button);
         });
 
@@ -151,6 +170,26 @@ document.addEventListener("DOMContentLoaded", () => {
         cardCount.textContent = deck[card["カード名"]] || 0;
         updateButtonState();
         popup.style.display = "flex";
+    }
+
+    // ボタンに応じた処理を実行する関数
+    function handleButtonClick(buttonName) {
+        const sameCardsContainer = document.getElementById("same-cards-container");
+        sameCardsContainer.innerHTML = ""; // コンテナを初期化
+
+        if (buttonName === "イラスト\n変更") {
+            // イラスト変更の処理
+            sameCardsContainer.textContent = "イラスト変更の処理を実行中...";
+        } else if (buttonName === "進化系統\nカード") {
+            // 進化系統カードの処理
+            sameCardsContainer.textContent = "進化系統カードの処理を実行中...";
+        } else if (buttonName === "関連タグ") {
+            // 関連タグの処理
+            sameCardsContainer.textContent = "関連タグの処理を実行中...";
+        } else if (buttonName === "関連情報") {
+            // 関連情報の処理
+            sameCardsContainer.textContent = "関連情報の処理を実行中...";
+        }
     }
 
     closeBtn.addEventListener("click", () => popup.style.display = "none");
