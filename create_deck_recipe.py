@@ -3,7 +3,6 @@ import requests
 from io import BytesIO
 import math
 
-print("aaaaa")
 def create_decklist_image(card_dict, output_path="decklist.jpg"):
     """
     card_dict: { 'http://example.com/card1.jpg': 4, ... }
@@ -92,7 +91,12 @@ def create_decklist_image(card_dict, output_path="decklist.jpg"):
     print(f"デッキリスト画像を保存しました: {output_path}")
 
 def main():
-    print("aaa")
+    '''
+    "現在は画像のURLを直接指定しているが、組み込む際はデッキゾーンに入れたら辞書に追加されるようにする"
+    "また，デッキリストを作成する際に並べ替える機能がほしい．追加した順とは関係なく"
+    "ポケモン→グッズ→どうぐ→サポート→スタジアム→エネルギー"
+    "になるように"
+    '''
     card_dict={
         'https://www.pokemon-card.com/assets/images/card_images/large/SV1S/042574_P_SANAITOEX.jpg':3,
         'https://www.pokemon-card.com/assets/images/card_images/large/SV1S/042573_P_KIRURIA.jpg':3,
@@ -119,7 +123,6 @@ def main():
         'https://www.pokemon-card.com/assets/images/card_images/large/ENE/046122_E_KIHONAKUENERUGI.jpg':3,
     }
     create_decklist_image(card_dict,output_path="decklist.jpg")
-    print("aaaaaa")
 
 if __name__ == "__main__":
     main()
