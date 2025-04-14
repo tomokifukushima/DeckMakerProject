@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const cardList = document.getElementById("cardList");
     const searchBox = document.getElementById("searchBox");
     const typeFilter = document.getElementById("typeFilter");
+    const categoryFilter = document.getElementById("categoryFilter");
     const deckArea = document.getElementById("deckArea");
 
     const popup = document.getElementById("popup");
@@ -36,9 +37,21 @@ document.addEventListener("DOMContentLoaded", () => {
             typeFilter.appendChild(option);
         });
 
+        // カテゴリフィルターを設定
+        const allCategories = new Set(cards.map(card => card["カテゴリ"]).filter(Boolean));
+        allCategories.forEach(category => {
+            const option = document.createElement("option");
+            option.value = category;
+            option.textContent = category;
+            categoryFilter.appendChild(option);
+        });
+
+        // 検索ボックス、タイプフィルター、カテゴリフィルターのイベントリスナーを設定
         searchBox.addEventListener("input", renderCardList);
         typeFilter.addEventListener("change", renderCardList);
+        categoryFilter.addEventListener("change", renderCardList);
 
+        // ドラッグ＆ドロップのイベントリスナーを設定
         deckArea.addEventListener("dragover", e => e.preventDefault());
         deckArea.addEventListener("drop", e => {
             e.preventDefault();
@@ -63,16 +76,21 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .catch(error => console.error("JSONの読み込みに失敗:", error));
 
+    // カードリストをレンダリングする関数
     function renderCardList() {
         const query = searchBox.value.toLowerCase();
         const selectedType = typeFilter.value;
+        const selectedCategory = categoryFilter.value;
         cardList.innerHTML = "";
 
+        // フィルタリングされたカードを取得
         const filteredCards = cards.filter(card =>
             card["カード名"].toLowerCase().includes(query) &&
-            (selectedType === "" || card["ポケモンのタイプ"] === selectedType)
+            (selectedType === "" || card["ポケモンのタイプ"] === selectedType) &&
+            (selectedCategory === "" || card["カテゴリ"] === selectedCategory)
         );
 
+        // フィルタリングされたカードをリストに追加
         filteredCards.forEach(card => {
             const cardDiv = document.createElement("div");
             cardDiv.classList.add("card");
@@ -91,6 +109,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 e.dataTransfer.setData("card-name", cardName);
             });
 
+            // ドラッグしてデッキエリアに追加する設定
             cardList.appendChild(cardDiv);
         });
     }
