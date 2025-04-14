@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const cardList = document.getElementById("cardList");
     const searchBox = document.getElementById("searchBox");
     const typeFilter = document.getElementById("typeFilter");
+    const categoryFilter = document.getElementById("categoryFilter");
     const deckArea = document.getElementById("deckArea");
 
     const popup = document.getElementById("popup");
@@ -18,75 +19,100 @@ document.addEventListener("DOMContentLoaded", () => {
     let currentCard = null;
     let cards = []; // 全カードデータ
 
-    fetch("pokemon_cards.json")
-        .then(response => response.json())
-        .then(data => {
-            cards = data; // データをグローバル変数に代入
-            const allTypes = new Set(cards.map(card => card["ポケモンのタイプ"]).filter(Boolean));
-            allTypes.forEach(type => {
-                const option = document.createElement("option");
-                option.value = type;
-                option.textContent = type;
-                typeFilter.appendChild(option);
-            });
+    // 2つのJSONを並列で取得
+    Promise.all([
+        fetch("pokemon_cards.json").then(response => response.json()),
+        fetch("non_pokemon_cards.json").then(response => response.json())
+    ])
+    .then(([pokemonData, nonPokemonData]) => {
+        // 両方のデータを統合
+        cards = [...pokemonData, ...nonPokemonData];
 
-            function renderCardList() {
-                const query = searchBox.value.toLowerCase();
-                const selectedType = typeFilter.value;
-                cardList.innerHTML = "";
+        // タイプフィルターを設定
+        const allTypes = new Set(cards.map(card => card["ポケモンのタイプ"]).filter(Boolean));
+        allTypes.forEach(type => {
+            const option = document.createElement("option");
+            option.value = type;
+            option.textContent = type;
+            typeFilter.appendChild(option);
+        });
 
-                const filteredCards = cards.filter(card =>
-                    card["カード名"].toLowerCase().includes(query) &&
-                    (selectedType === "" || card["ポケモンのタイプ"] === selectedType)
-                );
+        // カテゴリフィルターを設定
+        const allCategories = new Set(cards.map(card => card["カテゴリ"]).filter(Boolean));
+        allCategories.forEach(category => {
+            const option = document.createElement("option");
+            option.value = category;
+            option.textContent = category;
+            categoryFilter.appendChild(option);
+        });
 
-                filteredCards.forEach(card => {
-                    const cardDiv = document.createElement("div");
-                    cardDiv.classList.add("card");
-                    const imgSrc = card["画像"] || DEFAULT_IMAGE;
-                    const cardName = card["カード名"];
+        // 検索ボックス、タイプフィルター、カテゴリフィルターのイベントリスナーを設定
+        searchBox.addEventListener("input", renderCardList);
+        typeFilter.addEventListener("change", renderCardList);
+        categoryFilter.addEventListener("change", renderCardList);
 
-                    cardDiv.innerHTML = `
-                        <img src="${imgSrc}" alt="${cardName}">
-                        <p>${cardName}</p>
-                    `;
+        // ドラッグ＆ドロップのイベントリスナーを設定
+        deckArea.addEventListener("dragover", e => e.preventDefault());
+        deckArea.addEventListener("drop", e => {
+            e.preventDefault();
+            const cardName = e.dataTransfer.getData("card-name");
+            const card = cards.find(c => c["カード名"] === cardName);
+            if (!card) return;
 
-                    cardDiv.addEventListener("click", () => openPopup(card));
-
-                    cardDiv.setAttribute("draggable", true);
-                    cardDiv.addEventListener("dragstart", (e) => {
-                        e.dataTransfer.setData("card-name", cardName);
-                    });
-
-                    cardList.appendChild(cardDiv);
-                });
+            if (!deck[cardName]) {
+                deck[cardName] = 0;
+                addCardToDeck(card);
             }
 
-            searchBox.addEventListener("input", renderCardList);
-            typeFilter.addEventListener("change", renderCardList);
+            if (deck[cardName] < 4) {
+                deck[cardName]++;
+                document.getElementById(`deck-card-${cssId(cardName)}`)
+                    .querySelector(".count").textContent = `x${deck[cardName]}`;
+            }
+        });
 
-            deckArea.addEventListener("dragover", e => e.preventDefault());
-            deckArea.addEventListener("drop", e => {
-                e.preventDefault();
-                const cardName = e.dataTransfer.getData("card-name");
-                const card = cards.find(c => c["カード名"] === cardName);
-                if (!card) return;
+        // カードリストをレンダリング
+        renderCardList();
+    })
+    .catch(error => console.error("JSONの読み込みに失敗:", error));
 
-                if (!deck[cardName]) {
-                    deck[cardName] = 0;
-                    addCardToDeck(card);
-                }
+    // カードリストをレンダリングする関数
+    function renderCardList() {
+        const query = searchBox.value.toLowerCase();
+        const selectedType = typeFilter.value;
+        const selectedCategory = categoryFilter.value;
+        cardList.innerHTML = "";
 
-                if (deck[cardName] < 4) {
-                    deck[cardName]++;
-                    document.getElementById(`deck-card-${cssId(cardName)}`)
-                        .querySelector(".count").textContent = `x${deck[cardName]}`;
-                }
+        // フィルタリングされたカードを取得
+        const filteredCards = cards.filter(card =>
+            card["カード名"].toLowerCase().includes(query) &&
+            (selectedType === "" || card["ポケモンのタイプ"] === selectedType) &&
+            (selectedCategory === "" || card["カテゴリ"] === selectedCategory)
+        );
+
+        // フィルタリングされたカードをリストに追加
+        filteredCards.forEach(card => {
+            const cardDiv = document.createElement("div");
+            cardDiv.classList.add("card");
+            const imgSrc = card["画像"] || DEFAULT_IMAGE;
+            const cardName = card["カード名"];
+
+            cardDiv.innerHTML = `
+                <img src="${imgSrc}" alt="${cardName}">
+                <p>${cardName}</p>
+            `;
+
+            cardDiv.addEventListener("click", () => openPopup(card));
+
+            cardDiv.setAttribute("draggable", true);
+            cardDiv.addEventListener("dragstart", (e) => {
+                e.dataTransfer.setData("card-name", cardName);
             });
 
-            renderCardList();
-        })
-        .catch(error => console.error("JSONの読み込みに失敗:", error));
+            // ドラッグしてデッキエリアに追加する設定
+            cardList.appendChild(cardDiv);
+        });
+    }
 
     document.addEventListener("dragover", e => e.preventDefault());
     document.addEventListener("drop", (e) => {
@@ -202,7 +228,15 @@ document.addEventListener("DOMContentLoaded", () => {
             sameCardsContainer.textContent = "関連タグの処理を実行中...";
         } else if (buttonName === "関連情報") {
             // 関連情報の処理
-            sameCardsContainer.textContent = "関連情報の処理を実行中...";
+            // sameCardsContainer.textContent = "関連情報の処理を実行中...";
+            // sameCardsContainer.textContent = "https://www.pokemon-card.com/card-search/index.php?keyword=%E3%82%AD%E3%83%8E%E3%82%AC%E3%83%83%E3%82%B5&se_ta=&regulation_sidebar_form=XY&pg=&illust=&sm_and_keyword=true";
+            sameCardsContainer.innerHTML = `
+                <a href="https://www.pokemon-card.com/card-search/index.php?keyword=${card["カード名"]}&se_ta=&regulation_sidebar_form=XY&pg=&illust=&sm_and_keyword=true" 
+                target="_blank" 
+                rel="noopener noreferrer">
+                ポケモンカード公式サイトで検索
+                </a>
+            `;
         }
     }
 
