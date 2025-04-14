@@ -131,6 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
             // 最初のボタン（"イラスト\n変更"）を押された状態にする
             if (index === 0) {
                 button.classList.add("active");
+                handleButtonClick(card, name);
             }
 
             // ボタンをクリックしたときの動作
@@ -143,28 +144,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 button.classList.add("active");
 
                 // 押されたボタンに応じた処理を実行
-                handleButtonClick(name);
+                handleButtonClick(card, name);
             });
 
             buttonContainer.appendChild(button);
         });
-
-        // "同じカードid" が存在する場合のみ処理を実行
-        const sameCardsContainer = document.getElementById("same-cards-container");
-        sameCardsContainer.innerHTML = ""; // コンテナを初期化
-
-        if (card["同じカードid"] && Array.isArray(card["同じカードid"])) {
-            const otherCards = cards.filter(c => card["同じカードid"].includes(c["id"]));
-
-            // 同じカードの画像を追加
-            otherCards.forEach(otherCard => {
-                const img = document.createElement("img");
-                img.src = otherCard["画像"] || DEFAULT_IMAGE;
-                img.alt = otherCard["カード名"];
-                img.addEventListener("click", () => openPopup(otherCard)); // クリックでポップアップを開く
-                sameCardsContainer.appendChild(img);
-            });
-        }
 
         popupName.textContent = card["カード名"];
         cardCount.textContent = deck[card["カード名"]] || 0;
@@ -173,13 +157,28 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // ボタンに応じた処理を実行する関数
-    function handleButtonClick(buttonName) {
+    function handleButtonClick(card, buttonName) {
         const sameCardsContainer = document.getElementById("same-cards-container");
         sameCardsContainer.innerHTML = ""; // コンテナを初期化
 
         if (buttonName === "イラスト\n変更") {
             // イラスト変更の処理
-            sameCardsContainer.textContent = "イラスト変更の処理を実行中...";
+            // "同じカードid" が存在する場合のみ処理を実行
+            const sameCardsContainer = document.getElementById("same-cards-container");
+            sameCardsContainer.innerHTML = ""; // コンテナを初期化
+
+            if (card["同じカードid"] && Array.isArray(card["同じカードid"])) {
+                const otherCards = cards.filter(c => card["同じカードid"].includes(c["id"]));
+
+                // 同じカードの画像を追加
+                otherCards.forEach(otherCard => {
+                    const img = document.createElement("img");
+                    img.src = otherCard["画像"] || DEFAULT_IMAGE;
+                    img.alt = otherCard["カード名"];
+                    img.addEventListener("click", () => openPopup(otherCard)); // クリックでポップアップを開く
+                    sameCardsContainer.appendChild(img);
+                });
+            }
         } else if (buttonName === "進化系統\nカード") {
             // 進化系統カードの処理
             sameCardsContainer.textContent = "進化系統カードの処理を実行中...";
