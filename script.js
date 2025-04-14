@@ -202,7 +202,15 @@ document.addEventListener("DOMContentLoaded", () => {
             sameCardsContainer.textContent = "関連タグの処理を実行中...";
         } else if (buttonName === "関連情報") {
             // 関連情報の処理
-            sameCardsContainer.textContent = "関連情報の処理を実行中...";
+            // sameCardsContainer.textContent = "関連情報の処理を実行中...";
+            // sameCardsContainer.textContent = "https://www.pokemon-card.com/card-search/index.php?keyword=%E3%82%AD%E3%83%8E%E3%82%AC%E3%83%83%E3%82%B5&se_ta=&regulation_sidebar_form=XY&pg=&illust=&sm_and_keyword=true";
+            sameCardsContainer.innerHTML = `
+                <a href="https://www.pokemon-card.com/card-search/index.php?keyword=${card["カード名"]}&se_ta=&regulation_sidebar_form=XY&pg=&illust=&sm_and_keyword=true" 
+                target="_blank" 
+                rel="noopener noreferrer">
+                ポケモンカード公式サイトで検索
+                </a>
+            `;
         }
     }
 
