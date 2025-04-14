@@ -181,7 +181,22 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         } else if (buttonName === "進化系統\nカード") {
             // 進化系統カードの処理
-            sameCardsContainer.textContent = "進化系統カードの処理を実行中...";
+            // "進化系統カードid" が存在する場合のみ処理を実行
+            const sameCardsContainer = document.getElementById("same-cards-container");
+            sameCardsContainer.innerHTML = ""; // コンテナを初期化
+
+            if (card["進化系統カードid"] && Array.isArray(card["進化系統カードid"])) {
+                const otherCards = cards.filter(c => card["進化系統カードid"].includes(c["id"]));
+
+                // 進化系統カードの画像を追加
+                otherCards.forEach(otherCard => {
+                    const img = document.createElement("img");
+                    img.src = otherCard["画像"] || DEFAULT_IMAGE;
+                    img.alt = otherCard["カード名"];
+                    img.addEventListener("click", () => openPopup(otherCard)); // クリックでポップアップを開く
+                    sameCardsContainer.appendChild(img);
+                });
+            }
         } else if (buttonName === "関連タグ") {
             // 関連タグの処理
             sameCardsContainer.textContent = "関連タグの処理を実行中...";
