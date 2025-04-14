@@ -44,6 +44,17 @@ def find_same_card(pokemon_data_list,flag):
                         card_i["同じカードid"].append(card_j["id"])
 
 
+def add_evolution_chain_ids(pokemon_data_list):
+    for i, card_i in enumerate(pokemon_data_list):
+        for j, card_j in enumerate(pokemon_data_list):
+            if i != j:
+                if (card_j["カード名"] in card_i["進化"]):
+                        # 進化系統カードのidを追加
+                        if "進化系統カードid" not in card_i:
+                            card_i["進化系統カードid"] = []  # 初期化
+                        card_i["進化系統カードid"].append(card_j["id"])
+
+
 # ポケモンのタイプを取得する関数
 def get_pokemon_type(detail_soup):
     """
@@ -332,6 +343,9 @@ def main():
     # 同じカードidを追加する
     find_same_card(pokemon_cards,True)
     find_same_card(non_pokemon_cards,False)
+    
+    # 進化系統カードidを追加する
+    add_evolution_chain_ids(pokemon_cards)
 
     save_to_json(pokemon_cards, non_pokemon_cards)
 

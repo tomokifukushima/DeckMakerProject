@@ -121,6 +121,12 @@ body {
     color: #fff;
 }
 
+.popup-button.active {
+    background-color: #007bff;
+    color: #fff;
+    border: 1px solid #0056b3;
+}
+
 /* ポップアップの同じ画像 */
 .same-cards-container {
     display: flex;
