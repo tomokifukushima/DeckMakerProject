@@ -14,6 +14,12 @@ body {
     padding: 10px;
 }
 
+.generate-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
 .deck-card {
     position: relative;
     margin: 5px;
