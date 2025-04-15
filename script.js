@@ -225,14 +225,21 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         } else if (buttonName === "関連タグ") {
             // 関連タグの処理
-            sameCardsContainer.textContent = "関連タグの処理を実行中...";
+            if (card["特別なルール"]) {
+                sameCardsContainer.textContent = `特別なルール: ${card["特別なルール"]}`;
+            }
         } else if (buttonName === "関連情報") {
             // 関連情報の処理
-            // sameCardsContainer.textContent = "関連情報の処理を実行中...";
-            // sameCardsContainer.textContent = "https://www.pokemon-card.com/card-search/index.php?keyword=%E3%82%AD%E3%83%8E%E3%82%AC%E3%83%83%E3%82%B5&se_ta=&regulation_sidebar_form=XY&pg=&illust=&sm_and_keyword=true";
+            // sameCardsContainer.innerHTML = `
+            //     <a href="https://www.pokemon-card.com/card-search/index.php?keyword=${card["カード名"]}&se_ta=&regulation_sidebar_form=XY&pg=&illust=&sm_and_keyword=true"
+            //     target="_blank"
+            //     rel="noopener noreferrer">
+            //     ポケモンカード公式サイトで検索
+            //     </a>
+            // `;
             sameCardsContainer.innerHTML = `
-                <a href="https://www.pokemon-card.com/card-search/index.php?keyword=${card["カード名"]}&se_ta=&regulation_sidebar_form=XY&pg=&illust=&sm_and_keyword=true" 
-                target="_blank" 
+                <a href="https://www.pokemon-card.com/card-search/details.php/card/${card["id"]}/regu/XY"
+                target="_blank"
                 rel="noopener noreferrer">
                 ポケモンカード公式サイトで検索
                 </a>
@@ -314,6 +321,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function cssId(name) {
-        return name.replace(/[^a-zA-Z0-9]/g, "_");
+        // return name.replace(/[^a-zA-Z0-9]/g, "_");
+        return name
     }
 });
