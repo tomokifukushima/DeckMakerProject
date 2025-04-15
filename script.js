@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const minusBtn = document.getElementById("minus-btn");
     const cardCount = document.getElementById("card-count");
     const closeBtn = document.querySelector(".close-btn");
-
+    const generateDeckBtn = document.getElementById("generateDeckBtn");
     const DEFAULT_IMAGE = "images/default.png";
 
     const deck = {};
@@ -283,6 +283,29 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }
         updateButtonState();
+    });
+
+    //deck生成ボタンのイベント処理
+    generateDeckBtn.addEventListener("click", () => {
+
+        /////////テスト処理中（コンソールログ確認）/////////////
+        const deckList = Object.entries(deck)
+            .filter(([name, count]) => count > 0)
+            .map(([name, count]) => `${name} x${count}`)
+            .join("\n");
+    
+        if (deckList === "") {
+            alert("デッキにカードがありません！");
+        } else {
+            console.log("▼ デッキリスト ▼\n" + deckList);
+            alert("デッキリストを生成しました（開発者ツールに表示）");
+    
+            // 必要ならダウンロードや表示処理もここに書ける
+        }
+        ///////////////////////////////////////////////////////////
+
+        //１デッキの内容を精査
+        //２デッキリストをpdfで出力（jsで書くならここに記載）
     });
 
     function addCardToDeck(card) {
