@@ -314,6 +314,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function cssId(name) {
-        return name.replace(/[^a-zA-Z0-9]/g, "_");
+        // return name.replace(/[^a-zA-Z0-9]/g, "_");
+        return name
     }
 });
