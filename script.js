@@ -28,15 +28,6 @@ document.addEventListener("DOMContentLoaded", () => {
         // 両方のデータを統合
         cards = [...pokemonData, ...nonPokemonData];
 
-        // タイプフィルターを設定
-        const allTypes = new Set(cards.map(card => card["ポケモンのタイプ"]).filter(Boolean));
-        allTypes.forEach(type => {
-            const option = document.createElement("option");
-            option.value = type;
-            option.textContent = type;
-            typeFilter.appendChild(option);
-        });
-
         // カテゴリフィルターを設定
         const allCategories = new Set(cards.map(card => card["カテゴリ"]).filter(Boolean));
         allCategories.forEach(category => {
@@ -46,10 +37,20 @@ document.addEventListener("DOMContentLoaded", () => {
             categoryFilter.appendChild(option);
         });
 
+        // // タイプフィルターを設定
+        // const allTypes = new Set(cards.map(card => card["ポケモンのタイプ"]).filter(Boolean));
+        // allTypes.forEach(type => {
+        //     const option = document.createElement("option");
+        //     option.value = type;
+        //     option.textContent = type;
+        //     typeFilter.appendChild(option);
+        // });
+
+
         // 検索ボックス、タイプフィルター、カテゴリフィルターのイベントリスナーを設定
         searchBox.addEventListener("input", renderCardList);
-        typeFilter.addEventListener("change", renderCardList);
         categoryFilter.addEventListener("change", renderCardList);
+        // typeFilter.addEventListener("change", renderCardList);
 
         // ドラッグ＆ドロップのイベントリスナーを設定
         deckArea.addEventListener("dragover", e => e.preventDefault());
@@ -79,15 +80,15 @@ document.addEventListener("DOMContentLoaded", () => {
     // カードリストをレンダリングする関数
     function renderCardList() {
         const query = searchBox.value.toLowerCase();
-        const selectedType = typeFilter.value;
         const selectedCategory = categoryFilter.value;
+        // const selectedType = typeFilter.value;
         cardList.innerHTML = "";
 
         // フィルタリングされたカードを取得
         const filteredCards = cards.filter(card =>
             card["カード名"].toLowerCase().includes(query) &&
-            (selectedType === "" || card["ポケモンのタイプ"] === selectedType) &&
             (selectedCategory === "" || card["カテゴリ"] === selectedCategory)
+            // (selectedType === "" || card["ポケモンのタイプ"] === selectedType) &&
         );
 
         // フィルタリングされたカードをリストに追加
