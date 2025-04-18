@@ -28,13 +28,21 @@
             <option value="">すべてのタイプ</option> -->
             <!-- JavaScriptで動的にタイプを追加 -->
         <!-- </select> -->
+        <button id="add-condition-btn">条件を追加する</button>
     </div>
 
     <!-- カードリスト -->
     <div id="cardList"></div>
 
+    <!-- 条件を追加するポップアップ -->
+    <div id="condition-popup" class="popup hidden">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+        </div>
+    </div>
+
     <!-- ポップアップウィンドウ -->
-    <div id="popup" class="hidden">
+    <div id="popup" class="popup hidden">
         <div class="popup-content">
             <p id="popup-name"></p>
             <span class="close-btn">&times;</span>

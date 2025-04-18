@@ -1,8 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
     const cardList = document.getElementById("cardList");
     const searchBox = document.getElementById("searchBox");
-    const typeFilter = document.getElementById("typeFilter");
     const categoryFilter = document.getElementById("categoryFilter");
+    // const typeFilter = document.getElementById("typeFilter");
+    const addConditionBtn = document.getElementById("add-condition-btn");
+    const conditionPopup = document.getElementById("condition-popup");
     const deckArea = document.getElementById("deckArea");
 
     const popup = document.getElementById("popup");
@@ -114,6 +116,15 @@ document.addEventListener("DOMContentLoaded", () => {
             cardList.appendChild(cardDiv);
         });
     }
+
+    addConditionBtn.addEventListener("click", () => {
+        const selectedCategory = categoryFilter.value;
+
+        console.log("条件追加ボタンがクリックされました");
+        console.log(`${selectedCategory}`);
+
+        conditionPopup.style.display = "flex";
+    });
 
     document.addEventListener("dragover", e => e.preventDefault());
     document.addEventListener("drop", (e) => {
@@ -248,9 +259,24 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    closeBtn.addEventListener("click", () => popup.style.display = "none");
-    popup.addEventListener("click", (e) => {
-        if (e.target === popup) popup.style.display = "none";
+    // 全てのclose-btnにイベントリスナーを追加
+    document.querySelectorAll(".close-btn").forEach(closeBtn => {
+        closeBtn.addEventListener("click", (e) => {
+            // ボタンが属するポップアップを閉じる
+            const popup = e.target.closest(".popup");
+            if (popup) {
+                popup.style.display = "none";
+            }
+        });
+    });
+
+    // ポップアップの外側をクリックしたら閉じる処理も共通化
+    document.querySelectorAll(".popup").forEach(popup => {
+        popup.addEventListener("click", (e) => {
+            if (e.target === popup) {
+                popup.style.display = "none";
+            }
+        });
     });
 
     plusBtn.addEventListener("click", () => {
