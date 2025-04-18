@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const minusBtn = document.getElementById("minus-btn");
     const cardCount = document.getElementById("card-count");
     const closeBtn = document.querySelector(".close-btn");
-
+    const generateDeckBtn = document.getElementById("generateDeckBtn");
     const DEFAULT_IMAGE = "images/default.png";
 
     const deck = {};//Idをキーとして管理する
@@ -225,14 +225,21 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         } else if (buttonName === "関連タグ") {
             // 関連タグの処理
-            sameCardsContainer.textContent = "関連タグの処理を実行中...";
+            if (card["特別なルール"]) {
+                sameCardsContainer.textContent = `特別なルール: ${card["特別なルール"]}`;
+            }
         } else if (buttonName === "関連情報") {
             // 関連情報の処理
-            // sameCardsContainer.textContent = "関連情報の処理を実行中...";
-            // sameCardsContainer.textContent = "https://www.pokemon-card.com/card-search/index.php?keyword=%E3%82%AD%E3%83%8E%E3%82%AC%E3%83%83%E3%82%B5&se_ta=&regulation_sidebar_form=XY&pg=&illust=&sm_and_keyword=true";
+            // sameCardsContainer.innerHTML = `
+            //     <a href="https://www.pokemon-card.com/card-search/index.php?keyword=${card["カード名"]}&se_ta=&regulation_sidebar_form=XY&pg=&illust=&sm_and_keyword=true"
+            //     target="_blank"
+            //     rel="noopener noreferrer">
+            //     ポケモンカード公式サイトで検索
+            //     </a>
+            // `;
             sameCardsContainer.innerHTML = `
-                <a href="https://www.pokemon-card.com/card-search/index.php?keyword=${card["カード名"]}&se_ta=&regulation_sidebar_form=XY&pg=&illust=&sm_and_keyword=true" 
-                target="_blank" 
+                <a href="https://www.pokemon-card.com/card-search/details.php/card/${card["id"]}/regu/XY"
+                target="_blank"
                 rel="noopener noreferrer">
                 ポケモンカード公式サイトで検索
                 </a>
@@ -278,6 +285,29 @@ document.addEventListener("DOMContentLoaded", () => {
         updateButtonState();
     });
 
+    //deck生成ボタンのイベント処理
+    generateDeckBtn.addEventListener("click", () => {
+
+        /////////テスト処理中（コンソールログ確認）/////////////
+        const deckList = Object.entries(deck)
+            .filter(([name, count]) => count > 0)
+            .map(([name, count]) => `${name} x${count}`)
+            .join("\n");
+    
+        if (deckList === "") {
+            alert("デッキにカードがありません！");
+        } else {
+            console.log("▼ デッキリスト ▼\n" + deckList);
+            alert("デッキリストを生成しました（開発者ツールに表示）");
+    
+            // 必要ならダウンロードや表示処理もここに書ける
+        }
+        ///////////////////////////////////////////////////////////
+
+        //１デッキの内容を精査
+        //２デッキリストをpdfで出力（jsで書くならここに記載）
+    });
+
     function addCardToDeck(card) {
         const deckCard = document.createElement("div");
         deckCard.classList.add("deck-card");
@@ -315,6 +345,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function cssId(name) {
-        return name.replace(/[^a-zA-Z0-9]/g, "_");
+        // return name.replace(/[^a-zA-Z0-9]/g, "_");
+        return name
     }
 });
