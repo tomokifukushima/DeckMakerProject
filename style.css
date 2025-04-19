@@ -57,6 +57,11 @@ body {
     background: rgba(0, 0, 0, 0.7);
 }
 
+#condition-popup .popup-main {
+    width: 640px;
+    height: 480px;
+}
+
 /* ポップアップ */
 #popup {
     display: none;

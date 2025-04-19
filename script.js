@@ -120,8 +120,104 @@ document.addEventListener("DOMContentLoaded", () => {
     addConditionBtn.addEventListener("click", () => {
         const selectedCategory = categoryFilter.value;
 
-        console.log("条件追加ボタンがクリックされました");
-        console.log(`${selectedCategory}`);
+        const conditionContainer = document.getElementById("condition-container");
+        conditionContainer.innerHTML = ""; // コンテナを初期化
+        conditionContainer.style.width = "100%";
+
+        const conditionData = {
+            "ポケモンの条件": {
+                subConditions: ["進化", "ポケモンの種類"],
+                details: {
+                    "進化": ["たね", "1進化", "2進化"],
+                    "ポケモンの種類": ["草", "炎", "水", "雷", "超", "闘", "悪", "鋼", "無色"]
+                }
+            },
+            "HP": {
+                subConditions: [],
+                details: {
+                    "HP": ["50以下", "51～100", "101～150", "151以上"]
+                }
+            },
+            "にげるエネルギー": {
+                subConditions: [],
+                details: {
+                    "にげるエネルギー": ["0", "1", "2", "3以上"]
+                }
+            },
+            "カードの種類": {
+                subConditions: [],
+                details: {
+                    "カードの種類": ["ポケモン", "エネルギー", "トレーナー"]
+                }
+            }
+        };
+
+        Object.keys(conditionData).forEach(mainCondition => {
+            const wrapper = document.createElement("div");
+            wrapper.style.display = "flex";
+
+            const boxL = document.createElement("div");
+            boxL.style.width = "180px";
+            boxL.textContent = mainCondition;
+            boxL.style.textAlign = "left";
+            wrapper.appendChild(boxL);
+
+            const boxR = document.createElement("div");
+            boxR.style.flexDirection = "column";
+            boxR.style.width = "100%";
+
+            const subConditions = conditionData[mainCondition].subConditions;
+            if (subConditions.length > 0) {
+                subConditions.forEach(subCondition => {
+                    const subBoxU = document.createElement("div");
+                    subBoxU.textContent = subCondition;
+                    subBoxU.style.textAlign = "left";
+                    boxR.appendChild(subBoxU);
+
+                    const subBoxD = document.createElement("div");
+                    subBoxD.style.display = "flex";
+                    subBoxD.style.textAlign = "left";
+                    subBoxD.style.flexDirection = "row";
+
+                    const details = conditionData[mainCondition].details[subCondition];
+                    if (details) {
+                        details.forEach(detail => {
+                            const checkbox = document.createElement("input");
+                            checkbox.type = "checkbox";
+                            const tag = document.createElement("div");
+                            tag.textContent = detail;
+                            subBoxD.appendChild(checkbox);
+                            subBoxD.appendChild(tag);
+                        });
+
+                        boxR.appendChild(subBoxD);
+                    }
+                });
+            } else {
+                const subBoxD = document.createElement("div");
+                subBoxD.style.display = "flex";
+                subBoxD.style.textAlign = "left";
+                subBoxD.style.flexDirection = "row";
+
+                const details = conditionData[mainCondition].details[mainCondition];
+                if (details) {
+                    details.forEach(detail => {
+                        const checkbox = document.createElement("input");
+                        checkbox.type = "checkbox";
+                        const tag = document.createElement("div");
+                        tag.textContent = detail;
+                        subBoxD.appendChild(checkbox);
+                        subBoxD.appendChild(tag);
+                    });
+
+                    boxR.appendChild(subBoxD);
+                }
+            }
+
+            wrapper.appendChild(boxR);
+
+            conditionContainer.appendChild(wrapper);
+        });
 
         conditionPopup.style.display = "flex";
     });
