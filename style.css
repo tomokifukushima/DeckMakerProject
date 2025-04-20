@@ -45,6 +45,13 @@ body {
     font-size: 14px;
 }
 
+/*リスト生成ボタン*/
+.generate-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
 /* ポップアップ */
 #popup {
     display: none;

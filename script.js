@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const generateDeckBtn = document.getElementById("generateDeckBtn");
     const DEFAULT_IMAGE = "images/default.png";
 
-    const deck = {};
+    const deck = {};//Idをキーとして管理する
     let currentCard = null;
     let cards = []; // 全カードデータ
 
@@ -55,19 +55,19 @@ document.addEventListener("DOMContentLoaded", () => {
         deckArea.addEventListener("dragover", e => e.preventDefault());
         deckArea.addEventListener("drop", e => {
             e.preventDefault();
-            const cardName = e.dataTransfer.getData("card-name");
-            const card = cards.find(c => c["カード名"] === cardName);
+            const cardId = e.dataTransfer.getData("card-id");
+            const card = cards.find(c => c.id === cardId);
             if (!card) return;
 
-            if (!deck[cardName]) {
-                deck[cardName] = 0;
+            if (!deck[card.id]) {
+                deck[card.id] = 0;
                 addCardToDeck(card);
             }
 
-            if (deck[cardName] < 4) {
-                deck[cardName]++;
-                document.getElementById(`deck-card-${cssId(cardName)}`)
-                    .querySelector(".count").textContent = `x${deck[cardName]}`;
+            if (deck[card.id] < 4) {
+                deck[card.id]++;
+                document.getElementById(`deck-card-${cssId(card.id)}`)
+                    .querySelector(".count").textContent = `x${deck[card.id]}`;
             }
         });
 
@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             cardDiv.setAttribute("draggable", true);
             cardDiv.addEventListener("dragstart", (e) => {
-                e.dataTransfer.setData("card-name", cardName);
+                e.dataTransfer.setData("card-id", card.id);
             });
 
             // ドラッグしてデッキエリアに追加する設定
@@ -116,21 +116,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.addEventListener("dragover", e => e.preventDefault());
     document.addEventListener("drop", (e) => {
-        const droppedCardName = e.dataTransfer.getData("deck-card-name");
-        if (!droppedCardName) return;
+        const droppedCardId = e.dataTransfer.getData("deck-card-id");
+        if (!droppedCardId) return;
         const isInsideDeck = deckArea.contains(e.target) || e.target === deckArea;
         if (isInsideDeck) return;
 
-        if (deck[droppedCardName] > 0) {
-            deck[droppedCardName]--;
-            if (deck[droppedCardName] === 0) {
-                removeCardFromDeck(droppedCardName);
+        if (deck[droppedCardId] > 0) {
+            deck[droppedCardId]--;
+            if (deck[droppedCardId] === 0) {
+                removeCardFromDeck(droppedCardId);
             } else {
-                document.getElementById(`deck-card-${cssId(droppedCardName)}`)
-                    .querySelector(".count").textContent = `x${deck[droppedCardName]}`;
+                document.getElementById(`deck-card-${cssId(droppedCardId)}`)
+                    .querySelector(".count").textContent = `x${deck[droppedCardId]}`;
             }
-            if (currentCard && currentCard["カード名"] === droppedCardName) {
-                cardCount.textContent = deck[droppedCardName] || 0;
+            if (currentCard && currentCard["カード名"] === droppedCardId) {
+                cardCount.textContent = deck[droppedCardId] || 0;
                 updateButtonState();
             }
         }
@@ -177,7 +177,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         popupName.textContent = card["カード名"];
-        cardCount.textContent = deck[card["カード名"]] || 0;
+        cardCount.textContent = deck[card.id] || 0;
         updateButtonState();
         popup.style.display = "flex";
     }
@@ -252,34 +252,34 @@ document.addEventListener("DOMContentLoaded", () => {
         if (e.target === popup) popup.style.display = "none";
     });
 
-    plusBtn.addEventListener("click", () => {
-        const name = currentCard["カード名"];
-        if (!deck[name]) {
-            deck[name] = 0;
+    plusBtn.addEventListener("click", () => {//ポップアップのブラスボタンクリック時のイベント
+        const id = currentCard.id;
+        if (!deck[id]) {
+            deck[id] = 0;
             addCardToDeck(currentCard);
         }
 
-        if (deck[name] < 4) {
-            deck[name]++;
-            document.getElementById(`deck-card-${cssId(name)}`)
-                .querySelector(".count").textContent = `x${deck[name]}`;
-            cardCount.textContent = deck[name];
+        if (deck[id] < 4) {
+            deck[id]++;
+            document.getElementById(`deck-card-${cssId(id)}`)
+                .querySelector(".count").textContent = `x${deck[id]}`;
+            cardCount.textContent = deck[id];
         }
 
         updateButtonState();
     });
 
     minusBtn.addEventListener("click", () => {
-        const name = currentCard["カード名"];
-        if (deck[name] > 0) {
-            deck[name]--;
-            cardCount.textContent = deck[name];
+        const id = currentCard.id;
+        if (deck[id] > 0) {
+            deck[id]--;
+            cardCount.textContent = deck[id];
 
-            const deckCard = document.getElementById(`deck-card-${cssId(name)}`);
-            if (deck[name] === 0) {
-                removeCardFromDeck(name);
+            const deckCard = document.getElementById(`deck-card-${cssId(id)}`);
+            if (deck[id] === 0) {
+                removeCardFromDeck(id);
             } else {
-                deckCard.querySelector(".count").textContent = `x${deck[name]}`;
+                deckCard.querySelector(".count").textContent = `x${deck[id]}`;
             }
         }
         updateButtonState();
@@ -311,7 +311,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function addCardToDeck(card) {
         const deckCard = document.createElement("div");
         deckCard.classList.add("deck-card");
-        deckCard.id = `deck-card-${cssId(card["カード名"])}`;
+        deckCard.id = `deck-card-${cssId(card.id)}`;
         const imgSrc = card["画像"] || DEFAULT_IMAGE;
         deckCard.innerHTML = `
             <img src="${imgSrc}" alt="${card["カード名"]}">
@@ -322,7 +322,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // ドラッグして削除する設定
         deckCard.setAttribute("draggable", true);
         deckCard.addEventListener("dragstart", (e) => {
-            e.dataTransfer.setData("deck-card-name", card["カード名"]);
+            e.dataTransfer.setData("deck-card-id", card.id);
         });
 
         deckArea.appendChild(deckCard);
@@ -336,7 +336,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function updateButtonState() {
-        const count = deck[currentCard["カード名"]] || 0;
+        if(currentCard === null) return;
+        const count = deck[currentCard.id] || 0;
         minusBtn.disabled = count === 0;
         plusBtn.disabled = count >= 4;
         minusBtn.classList.toggle("disabled", count === 0);
