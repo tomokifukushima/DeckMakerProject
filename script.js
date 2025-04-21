@@ -40,13 +40,13 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         // // タイプフィルターを設定
-        // const allTypes = new Set(cards.map(card => card["ポケモンのタイプ"]).filter(Boolean));
-        // allTypes.forEach(type => {
-        //     const option = document.createElement("option");
-        //     option.value = type;
-        //     option.textContent = type;
-        //     typeFilter.appendChild(option);
-        // });
+        const allTypes = new Set(cards.map(card => card["ポケモンのタイプ"]).filter(Boolean));
+        allTypes.forEach(type => {
+            const option = document.createElement("option");
+            option.value = type;
+            option.textContent = type;
+            // typeFilter.appendChild(option);
+        });
 
 
         // 検索ボックス、タイプフィルター、カテゴリフィルターのイベントリスナーを設定

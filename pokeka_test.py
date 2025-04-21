@@ -230,6 +230,7 @@ def get_pokemon_card_info(detail_soup, card_id, pack_name, image_url, regulation
         "id": card_id,
         "カード名": detail_soup.find("h1", class_="Heading1").text.strip(),
         "カテゴリ": "ポケモン",
+        "進化": card_type,
         "HP": hp,
         "特別なルール": pokemons_rule,
         "画像": image_url,
@@ -243,7 +244,7 @@ def get_pokemon_card_info(detail_soup, card_id, pack_name, image_url, regulation
         "弱点": weakness_type,
         "抵抗": resistance_type,
         "逃げるために必要なエネルギー": escape_energy,
-        "進化": evolution,
+        "進化系統": evolution,
         "収録パック": pack_name
     }
 
@@ -338,8 +339,8 @@ def main():
     data = response.json()
     max_page = data.get("maxPage", 1)
     print(max_page)
-    print(f"32ページ目でへばるので{max_page-140}ページだけやります")
-    pokemon_cards, non_pokemon_cards = fetch_pokemon_data(base_url, max_page-140, headers,pack_flag=False)
+    print(f"32ページ目でへばるので{max_page-0}ページだけやります")
+    pokemon_cards, non_pokemon_cards = fetch_pokemon_data(base_url, max_page-0, headers,pack_flag=False)
     # 同じカードidを追加する
     find_same_card(pokemon_cards,True)
     find_same_card(non_pokemon_cards,False)
