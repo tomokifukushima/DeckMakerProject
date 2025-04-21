@@ -48,7 +48,7 @@ def add_evolution_chain_ids(pokemon_data_list):
     for i, card_i in enumerate(pokemon_data_list):
         for j, card_j in enumerate(pokemon_data_list):
             if i != j:
-                if (card_j["カード名"] in card_i["進化"]):
+                if (card_j["カード名"] in card_i["進化系統"]):
                         # 進化系統カードのidを追加
                         if "進化系統カードid" not in card_i:
                             card_i["進化系統カードid"] = []  # 初期化
