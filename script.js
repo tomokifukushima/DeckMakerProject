@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const deck = {};//Idをキーとして管理する
     let currentCard = null;
     let cards = []; // 全カードデータ
+    let condition_data = {}; // 条件データ
 
     // 2つのJSONを並列で取得
     Promise.all([
@@ -77,7 +78,17 @@ document.addEventListener("DOMContentLoaded", () => {
         // カードリストをレンダリング
         renderCardList();
     })
-    .catch(error => console.error("JSONの読み込みに失敗:", error));
+    .catch(error => {
+        console.error("JSONの読み込みに失敗:", error);
+    });
+
+    fetch("condition_data.json")
+    .then(data => {
+        condition_data = data;
+    })
+    .catch(error => {
+        console.error("JSONの読み込みに失敗:", error);
+    });
 
     // カードリストをレンダリングする関数
     function renderCardList() {
