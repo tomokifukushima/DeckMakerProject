@@ -339,8 +339,8 @@ def main():
     data = response.json()
     max_page = data.get("maxPage", 1)
     print(max_page)
-    print(f"32ページ目でへばるので{max_page-0}ページだけやります")
-    pokemon_cards, non_pokemon_cards = fetch_pokemon_data(base_url, max_page-0, headers,pack_flag=False)
+    print(f"32ページ目でへばるので{max_page-147}ページだけやります")
+    pokemon_cards, non_pokemon_cards = fetch_pokemon_data(base_url, max_page-147, headers,pack_flag=False)
     # 同じカードidを追加する
     find_same_card(pokemon_cards,True)
     find_same_card(non_pokemon_cards,False)
