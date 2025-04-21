@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const cardList = document.getElementById("cardList");
     const searchBox = document.getElementById("searchBox");
     const categoryFilter = document.getElementById("categoryFilter");
-    // const typeFilter = document.getElementById("typeFilter");
     const addConditionBtn = document.getElementById("add-condition-btn");
     const conditionPopup = document.getElementById("condition-popup");
     const deckArea = document.getElementById("deckArea");
@@ -16,6 +15,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const closeBtn = document.querySelector(".close-btn");
     const generateDeckBtn = document.getElementById("generateDeckBtn");
     const DEFAULT_IMAGE = "images/default.png";
+
+    const selectedTags = new Map(); // 選択されたタグを管理するMap
+    const conditionContainer = document.getElementById("condition-container");
 
     const deck = {};//Idをキーとして管理する
     let currentCard = null;
@@ -40,20 +42,17 @@ document.addEventListener("DOMContentLoaded", () => {
             categoryFilter.appendChild(option);
         });
 
-        // // タイプフィルターを設定
-        const allTypes = new Set(cards.map(card => card["ポケモンのタイプ"]).filter(Boolean));
-        allTypes.forEach(type => {
-            const option = document.createElement("option");
-            option.value = type;
-            option.textContent = type;
-            // typeFilter.appendChild(option);
-        });
-
 
         // 検索ボックス、タイプフィルター、カテゴリフィルターのイベントリスナーを設定
         searchBox.addEventListener("input", renderCardList);
         categoryFilter.addEventListener("change", renderCardList);
-        // typeFilter.addEventListener("change", renderCardList);
+
+        // TODO:
+        conditionContainer.innerHTML = "";
+        categoryFilter.addEventListener("change", e => {
+            conditionContainer.innerHTML = ""
+            selectedTags.clear();
+        });
 
         // ドラッグ＆ドロップのイベントリスナーを設定
         deckArea.addEventListener("dragover", e => e.preventDefault());
@@ -82,6 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
         console.error("JSONの読み込みに失敗:", error);
     });
 
+    // 条件データを取得
     fetch("condition_data.json")
     .then(response => {
         if (!response.ok) {
@@ -100,15 +100,19 @@ document.addEventListener("DOMContentLoaded", () => {
     function renderCardList() {
         const query = searchBox.value.toLowerCase();
         const selectedCategory = categoryFilter.value;
-        // const selectedType = typeFilter.value;
         cardList.innerHTML = "";
 
         // フィルタリングされたカードを取得
-        const filteredCards = cards.filter(card =>
+        const _filteredCards = cards.filter(card =>
             card["カード名"].toLowerCase().includes(query) &&
             (selectedCategory === "" || card["カテゴリ"] === selectedCategory)
-            // (selectedType === "" || card["ポケモンのタイプ"] === selectedType) &&
         );
+
+        const filteredCards = _filteredCards.filter(card => {
+            return Array.from(selectedTags.entries()).every(([category, values]) => {
+                return values.has(card[category]); // カードのカテゴリが選択された項目に含まれるか
+            });
+        });
 
         // フィルタリングされたカードをリストに追加
         filteredCards.forEach(card => {
@@ -137,46 +141,22 @@ document.addEventListener("DOMContentLoaded", () => {
     addConditionBtn.addEventListener("click", () => {
         const selectedCategory = categoryFilter.value;
 
-        const conditionContainer = document.getElementById("condition-container");
-        conditionContainer.innerHTML = ""; // コンテナを初期化
-        conditionContainer.style.width = "100%";
+        if (conditionContainer.innerHTML == "") {
 
-        // const conditionData = {
-        //     "ポケモンの条件": {
-        //         subConditions: ["進化", "ポケモンの種類"],
-        //         details: {
-        //             "進化": ["たね", "1進化", "2進化"],
-        //             "ポケモンの種類": ["草", "炎", "水", "雷", "超", "闘", "悪", "鋼", "無色"]
-        //         }
-        //     },
-        //     "HP": {
-        //         subConditions: [],
-        //         details: {
-        //             "HP": ["50以下", "51～100", "101～150", "151以上"]
-        //         }
-        //     },
-        //     "にげるエネルギー": {
-        //         subConditions: [],
-        //         details: {
-        //             "にげるエネルギー": ["0", "1", "2", "3以上"]
-        //         }
-        //     },
-        //     "カードの種類": {
-        //         subConditions: [],
-        //         details: {
-        //             "カードの種類": ["ポケモン", "エネルギー", "トレーナー"]
-        //         }
-        //     }
-        // };
+        conditionContainer.style.width = "100%";
 
         Object.keys(conditionData).forEach(mainCondition => {
             const wrapper = document.createElement("div");
             wrapper.style.display = "flex";
+            wrapper.style.background = "#e7e7e7";
 
             const boxL = document.createElement("div");
             boxL.style.width = "200px";
+            boxL.style.padding = "4px";
             boxL.textContent = mainCondition;
             boxL.style.textAlign = "left";
+            boxL.style.background = "#a0a0a0";
+            boxL.style.borderTop = "1px solid #c3c3c3";
             wrapper.appendChild(boxL);
 
             const boxR = document.createElement("div");
@@ -185,29 +165,49 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const subConditions = conditionData[mainCondition];
             subConditions.forEach(subCondition => {
-                if (subConditions.length != 0) {
-                    const subBoxU = document.createElement("div");
-                    subBoxU.textContent = subCondition.label;
-                    subBoxU.style.textAlign = "left";
-                    boxR.appendChild(subBoxU);
+                const subBoxT = document.createElement("div");
+                subBoxT.style.borderBottom = "1px solid #c3c3c3";
+                if (subConditions.length > 1) {
+                    subBoxT.textContent = subCondition.label;
+                    subBoxT.style.padding = "4px";
+                    subBoxT.style.textAlign = "left";
+                    subBoxT.style.background = "#dddddd";
                 }
+                boxR.appendChild(subBoxT);
 
-                const subBoxD = document.createElement("div");
-                subBoxD.style.display = "flex";
-                subBoxD.style.textAlign = "left";
-                subBoxD.style.flexDirection = "row";
+                const subBoxB = document.createElement("div");
+                subBoxB.style.padding = "4px";
+                subBoxB.style.display = "flex";
+                subBoxB.style.textAlign = "left";
+                subBoxB.style.flexDirection = "row";
+                subBoxB.style.flexWrap = "wrap";
 
                 const type = subCondition.type;
+                const category = subCondition.category;
                 const details = subCondition.details;
-                console.log(details);
                 if (type === "checkbox") {
                     details.forEach(detail => {
                         const checkbox = document.createElement("input");
                         checkbox.type = "checkbox";
-                        const tag = document.createElement("div");
-                        tag.textContent = detail;
-                        subBoxD.appendChild(checkbox);
-                        subBoxD.appendChild(tag);
+                        checkbox.addEventListener("click", (e) => {
+                            const isChecked = e.target.checked;
+                            selectCondition(isChecked, category, detail)
+                        });
+
+                        const label = document.createElement("div");
+                        label.style.display = "flex";
+                        label.style.alignItems = "center";
+
+                        const text = document.createElement("span"); // span要素を使う
+                        text.textContent = detail;
+                        label.appendChild(text);
+
+                        const paragraph = document.createElement("p");
+                        paragraph.style.width = "8px"
+                        label.appendChild(paragraph);
+
+                        subBoxB.appendChild(checkbox);
+                        subBoxB.appendChild(label);
                     });
                 } else if (type === "range-dropdown") {
                     const select1 = document.createElement("select");
@@ -224,13 +224,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
                         select1.appendChild(option);
                     });
-                    subBoxD.appendChild(select1);
+                    subBoxB.appendChild(select1);
 
                     const text = document.createElement("div");
                     text.style.width = "20px";
                     text.style.textAlign = "center";
                     text.textContent = "～";
-                    subBoxD.appendChild(text);
+                    subBoxB.appendChild(text);
 
 
                     const select2 = document.createElement("select");
@@ -247,14 +247,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
                         select2.appendChild(option);
                     });
-                    subBoxD.appendChild(select2);
+                    subBoxB.appendChild(select2);
                 } else if (type === "text") {
                     const input = document.createElement("input");
                     input.type = "text";
-                    subBoxD.appendChild(input);
+                    subBoxB.appendChild(input);
                 }
 
-                boxR.appendChild(subBoxD);
+                boxR.appendChild(subBoxB);
             });
 
             wrapper.appendChild(boxR);
@@ -262,8 +262,31 @@ document.addEventListener("DOMContentLoaded", () => {
             conditionContainer.appendChild(wrapper);
         });
 
+        }
+
         conditionPopup.style.display = "flex";
     });
+
+    function selectCondition(isChecked, category, tag) {
+        if (isChecked) {
+            if (!selectedTags.has(category)) {
+                selectedTags.set(category, new Set());
+            }
+            selectedTags.get(category).add(tag);
+            console.log("タグ:", category, tag);
+        } else {
+            if (selectedTags.has(category)) {
+                selectedTags.get(category).delete(tag);
+                if (selectedTags.get(category).size === 0) {
+                    selectedTags.delete(category);
+                }
+            }
+            console.log("タグ解除:", category, tag);
+        }
+        console.log("現在選択されているタグ:", Array.from(selectedTags));
+
+        renderCardList();
+    }
 
     document.addEventListener("dragover", e => e.preventDefault());
     document.addEventListener("drop", (e) => {

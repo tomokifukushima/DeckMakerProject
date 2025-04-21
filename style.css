@@ -58,8 +58,8 @@ body {
 }
 
 #condition-popup .popup-main {
-    width: 640px;
-    height: 480px;
+    width: auto;
+    height: auto;
 }
 
 /* ポップアップ */
