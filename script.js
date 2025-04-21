@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const deck = {};//Idをキーとして管理する
     let currentCard = null;
     let cards = []; // 全カードデータ
-    let condition_data = {}; // 条件データ
+    let conditionData = {}; // 条件データ
 
     // 2つのJSONを並列で取得
     Promise.all([
@@ -83,8 +83,14 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     fetch("condition_data.json")
+    .then(response => {
+        if (!response.ok) {
+            throw new Error("HTTP error " + response.status);
+        }
+        return response.json(); // レスポンスをJSON形式に変換
+    })
     .then(data => {
-        condition_data = data;
+        conditionData = data;
     })
     .catch(error => {
         console.error("JSONの読み込みに失敗:", error);
@@ -135,40 +141,40 @@ document.addEventListener("DOMContentLoaded", () => {
         conditionContainer.innerHTML = ""; // コンテナを初期化
         conditionContainer.style.width = "100%";
 
-        const conditionData = {
-            "ポケモンの条件": {
-                subConditions: ["進化", "ポケモンの種類"],
-                details: {
-                    "進化": ["たね", "1進化", "2進化"],
-                    "ポケモンの種類": ["草", "炎", "水", "雷", "超", "闘", "悪", "鋼", "無色"]
-                }
-            },
-            "HP": {
-                subConditions: [],
-                details: {
-                    "HP": ["50以下", "51～100", "101～150", "151以上"]
-                }
-            },
-            "にげるエネルギー": {
-                subConditions: [],
-                details: {
-                    "にげるエネルギー": ["0", "1", "2", "3以上"]
-                }
-            },
-            "カードの種類": {
-                subConditions: [],
-                details: {
-                    "カードの種類": ["ポケモン", "エネルギー", "トレーナー"]
-                }
-            }
-        };
+        // const conditionData = {
+        //     "ポケモンの条件": {
+        //         subConditions: ["進化", "ポケモンの種類"],
+        //         details: {
+        //             "進化": ["たね", "1進化", "2進化"],
+        //             "ポケモンの種類": ["草", "炎", "水", "雷", "超", "闘", "悪", "鋼", "無色"]
+        //         }
+        //     },
+        //     "HP": {
+        //         subConditions: [],
+        //         details: {
+        //             "HP": ["50以下", "51～100", "101～150", "151以上"]
+        //         }
+        //     },
+        //     "にげるエネルギー": {
+        //         subConditions: [],
+        //         details: {
+        //             "にげるエネルギー": ["0", "1", "2", "3以上"]
+        //         }
+        //     },
+        //     "カードの種類": {
+        //         subConditions: [],
+        //         details: {
+        //             "カードの種類": ["ポケモン", "エネルギー", "トレーナー"]
+        //         }
+        //     }
+        // };
 
         Object.keys(conditionData).forEach(mainCondition => {
             const wrapper = document.createElement("div");
             wrapper.style.display = "flex";
 
             const boxL = document.createElement("div");
-            boxL.style.width = "180px";
+            boxL.style.width = "200px";
             boxL.textContent = mainCondition;
             boxL.style.textAlign = "left";
             wrapper.appendChild(boxL);
@@ -177,41 +183,24 @@ document.addEventListener("DOMContentLoaded", () => {
             boxR.style.flexDirection = "column";
             boxR.style.width = "100%";
 
-            const subConditions = conditionData[mainCondition].subConditions;
-            if (subConditions.length > 0) {
-                subConditions.forEach(subCondition => {
+            const subConditions = conditionData[mainCondition];
+            subConditions.forEach(subCondition => {
+                if (subConditions.length != 0) {
                     const subBoxU = document.createElement("div");
-                    subBoxU.textContent = subCondition;
+                    subBoxU.textContent = subCondition.label;
                     subBoxU.style.textAlign = "left";
                     boxR.appendChild(subBoxU);
+                }
 
-                    const subBoxD = document.createElement("div");
-                    subBoxD.style.display = "flex";
-                    subBoxD.style.textAlign = "left";
-                    subBoxD.style.flexDirection = "row";
-
-                    const details = conditionData[mainCondition].details[subCondition];
-                    if (details) {
-                        details.forEach(detail => {
-                            const checkbox = document.createElement("input");
-                            checkbox.type = "checkbox";
-                            const tag = document.createElement("div");
-                            tag.textContent = detail;
-                            subBoxD.appendChild(checkbox);
-                            subBoxD.appendChild(tag);
-                        });
-
-                        boxR.appendChild(subBoxD);
-                    }
-                });
-            } else {
                 const subBoxD = document.createElement("div");
                 subBoxD.style.display = "flex";
                 subBoxD.style.textAlign = "left";
                 subBoxD.style.flexDirection = "row";
 
-                const details = conditionData[mainCondition].details[mainCondition];
-                if (details) {
+                const type = subCondition.type;
+                const details = subCondition.details;
+                console.log(details);
+                if (type === "checkbox") {
                     details.forEach(detail => {
                         const checkbox = document.createElement("input");
                         checkbox.type = "checkbox";
@@ -220,10 +209,53 @@ document.addEventListener("DOMContentLoaded", () => {
                         subBoxD.appendChild(checkbox);
                         subBoxD.appendChild(tag);
                     });
+                } else if (type === "range-dropdown") {
+                    const select1 = document.createElement("select");
+                    select1.style.width = "80px";
+                    details[0].forEach((detail, index) => {
+                        const option = document.createElement("option");
+                        option.value = detail;
+                        option.textContent = detail;
 
-                    boxR.appendChild(subBoxD);
+                        // 最初の選択肢をデフォルトで選択
+                        if (index === 0) {
+                            option.selected = true;
+                        }
+
+                        select1.appendChild(option);
+                    });
+                    subBoxD.appendChild(select1);
+
+                    const text = document.createElement("div");
+                    text.style.width = "20px";
+                    text.style.textAlign = "center";
+                    text.textContent = "～";
+                    subBoxD.appendChild(text);
+
+
+                    const select2 = document.createElement("select");
+                    select2.style.width = "80px";
+                    details[1].forEach((detail, index) => {
+                        const option = document.createElement("option");
+                        option.value = detail;
+                        option.textContent = detail;
+
+                        // 最後の選択肢をデフォルトで選択
+                        if (index === details[1].length - 1) {
+                            option.selected = true;
+                        }
+
+                        select2.appendChild(option);
+                    });
+                    subBoxD.appendChild(select2);
+                } else if (type === "text") {
+                    const input = document.createElement("input");
+                    input.type = "text";
+                    subBoxD.appendChild(input);
                 }
-            }
+
+                boxR.appendChild(subBoxD);
+            });
 
             wrapper.appendChild(boxR);
 
