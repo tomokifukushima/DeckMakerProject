@@ -1,4 +1,5 @@
 import requests
+import re
 import json
 from bs4 import BeautifulSoup
 
@@ -218,6 +219,7 @@ def get_pokemon_card_info(detail_soup, card_id, pack_name, image_url, regulation
     """
     pokemons_rule = "ex" if "ex" in detail_soup.find("h1", class_="Heading1").text else None
     card_type = detail_soup.find("span", class_="type").text.strip()
+    card_type = re.sub(r"\s", "", card_type) # スペースを削除
     hp = detail_soup.find("span", class_="hp-num").text.strip()
     pokemon_type = get_pokemon_type(detail_soup)
     weakness_type, resistance_type = get_weakness_and_resistance(detail_soup)
