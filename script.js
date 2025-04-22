@@ -287,25 +287,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     //deck生成ボタンのイベント処理
     generateDeckBtn.addEventListener("click", () => {
-
-        /////////テスト処理中（コンソールログ確認）/////////////
-        const deckList = Object.entries(deck)
-            .filter(([name, count]) => count > 0)
-            .map(([name, count]) => `${name} x${count}`)
-            .join("\n");
-    
-        if (deckList === "") {
-            alert("デッキにカードがありません！");
-        } else {
-            console.log("▼ デッキリスト ▼\n" + deckList);
-            alert("デッキリストを生成しました（開発者ツールに表示）");
-    
-            // 必要ならダウンロードや表示処理もここに書ける
-        }
-        ///////////////////////////////////////////////////////////
-
-        //１デッキの内容を精査
-        //２デッキリストをpdfで出力（jsで書くならここに記載）
+        generateDeckImage();//デッキリスト画像作成関数呼び出し
     });
 
     function addCardToDeck(card) {
@@ -347,5 +329,64 @@ document.addEventListener("DOMContentLoaded", () => {
     function cssId(name) {
         // return name.replace(/[^a-zA-Z0-9]/g, "_");
         return name
+    }
+
+    //デッキリスト画像作成関数
+    function generateDeckImage() {
+        
+        const deckEntries = Object.entries(deck).filter(([id, count]) => count > 0);
+        //デッキにカードが登録されていなければアラート
+        if (deckEntries.length === 0) {
+            alert("デッキにカードがありません！");
+            return;
+        }
+
+        const cardWidth = 250;
+        const cardHeight = 350;
+        const cardsPerRow = 8;
+        const margin = 10;
+        const canvasWidth = (cardWidth + margin) * cardsPerRow;
+        const rows = Math.ceil(deckEntries.length / cardsPerRow);
+        const canvasHeight = (cardHeight + margin) * rows;
+
+        //canvas作成
+        const canvas = document.createElement("canvas");
+        canvas.width = canvasWidth;
+        canvas.height = canvasHeight;
+        const ctx = canvas.getContext("2d");
+
+        //canvasにカード画像貼り付け
+        const promises = deckEntries.map(([id, count], index) => {
+            const card = cards.find(c => c.id === id);
+            return new Promise((resolve) => {
+                const img = new Image();
+                img.crossOrigin = "anonymous"; 
+                img.src = card["画像"] || DEFAULT_IMAGE;
+                img.onload = () => {
+                    const x = (index % cardsPerRow) * (cardWidth + margin);
+                    const y = Math.floor(index / cardsPerRow) * (cardHeight + margin);
+                    ctx.drawImage(img, x, y, cardWidth, cardHeight);
+    
+                    ctx.font = "30px Arial";
+                    ctx.fillStyle = "white";
+                    ctx.strokeStyle = "black";
+                    ctx.lineWidth = 3;
+                    const text = `x${count}`;
+                    ctx.strokeText(text, x + cardWidth - 50, y + cardHeight - 10);
+                    ctx.fillText(text, x + cardWidth - 50, y + cardHeight - 10);
+    
+                    resolve();
+                };
+            });
+        });
+        //canvasを画像変換してダウンロード
+        Promise.all(promises).then(() => {
+            const imageUrl = canvas.toDataURL("image/png");
+            const link = document.createElement("a");
+            link.href = imageUrl;
+            link.download = "decklist.png";
+            link.click();
+        });
+
     }
 });
