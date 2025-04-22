@@ -1,4 +1,5 @@
 import requests
+import re
 import json
 from bs4 import BeautifulSoup
 
@@ -48,7 +49,7 @@ def add_evolution_chain_ids(pokemon_data_list):
     for i, card_i in enumerate(pokemon_data_list):
         for j, card_j in enumerate(pokemon_data_list):
             if i != j:
-                if (card_j["カード名"] in card_i["進化"]):
+                if (card_j["カード名"] in card_i["進化系統"]):
                         # 進化系統カードのidを追加
                         if "進化系統カードid" not in card_i:
                             card_i["進化系統カードid"] = []  # 初期化
@@ -218,6 +219,7 @@ def get_pokemon_card_info(detail_soup, card_id, pack_name, image_url, regulation
     """
     pokemons_rule = "ex" if "ex" in detail_soup.find("h1", class_="Heading1").text else None
     card_type = detail_soup.find("span", class_="type").text.strip()
+    card_type = re.sub(r"\s", "", card_type) # スペースを削除
     hp = detail_soup.find("span", class_="hp-num").text.strip()
     pokemon_type = get_pokemon_type(detail_soup)
     weakness_type, resistance_type = get_weakness_and_resistance(detail_soup)
@@ -230,6 +232,7 @@ def get_pokemon_card_info(detail_soup, card_id, pack_name, image_url, regulation
         "id": card_id,
         "カード名": detail_soup.find("h1", class_="Heading1").text.strip(),
         "カテゴリ": "ポケモン",
+        "進化": card_type,
         "HP": hp,
         "特別なルール": pokemons_rule,
         "画像": image_url,
@@ -243,19 +246,20 @@ def get_pokemon_card_info(detail_soup, card_id, pack_name, image_url, regulation
         "弱点": weakness_type,
         "抵抗": resistance_type,
         "逃げるために必要なエネルギー": escape_energy,
-        "進化": evolution,
+        "進化系統": evolution,
         "収録パック": pack_name
     }
 
 
 # カードデータを取得するメイン関数
-def fetch_pokemon_data(base_url, max_page, headers,pack_flag):
+def fetch_pokemon_data(base_url, max_page, headers, ids, pack_flag):
     """
     ページごとにポケモンカードの情報を取得し、ポケモンカードと非ポケモンカードを分けて保存する。
     """
     pokemon_cards = []
     non_pokemon_cards = []
     exit_loop = False
+    id_order = [] # ソート用
 
     for page in range(1, max_page + 1):
         response = requests.get(base_url.format(page), headers=headers)
@@ -265,6 +269,9 @@ def fetch_pokemon_data(base_url, max_page, headers,pack_flag):
 
         for card in data["cardList"]:
             card_id = card["cardID"]
+            id_order.append(card_id)
+            if card_id in ids:
+                continue
             detail_soup = get_card_details(card_id, headers)
             if not detail_soup:
                 continue
@@ -309,7 +316,23 @@ def fetch_pokemon_data(base_url, max_page, headers,pack_flag):
         if exit_loop:
             break
 
-    return pokemon_cards, non_pokemon_cards
+    return pokemon_cards, non_pokemon_cards, id_order
+
+
+# JSONファイルを読み込む関数
+def load_json(file_path):
+    """
+    指定されたJSONファイルを読み込む。
+    """
+    try:
+        with open(file_path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except FileNotFoundError:
+        print(f"❌ ファイルが見つかりません: {file_path}")
+        return []
+    except json.JSONDecodeError:
+        print(f"❌ JSONの読み込みに失敗しました: {file_path}")
+        return []
 
 
 # データをJSONとして保存する関数
@@ -324,6 +347,14 @@ def save_to_json(pokemon_cards, non_pokemon_cards):
     print(f"✅ ポケモン: {len(pokemon_cards)}枚, トレーナーズ: {len(non_pokemon_cards)}枚 を保存しました！")
 
 
+def sort_by_specified_ids(data_list, id_order):
+    """
+    指定したIDの順序に基づいてデータをソートする。
+    """
+    id_to_index = {id_: index for index, id_ in enumerate(id_order)}
+    return sorted(data_list, key=lambda x: id_to_index.get(x["id"], float("inf")))
+
+
 # メイン処理
 def main():
     """
@@ -336,10 +367,17 @@ def main():
         print("データ取得失敗")
         return
     data = response.json()
+    
+    # 既存のIDを抽出
+    parsed_pokemon_data = load_json("pokemon_cards.json")
+    parsed_non_pokemon_data = load_json("non_pokemon_cards.json")
+    parsed_data = parsed_pokemon_data + parsed_non_pokemon_data
+    ids = [item["id"] for item in parsed_data]
+    
     max_page = data.get("maxPage", 1)
     print(max_page)
     print(f"32ページ目でへばるので{max_page-140}ページだけやります")
-    pokemon_cards, non_pokemon_cards = fetch_pokemon_data(base_url, max_page-140, headers,pack_flag=False)
+    pokemon_cards, non_pokemon_cards, id_order = fetch_pokemon_data(base_url, max_page-140, headers, ids, pack_flag=False)
     # 同じカードidを追加する
     find_same_card(pokemon_cards,True)
     find_same_card(non_pokemon_cards,False)
@@ -347,7 +385,15 @@ def main():
     # 進化系統カードidを追加する
     add_evolution_chain_ids(pokemon_cards)
 
-    save_to_json(pokemon_cards, non_pokemon_cards)
+    # データを結合
+    combined_pokemon_data = pokemon_cards + parsed_pokemon_data
+    combined_non_pokemon_data = non_pokemon_cards + parsed_non_pokemon_data
+
+    # idでソート（数値としてソートする場合はintに変換）
+    sorted_pokemon_data = sort_by_specified_ids(combined_pokemon_data, id_order)
+    sorted_non_pokemon_data = sort_by_specified_ids(combined_non_pokemon_data, id_order)
+
+    save_to_json(sorted_pokemon_data, sorted_non_pokemon_data)
 
 
 if __name__ == "__main__":
