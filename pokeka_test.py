@@ -30,7 +30,13 @@ rarity_dict = {
     "sar": "SAR",
     "ur_c": "UR",
     "s_2": "S",
-    "ssr": "SSR"
+    "ssr": "SSR",
+    "hr":"HR",
+    "chr":"CHR",
+    "csr":"CSR",
+    "tr":"TR",
+    "u":"u",
+    "r":"r",
 }
 
 #同じカードのidを記録する
@@ -189,13 +195,20 @@ def get_pack_name(detail_soup):
 # カードの詳細情報を取得する関数
 def get_card_details(card_id, headers):
     """
-    カードIDを使って、カードの詳細情報を取得する。
+    カード詳細ページ取得。403 が返ったら None を返す。
     """
     detail_url = f"https://www.pokemon-card.com/card-search/details.php/card/{card_id}/"
-    detail_response = requests.get(detail_url, headers=headers)
-    if detail_response.status_code != 200:
+    resp = requests.get(detail_url, headers=headers)
+    if resp.status_code == 403:
+        print(f"[403] カード詳細取得エラー: card_id={card_id} → スキップします")
+        return None  # ← ここでスキップ
+    try:
+        resp.raise_for_status()
+    except Exception as e:
+        print(f"[ERROR] 詳細取得失敗: {card_id} ({e})")
         return None
-    return BeautifulSoup(detail_response.text, "html.parser")
+    return BeautifulSoup(resp.text, "html.parser")
+
 
 
 # ポケモンカードかどうかを判定する関数
@@ -275,6 +288,30 @@ def get_pokemon_card_info(detail_soup, card_id, pack_name, image_url, regulation
         "収録パック": pack_name
     }
 
+def get_basic_energy_info(detail_soup, card_id, image_url, pack_name):
+    """
+    基本エネルギーカードの情報を取得する（シンプル構成）。
+    """
+    return {
+        "id": card_id,
+        "カード名": detail_soup.find("h1", class_="Heading1").text.strip(),
+        "画像": image_url,
+        "収録パック": pack_name
+    }
+def get_basic_energy_info(detail_soup, card_id, image_url, pack_name):
+    """
+    基本エネルギーカードの情報を取得する（シンプル構成）。
+    """
+    card_name = detail_soup.find("h1", class_="Heading1").text.strip()
+    energy_type = re.sub(r"^基本|エネルギー$", "", card_name)  # 「基本草エネルギー」→「草」
+    return {
+        "id": card_id,
+        "カード名": card_name,
+        "カテゴリ": "基本エネルギー",
+        "画像": image_url,
+        "収録パック": pack_name,
+        "エネルギーのタイプ": energy_type
+    }
 
 # カードデータを取得するメイン関数
 def fetch_pokemon_data(base_url, max_page, headers, ids, pack_flag):
@@ -283,20 +320,40 @@ def fetch_pokemon_data(base_url, max_page, headers, ids, pack_flag):
     """
     pokemon_cards = []
     non_pokemon_cards = []
+    energy_cards=[]
     exit_loop = False
     id_order = [] # ソート用
 
     for page in range(1, max_page + 1):
-        response = requests.get(base_url.format(page), headers=headers)
-        if response.status_code != 200:
+        #response = requests.get(base_url.format(page), headers=headers)
+        # ページ取得＋403チェック
+        try:
+            resp = requests.get(base_url.format(page), headers=headers)
+            if resp.status_code == 403:
+                print(f"[ERROR] ページ{page}で403エラー。スクレイピングを中断します。")
+                break
+            resp.raise_for_status()
+            data = resp.json()
+        except requests.exceptions.RequestException as e:
+            print(f"[WARN] ページ{page}の取得失敗 ({e})。次ページへ。")
             continue
-        data = response.json()
+        except ValueError as e:
+            print(f"[WARN] ページ{page}のJSONパース失敗 ({e})。次ページへ。")
+            continue
+
+        card_list = data.get("cardList", [])
+
+        if resp.status_code != 200:
+            continue
+        data = resp.json()
 
         for card in data["cardList"]:
+            cid = int(card["cardID"])
             card_id = card["cardID"]
             id_order.append(card_id)
             if card_id in ids:
                 continue
+
             detail_soup = get_card_details(card_id, headers)
             if not detail_soup:
                 continue
@@ -306,12 +363,42 @@ def fetch_pokemon_data(base_url, max_page, headers, ids, pack_flag):
 
             image_url = detail_soup.find("img", class_="fit")["src"]
             image_url="https://www.pokemon-card.com/"+image_url
-            regulation = detail_soup.find("img", class_="img-regulation")["alt"]
-            card_number = detail_soup.find("div", class_="subtext").text.strip().split()[0]
+            #regulation = detail_soup.find("img", class_="img-regulation")["alt"]
+            #card_number = detail_soup.find("div", class_="subtext").text.strip().split()[0]
             illustrator = detail_soup.find("a", href=lambda x: x and "regulation_illust" in x)
             illustrator = illustrator.text.strip() if illustrator else "なし"
             pack_name = get_pack_name(detail_soup)
             rarity_img = detail_soup.find("img", src=lambda x: x and "/assets/images/card/rarity/" in x)
+            subtext_div = detail_soup.find("div", class_="subtext")
+            if subtext_div:
+                text_parts = subtext_div.text.strip().split()
+                if text_parts:
+                    card_number = text_parts[0]
+                else:
+                    card_number = "不明"
+                    card_name = detail_soup.find("h1", class_="Heading1")
+                    print("⚠️ subtextにカード番号が含まれていません")
+                    print(f"  ▶ カード名: {card_name.text.strip() if card_name else '不明'}")
+                    print(f"  ▶ ページURL: https://www.pokemon-card.com/card-search/details.php/card/{cid}/")
+            else:
+                card_number = "不明"
+                card_name = detail_soup.find("h1", class_="Heading1")
+                print("⚠️ <div class='subtext'> が見つかりません")
+                print(f"  ▶ カード名: {card_name.text.strip() if card_name else '不明'}")
+                print(f"  ▶ ページURL: https://www.pokemon-card.com/card-search/details.php/card/{cid}/")
+
+            regulation = detail_soup.find("img", class_="img-regulation")
+            if regulation:
+                regulation = regulation["alt"]
+            else:
+                regulation = "なし"
+                # どのカードでエラーになるか知るための出力（カテゴリ名・画像URL・ページURL）
+                card_name = detail_soup.find("h1", class_="Heading1").text.strip() if detail_soup.find("h1", class_="Heading1") else "不明"
+                print("⚠️ <img class='img-regulation'> が見つかりませんでした")
+                print(f"  ▶ カード名: {card_name}")
+                print(f"  ▶ カテゴリ: {category_text}")
+                print(f"  ▶ ページURL: https://www.pokemon-card.com/card-search/details.php/card/{cid}/")
+    
             if rarity_img:
                 card_rarity = rarity_dict[rarity_img["src"].split("ic_rare_")[-1].split(".")[0]]
             else:
@@ -320,12 +407,23 @@ def fetch_pokemon_data(base_url, max_page, headers, ids, pack_flag):
             if exit_loop:
                 break
 
-            if is_pokemon_card(category_text):
+
+
+            if detail_soup.find("h2", class_="mt20", string="基本エネルギー"):
+                energy_cards.append(get_basic_energy_info(detail_soup, card_id, image_url, pack_name))
+                print(f"[基本エネルギー] {energy_cards[-1]['カード名']}")
+            elif category_text == "特殊エネルギー":
+                energy_cards.append(get_non_pokemon_card_info(detail_soup, card_id, category_text, image_url, regulation, card_number, illustrator, pack_name, card_rarity))
+                print(f"[特殊エネルギー] {energy_cards[-1]['カード名']}")
+            elif is_pokemon_card(category_text):
                 pokemon_cards.append(get_pokemon_card_info(detail_soup, card_id, pack_name, image_url, regulation, card_number, illustrator, card_rarity))
                 print(pokemon_cards[-1]["カード名"])
             else:
                 non_pokemon_cards.append(get_non_pokemon_card_info(detail_soup, card_id, category_text, image_url, regulation, card_number, illustrator, pack_name, card_rarity))
                 print(non_pokemon_cards[-1]["カード名"])
+
+
+
 
             if(pack_flag):
                 # 収録パックが変わった場合や同じカードが続く場合はループを抜ける
@@ -341,7 +439,7 @@ def fetch_pokemon_data(base_url, max_page, headers, ids, pack_flag):
         if exit_loop:
             break
 
-    return pokemon_cards, non_pokemon_cards, id_order
+    return pokemon_cards, non_pokemon_cards, energy_cards, id_order
 
 
 # JSONファイルを読み込む関数
@@ -361,15 +459,14 @@ def load_json(file_path):
 
 
 # データをJSONとして保存する関数
-def save_to_json(pokemon_cards, non_pokemon_cards):
-    """
-    取得したポケモンカードと非ポケモンカードのデータをJSONファイルに保存する。
-    """
+def save_to_json(pokemon_cards, non_pokemon_cards, energy_cards):
     with open("pokemon_cards.json", "w", encoding="utf-8") as f:
         json.dump(pokemon_cards, f, ensure_ascii=False, indent=4)
     with open("non_pokemon_cards.json", "w", encoding="utf-8") as f:
         json.dump(non_pokemon_cards, f, ensure_ascii=False, indent=4)
-    print(f"✅ ポケモン: {len(pokemon_cards)}枚, トレーナーズ: {len(non_pokemon_cards)}枚 を保存しました！")
+    with open("energy_cards.json", "w", encoding="utf-8") as f:
+        json.dump(energy_cards, f, ensure_ascii=False, indent=4)
+    print(f"✅ 保存完了！ポケモン: {len(pokemon_cards)}枚, トレーナーズ: {len(non_pokemon_cards)}枚, エネルギー: {len(energy_cards)}枚")
 
 
 def sort_by_specified_ids(data_list, id_order):
@@ -382,44 +479,53 @@ def sort_by_specified_ids(data_list, id_order):
 
 # メイン処理
 def main():
-    """
-    メイン処理: ポケモンカードのデータを取得し、JSONファイルに保存する。
-    """
     base_url = "https://www.pokemon-card.com/card-search/resultAPI.php?page={}"
     headers = {"User-Agent": "Mozilla/5.0"}
-    response = requests.get(base_url.format(1), headers=headers)
-    if response.status_code != 200:
-        print("データ取得失敗")
+    try:
+        response = requests.get(base_url.format(1), headers=headers)
+        if response.status_code == 403:
+            print("⚠️ 接続失敗: サイト側のアクセス制限（403 Forbidden）です。時間をおいて再試行してください。")
+            return
+        response.raise_for_status()
+    except requests.exceptions.RequestException as e:
+        print(f"⚠️ 接続エラー: {e}")
         return
     data = response.json()
-    
-    # 既存のIDを抽出
+
+    # 既存データを読み込み（ここで energy も含める）
     parsed_pokemon_data = load_json("pokemon_cards.json")
     parsed_non_pokemon_data = load_json("non_pokemon_cards.json")
-    parsed_data = parsed_pokemon_data + parsed_non_pokemon_data
+    parsed_energy_data = load_json("energy_cards.json")  # ← ここが重要！
+
+    # 全体IDを抽出
+    parsed_data = parsed_pokemon_data + parsed_non_pokemon_data + parsed_energy_data
     ids = [item["id"] for item in parsed_data]
-    
+
     max_page = data.get("maxPage", 1)
     print(max_page)
-    print(f"32ページ目でへばるので{max_page-147}ページだけやります")
-    pokemon_cards, non_pokemon_cards, id_order = fetch_pokemon_data(base_url, max_page-147, headers, ids, pack_flag=False)
-    # 同じカードidを追加する
-    find_same_card(pokemon_cards,True)
-    find_same_card(non_pokemon_cards,False)
-    
-    # 進化系統カードidを追加する
+
+    # データ取得
+    pokemon_cards, non_pokemon_cards, energy_cards, id_order = fetch_pokemon_data(base_url, max_page, headers, ids, pack_flag=False)
+
+    # 重複・進化情報の処理
+    find_same_card(pokemon_cards, True)
+    find_same_card(non_pokemon_cards, False)
+    find_same_card(energy_cards, False)
     add_evolution_chain_ids(pokemon_cards)
 
-    # データを結合
+    # 結合してソート
     combined_pokemon_data = pokemon_cards + parsed_pokemon_data
     combined_non_pokemon_data = non_pokemon_cards + parsed_non_pokemon_data
+    combined_energy_data = energy_cards + parsed_energy_data
 
-    # idでソート（数値としてソートする場合はintに変換）
     sorted_pokemon_data = sort_by_specified_ids(combined_pokemon_data, id_order)
     sorted_non_pokemon_data = sort_by_specified_ids(combined_non_pokemon_data, id_order)
+    sorted_energy_data = sort_by_specified_ids(combined_energy_data, id_order)
 
-    save_to_json(sorted_pokemon_data, sorted_non_pokemon_data)
+    save_to_json(sorted_pokemon_data, sorted_non_pokemon_data, sorted_energy_data)
+
 
 
 if __name__ == "__main__":
     main()
+
