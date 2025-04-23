@@ -1,4 +1,3 @@
-//conditon_data.json
 {
     "ポケモンの条件": [
         {
@@ -10,7 +9,7 @@
         {
             "label": "ポケモンの種類",
             "type": "checkbox",
-            "category": "ポケモンの種類",
+            "category": "特別なルール",
             "details": ["ポケモンex", "「テラスタル」のポケモン"]
         },
         {
@@ -23,25 +22,29 @@
             "label": "タイプ",
             "type": "checkbox",
             "category": "ポケモンのタイプ",
-            "details": ["草", "炎", "水", "雷", "超", "闘", "悪", "鋼", "ドラゴン", "無色"]
+            "details": ["草", "炎", "水", "雷", "超", "闘", "悪", "鋼", "ドラゴン", "無色"],
+            "cssClass": ["SearchIcon-grass", "SearchIcon-fire", "SearchIcon-water", "SearchIcon-electric", "SearchIcon-psychic", "SearchIcon-fighting", "SearchIcon-dark", "SearchIcon-steel", "SearchIcon-dragon", "SearchIcon-none"]
         },
         {
             "label": "弱点",
             "type": "checkbox",
             "category": "弱点",
-            "details": ["草", "炎", "水", "雷", "超", "闘", "悪", "鋼", "ドラゴン", "無色"]
+            "details": ["草", "炎", "水", "雷", "超", "闘", "悪", "鋼", "ドラゴン", "無色"],
+            "cssClass": ["SearchIcon-grass", "SearchIcon-fire", "SearchIcon-water", "SearchIcon-electric", "SearchIcon-psychic", "SearchIcon-fighting", "SearchIcon-dark", "SearchIcon-steel", "SearchIcon-dragon", "SearchIcon-none"]
         },
         {
             "label": "抵抗力",
             "type": "checkbox",
             "category": "抵抗",
-            "details": ["草", "炎", "水", "雷", "超", "闘", "悪", "鋼", "ドラゴン", "無色"]
+            "details": ["草", "炎", "水", "雷", "超", "闘", "悪", "鋼", "ドラゴン", "無色"],
+            "cssClass": ["SearchIcon-grass", "SearchIcon-fire", "SearchIcon-water", "SearchIcon-electric", "SearchIcon-psychic", "SearchIcon-fighting", "SearchIcon-dark", "SearchIcon-steel", "SearchIcon-dragon", "SearchIcon-none"]
         },
         {
             "label": "ワザのエネルギー",
             "type": "checkbox",
             "category": "ワザのエネルギー",
-            "details": ["草", "炎", "水", "雷", "超", "闘", "悪", "鋼", "ドラゴン", "無色", "なし"]
+            "details": ["草", "炎", "水", "雷", "超", "闘", "悪", "鋼", "ドラゴン", "無色", "なし"],
+            "cssClass": ["SearchIcon-grass", "SearchIcon-fire", "SearchIcon-water", "SearchIcon-electric", "SearchIcon-psychic", "SearchIcon-fighting", "SearchIcon-dark", "SearchIcon-steel", "SearchIcon-dragon", "SearchIcon-none", "SearchIcon-void"]
         }
     ],
     "HP": [
@@ -83,7 +86,7 @@
             "label": "レアリティ",
             "type": "checkbox",
             "category": "レアリティ",
-            "details": ["AR", "SR", "SAR", "UR", "S", "SSR"]
+            "details": ["C", "U", "R", "RR", "AR", "SR", "SAR", "UR", "S", "SSR"]
         }
     ],
     "イラストレーター名": [

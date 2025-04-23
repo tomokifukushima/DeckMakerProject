@@ -1,4 +1,3 @@
-#create_deck_recipe.py
 from PIL import Image, ImageDraw, ImageFont
 import requests
 from io import BytesIO
