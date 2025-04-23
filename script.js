@@ -61,18 +61,29 @@ document.addEventListener("DOMContentLoaded", () => {
             const cardId = e.dataTransfer.getData("card-id");
             const card = cards.find(c => c.id === cardId);
             if (!card) return;
-
+        
+            const totalCount = Object.values(deck).reduce((sum, count) => sum + count, 0);
+            if (totalCount >= 60) {
+                showErrorMessage("60枚以上は追加できません");
+                return;
+            }
+            
+        
             if (!deck[card.id]) {
                 deck[card.id] = 0;
                 addCardToDeck(card);
             }
-
+        
             if (deck[card.id] < 4) {
                 deck[card.id]++;
                 document.getElementById(`deck-card-${cssId(card.id)}`)
                     .querySelector(".count").textContent = `x${deck[card.id]}`;
             }
+        
+            updateDeckCount();
         });
+        
+        
 
         // カードリストをレンダリング
         renderCardList();
@@ -307,6 +318,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 cardCount.textContent = deck[droppedCardId] || 0;
                 updateButtonState();
             }
+            updateDeckCount();
         }
     });
 
@@ -441,38 +453,34 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    plusBtn.addEventListener("click", () => {//ポップアップのブラスボタンクリック時のイベント
+
+    
+
+    plusBtn.addEventListener("click", () => {
         const id = currentCard.id;
+        const totalCount = Object.values(deck).reduce((sum, count) => sum + count, 0);
+    
+        if (totalCount >= 60) {
+            showErrorMessage("60枚以上は追加できません");
+            return;
+        }        
+    
         if (!deck[id]) {
             deck[id] = 0;
             addCardToDeck(currentCard);
         }
-
+    
         if (deck[id] < 4) {
             deck[id]++;
             document.getElementById(`deck-card-${cssId(id)}`)
                 .querySelector(".count").textContent = `x${deck[id]}`;
             cardCount.textContent = deck[id];
         }
-
+    
         updateButtonState();
+        updateDeckCount();
     });
-
-    minusBtn.addEventListener("click", () => {
-        const id = currentCard.id;
-        if (deck[id] > 0) {
-            deck[id]--;
-            cardCount.textContent = deck[id];
-
-            const deckCard = document.getElementById(`deck-card-${cssId(id)}`);
-            if (deck[id] === 0) {
-                removeCardFromDeck(id);
-            } else {
-                deckCard.querySelector(".count").textContent = `x${deck[id]}`;
-            }
-        }
-        updateButtonState();
-    });
+    
 
     //deck生成ボタンのイベント処理
     generateDeckBtn.addEventListener("click", () => {
@@ -504,6 +512,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const elem = document.getElementById(cardId);
         if (elem) elem.remove();
         delete deck[name];
+
+        updateDeckCount();
     }
 
     function updateButtonState() {
@@ -520,6 +530,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return name
     }
 
+<<<<<<< HEAD
     //デッキリスト画像作成関数
     function generateDeckImage() {
         
@@ -578,4 +589,35 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
     }
+=======
+    function updateDeckCount() {
+        const totalCount = Object.values(deck).reduce((sum, count) => sum + count, 0);
+        const deckCount = document.getElementById("deckCount");
+        deckCount.textContent = `デッキ枚数: ${totalCount}枚`;
+    }
+
+    function showErrorMessage(message) {
+        const errorDiv = document.getElementById("errorMessage");
+        errorDiv.textContent = message;
+        errorDiv.classList.remove("hidden");
+    
+        // もし前回のイベントリスナーが残ってたら消す
+        document.removeEventListener("mousedown", handleOutsideClick);
+    
+        // クリックした場所がerrorMessage以外だったら消す
+        function handleOutsideClick(event) {
+            if (!errorDiv.contains(event.target)) {
+                errorDiv.classList.add("hidden");
+                document.removeEventListener("mousedown", handleOutsideClick);
+            }
+        }
+    
+        setTimeout(() => {
+            document.addEventListener("mousedown", handleOutsideClick);
+        }, 0);
+    }
+    
+    
+    
+>>>>>>> d030a41 (60枚制限とエラーメッセージ表示追加)
 });

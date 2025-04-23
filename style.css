@@ -235,3 +235,22 @@ button.disabled {
     gap: 10px;
     margin-bottom: 10px;
 }
+
+#errorMessage {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ffcccc;
+    color: #b30000;
+    padding: 10px 20px;
+    border: 1px solid #b30000;
+    border-radius: 5px;
+    font-weight: bold;
+    z-index: 1000;
+}
+
+.hidden {
+    display: none;
+}
+
