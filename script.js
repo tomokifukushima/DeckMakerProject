@@ -61,29 +61,18 @@ document.addEventListener("DOMContentLoaded", () => {
             const cardId = e.dataTransfer.getData("card-id");
             const card = cards.find(c => c.id === cardId);
             if (!card) return;
-        
-            const totalCount = Object.values(deck).reduce((sum, count) => sum + count, 0);
-            if (totalCount >= 60) {
-                showErrorMessage("60枚以上は追加できません");
-                return;
-            }
-            
-        
+
             if (!deck[card.id]) {
                 deck[card.id] = 0;
                 addCardToDeck(card);
             }
-        
+
             if (deck[card.id] < 4) {
                 deck[card.id]++;
                 document.getElementById(`deck-card-${cssId(card.id)}`)
                     .querySelector(".count").textContent = `x${deck[card.id]}`;
             }
-        
-            updateDeckCount();
         });
-        
-        
 
         // カードリストをレンダリング
         renderCardList();
@@ -121,7 +110,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const filteredCards = _filteredCards.filter(card => {
             return Array.from(selectedTags.entries()).every(([category, values]) => {
-                return values.has(card[category]); // カードのカテゴリが選択された項目に含まれるか
+                if (Array.isArray(card[category])) {
+                    // 複数の値の場合
+                    return card[category].some(value => values.has(value));
+                  } else {
+                     // 単一の値の場合
+                    return values.has(card[category]);
+                  }
             });
         });
 
@@ -196,29 +191,36 @@ document.addEventListener("DOMContentLoaded", () => {
                 const type = subCondition.type;
                 const category = subCondition.category;
                 const details = subCondition.details;
+                const cssClass = subCondition.cssClass;
                 if (type === "checkbox") {
-                    details.forEach(detail => {
+                    details.forEach((detail, index) => {
+                        // checkboxの表示エリア
+                        const checkBoxField = document.createElement("div");
+                        checkBoxField.classList.add("checkbox-field");
+
+                        // checkbox
                         const checkbox = document.createElement("input");
                         checkbox.type = "checkbox";
                         checkbox.addEventListener("click", (e) => {
                             const isChecked = e.target.checked;
                             selectCondition(isChecked, category, detail)
                         });
+                        checkBoxField.appendChild(checkbox);
 
+                        // checkboxのラベル
                         const label = document.createElement("div");
                         label.style.display = "flex";
                         label.style.alignItems = "center";
 
-                        const text = document.createElement("span"); // span要素を使う
+                        const text = document.createElement("span");
+                        if (cssClass) {
+                            text.classList.add(cssClass[index]);
+                        }
                         text.textContent = detail;
                         label.appendChild(text);
+                        checkBoxField.appendChild(label);
 
-                        const paragraph = document.createElement("p");
-                        paragraph.style.width = "8px"
-                        label.appendChild(paragraph);
-
-                        subBoxB.appendChild(checkbox);
-                        subBoxB.appendChild(label);
+                        subBoxB.appendChild(checkBoxField);
                     });
                 } else if (type === "range-dropdown") {
                     const select1 = document.createElement("select");
@@ -284,7 +286,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 selectedTags.set(category, new Set());
             }
             selectedTags.get(category).add(tag);
-            console.log("タグ:", category, tag);
+            console.log("タグ追加:", category, tag);
         } else {
             if (selectedTags.has(category)) {
                 selectedTags.get(category).delete(tag);
@@ -318,7 +320,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 cardCount.textContent = deck[droppedCardId] || 0;
                 updateButtonState();
             }
-            updateDeckCount();
         }
     });
 
@@ -453,34 +454,38 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-
-    
-
-    plusBtn.addEventListener("click", () => {
+    plusBtn.addEventListener("click", () => {//ポップアップのブラスボタンクリック時のイベント
         const id = currentCard.id;
-        const totalCount = Object.values(deck).reduce((sum, count) => sum + count, 0);
-    
-        if (totalCount >= 60) {
-            showErrorMessage("60枚以上は追加できません");
-            return;
-        }        
-    
         if (!deck[id]) {
             deck[id] = 0;
             addCardToDeck(currentCard);
         }
-    
+
         if (deck[id] < 4) {
             deck[id]++;
             document.getElementById(`deck-card-${cssId(id)}`)
                 .querySelector(".count").textContent = `x${deck[id]}`;
             cardCount.textContent = deck[id];
         }
-    
+
         updateButtonState();
-        updateDeckCount();
     });
-    
+
+    minusBtn.addEventListener("click", () => {
+        const id = currentCard.id;
+        if (deck[id] > 0) {
+            deck[id]--;
+            cardCount.textContent = deck[id];
+
+            const deckCard = document.getElementById(`deck-card-${cssId(id)}`);
+            if (deck[id] === 0) {
+                removeCardFromDeck(id);
+            } else {
+                deckCard.querySelector(".count").textContent = `x${deck[id]}`;
+            }
+        }
+        updateButtonState();
+    });
 
     //deck生成ボタンのイベント処理
     generateDeckBtn.addEventListener("click", () => {
@@ -512,8 +517,6 @@ document.addEventListener("DOMContentLoaded", () => {
         const elem = document.getElementById(cardId);
         if (elem) elem.remove();
         delete deck[name];
-
-        updateDeckCount();
     }
 
     function updateButtonState() {
@@ -588,33 +591,4 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
     }
-    function updateDeckCount() {
-        const totalCount = Object.values(deck).reduce((sum, count) => sum + count, 0);
-        const deckCount = document.getElementById("deckCount");
-        deckCount.textContent = `デッキ枚数: ${totalCount}枚`;
-    }
-
-    function showErrorMessage(message) {
-        const errorDiv = document.getElementById("errorMessage");
-        errorDiv.textContent = message;
-        errorDiv.classList.remove("hidden");
-    
-        // もし前回のイベントリスナーが残ってたら消す
-        document.removeEventListener("mousedown", handleOutsideClick);
-    
-        // クリックした場所がerrorMessage以外だったら消す
-        function handleOutsideClick(event) {
-            if (!errorDiv.contains(event.target)) {
-                errorDiv.classList.add("hidden");
-                document.removeEventListener("mousedown", handleOutsideClick);
-            }
-        }
-    
-        setTimeout(() => {
-            document.addEventListener("mousedown", handleOutsideClick);
-        }, 0);
-    }
-    
-    
-    
 });
