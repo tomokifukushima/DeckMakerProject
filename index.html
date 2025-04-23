@@ -1,3 +1,4 @@
+<!--index.html-->
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -8,6 +9,9 @@
 </head>
 <body>
     <h1>デッキメーカー</h1>
+
+    <!-- デッキ枚数表示 -->
+    <div id="deckCount">デッキ枚数: 0枚</div>
 
     <!-- デッキエリア -->
     <div id="deckArea"></div>
@@ -65,6 +69,10 @@
             </div>
         </div>
     </div>
+
+    <!-- エラーメッセージ -->
+    <div id="errorMessage" class="hidden">60枚以上は追加できません</div>
+
 
     <script src="script.js"></script>
 </body>
