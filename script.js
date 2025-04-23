@@ -530,7 +530,6 @@ document.addEventListener("DOMContentLoaded", () => {
         return name
     }
 
-<<<<<<< HEAD
     //デッキリスト画像作成関数
     function generateDeckImage() {
         
@@ -589,7 +588,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
     }
-=======
     function updateDeckCount() {
         const totalCount = Object.values(deck).reduce((sum, count) => sum + count, 0);
         const deckCount = document.getElementById("deckCount");
@@ -619,5 +617,4 @@ document.addEventListener("DOMContentLoaded", () => {
     
     
     
->>>>>>> d030a41 (60枚制限とエラーメッセージ表示追加)
 });
