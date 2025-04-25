@@ -68,6 +68,13 @@ document.addEventListener("DOMContentLoaded", () => {
             const card = cards.find(c => c.id === cardId);
             if (!card) return;
 
+            const totalCount = Object.values(deck).reduce((sum, count) => sum + count, 0);
+            if (totalCount >= 60) {
+                showErrorMessage("60枚以上は追加できません");
+                return;
+            }
+
+
             if (!deck[card.id]) {
                 deck[card.id] = 0;
                 addCardToDeck(card);
@@ -78,6 +85,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 document.getElementById(`deck-card-${cssId(card.id)}`)
                     .querySelector(".count").textContent = `x${deck[card.id]}`;
             }
+
+            updateDeckCount();
         });
 
         // カードリストをレンダリング
@@ -364,6 +373,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 cardCount.textContent = deck[droppedCardId] || 0;
                 updateButtonState();
             }
+            updateDeckCount();
         }
     });
 
@@ -500,6 +510,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     plusBtn.addEventListener("click", () => {//ポップアップのブラスボタンクリック時のイベント
         const id = currentCard.id;
+        const totalCount = Object.values(deck).reduce((sum, count) => sum + count, 0);
+
+        if (totalCount >= 60) {
+            showErrorMessage("60枚以上は追加できません");
+            return;
+        }        
+
         if (!deck[id]) {
             deck[id] = 0;
             addCardToDeck(currentCard);
@@ -513,6 +530,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         updateButtonState();
+        updateDeckCount();
     });
 
     minusBtn.addEventListener("click", () => {
@@ -561,6 +579,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const elem = document.getElementById(cardId);
         if (elem) elem.remove();
         delete deck[name];
+
+        updateDeckCount();
     }
 
     function updateButtonState() {
@@ -634,5 +654,32 @@ document.addEventListener("DOMContentLoaded", () => {
             link.click();
         });
 
+    }
+
+    function updateDeckCount() {
+        const totalCount = Object.values(deck).reduce((sum, count) => sum + count, 0);
+        const deckCount = document.getElementById("deckCount");
+        deckCount.textContent = `デッキ枚数: ${totalCount}枚`;
+    }
+
+    function showErrorMessage(message) {
+        const errorDiv = document.getElementById("errorMessage");
+        errorDiv.textContent = message;
+        errorDiv.classList.remove("hidden");
+
+        // もし前回のイベントリスナーが残ってたら消す
+        document.removeEventListener("mousedown", handleOutsideClick);
+
+        // クリックした場所がerrorMessage以外だったら消す
+        function handleOutsideClick(event) {
+            if (!errorDiv.contains(event.target)) {
+                errorDiv.classList.add("hidden");
+                document.removeEventListener("mousedown", handleOutsideClick);
+            }
+        }
+
+        setTimeout(() => {
+            document.addEventListener("mousedown", handleOutsideClick);
+        }, 0);
     }
 });
