@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const selectedRanges = new Map(); // ドロップダウンで選択されたレンジを管理するMap
     const conditionContainer = document.getElementById("condition-container");
 
-    const allCountNum = document.getElementById("all-count-num");
+    // const allCountNum = document.getElementById("all-count-num");
 
     const deck = {};//Idをキーとして管理する
     let currentCard = null;
@@ -140,6 +140,10 @@ document.addEventListener("DOMContentLoaded", () => {
             return matchesQuery && matchesCategory && matchesTags && matchesRanges;
         });
 
+        // hit件数表示
+        const allCountNum = document.getElementById("all-count-num");
+        allCountNum.textContent = filteredCards.length;
+
         // フィルタリングされたカードをリストに追加
         filteredCards.forEach(card => {
             const cardDiv = document.createElement("div");
@@ -163,9 +167,6 @@ document.addEventListener("DOMContentLoaded", () => {
             // ドラッグしてデッキエリアに追加する設定
             cardList.appendChild(cardDiv);
         });
-
-        // hit件数表示
-        allCountNum.textContent = filteredCards.length;
     }
 
     // TODO: HTMLに型を置いておく
