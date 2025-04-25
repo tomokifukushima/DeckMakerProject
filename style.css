@@ -283,7 +283,7 @@ button.disabled {
 .SearchIcon-grass::before {
     content: ".";
     color: transparent;
-    background-image: url(/assets/images/sprite.png);
+    background-image: url(./assets/images/sprite.png);
     background-position: -30px -212px;
     position: absolute;
     width: 20px;
@@ -301,7 +301,7 @@ button.disabled {
 .SearchIcon-fire::before {
     content: ".";
     color: transparent;
-    background-image: url(/assets/images/sprite.png);
+    background-image: url(./assets/images/sprite.png);
     background-position: -217px -142px;
     position: absolute;
     width: 20px;
@@ -319,7 +319,7 @@ button.disabled {
 .SearchIcon-water::before {
     content: ".";
     color: transparent;
-    background-image: url(/assets/images/sprite.png);
+    background-image: url(./assets/images/sprite.png);
     background-position: -60px -212px;
     position: absolute;
     width: 20px;
@@ -337,7 +337,7 @@ button.disabled {
 .SearchIcon-electric::before {
     content: ".";
     color: transparent;
-    background-image: url(/assets/images/sprite.png);
+    background-image: url(./assets/images/sprite.png);
     background-position: -150px -212px;
     position: absolute;
     width: 20px;
@@ -355,7 +355,7 @@ button.disabled {
 .SearchIcon-psychic::before {
     content: ".";
     color: transparent;
-    background-image: url(/assets/images/sprite.png);
+    background-image: url(./assets/images/sprite.png);
     background-position: -247px -142px;
     position: absolute;
     width: 20px;
@@ -373,7 +373,7 @@ button.disabled {
 .SearchIcon-fighting::before {
     content: ".";
     color: transparent;
-    background-image: url(/assets/images/sprite.png);
+    background-image: url(./assets/images/sprite.png);
     background-position: -90px -212px;
     position: absolute;
     width: 20px;
@@ -391,7 +391,7 @@ button.disabled {
 .SearchIcon-dark::before {
     content: ".";
     color: transparent;
-    background-image: url(/assets/images/sprite.png);
+    background-image: url(./assets/images/sprite.png);
     background-position: -247px -172px;
     position: absolute;
     width: 20px;
@@ -409,7 +409,7 @@ button.disabled {
 .SearchIcon-steel::before {
     content: ".";
     color: transparent;
-    background-image: url(/assets/images/sprite.png);
+    background-image: url(./assets/images/sprite.png);
     background-position: -217px -172px;
     position: absolute;
     width: 20px;
@@ -427,7 +427,7 @@ button.disabled {
 .SearchIcon-dragon::before {
     content: ".";
     color: transparent;
-    background-image: url(/assets/images/sprite.png);
+    background-image: url(./assets/images/sprite.png);
     background-position: -180px -212px;
     position: absolute;
     width: 20px;
@@ -445,7 +445,7 @@ button.disabled {
 .SearchIcon-none::before {
     content: ".";
     color: transparent;
-    background-image: url(/assets/images/sprite.png);
+    background-image: url(./assets/images/sprite.png);
     background-position: 0px -212px;
     position: absolute;
     width: 20px;
@@ -463,7 +463,7 @@ button.disabled {
 .SearchIcon-void::before {
     content: ".";
     color: transparent;
-    background-image: url(/assets/images/sprite.png);
+    background-image: url(./assets/images/sprite.png);
     background-position: -210px -212px;
     position: absolute;
     width: 20px;
