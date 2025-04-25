@@ -54,6 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
         categoryFilter.addEventListener("change", e => {
             conditionContainer.innerHTML = ""
             selectedTags.clear();
+            selectedRanges.clear();
         });
 
         // ドラッグ＆ドロップのイベントリスナーを設定
@@ -134,8 +135,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 return fromOk && toOk;
             });
         });
-
-        console.log(selectedRanges);
 
         // フィルタリングされたカードをリストに追加
         finalCards.forEach(card => {
@@ -320,7 +319,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 selectedTags.set(category, new Set());
             }
             selectedTags.get(category).add(tag);
-            console.log("タグ追加:", category, tag);
+            // console.log("タグ追加:", category, tag);
         } else {
             if (selectedTags.has(category)) {
                 selectedTags.get(category).delete(tag);
@@ -328,9 +327,9 @@ document.addEventListener("DOMContentLoaded", () => {
                     selectedTags.delete(category);
                 }
             }
-            console.log("タグ解除:", category, tag);
+            // console.log("タグ解除:", category, tag);
         }
-        console.log("現在選択されているタグ:", Array.from(selectedTags));
+        // console.log("現在選択されているタグ:", Array.from(selectedTags));
 
         renderCardList();
     }
