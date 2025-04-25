@@ -16,7 +16,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const generateDeckBtn = document.getElementById("generateDeckBtn");
     const DEFAULT_IMAGE = "images/default.png";
 
-    const selectedTags = new Map(); // 選択されたタグを管理するMap
+    const selectedTags = new Map(); // チェックボックスで選択されたタグを管理するMap
+    const selectedRanges = new Map(); // ドロップダウンで選択されたレンジを管理するMap
     const conditionContainer = document.getElementById("condition-container");
 
     const deck = {};//Idをキーとして管理する
@@ -48,11 +49,13 @@ document.addEventListener("DOMContentLoaded", () => {
         searchBox.addEventListener("input", renderCardList);
         categoryFilter.addEventListener("change", renderCardList);
 
-        // TODO:
+        // 追加条件ポップアップの初期化
+        // TODO: こんなとこでやらない！
         conditionContainer.innerHTML = "";
         categoryFilter.addEventListener("change", e => {
             conditionContainer.innerHTML = ""
             selectedTags.clear();
+            selectedRanges.clear();
         });
 
         // ドラッグ＆ドロップのイベントリスナーを設定
@@ -104,21 +107,35 @@ document.addEventListener("DOMContentLoaded", () => {
         cardList.innerHTML = "";
 
         // フィルタリングされたカードを取得
-        const _filteredCards = cards.filter(card =>
-            card["カード名"].toLowerCase().includes(query) &&
-            (selectedCategory === "" || card["カテゴリ"] === selectedCategory)
-        );
-
-        const filteredCards = _filteredCards.filter(card => {
-            return Array.from(selectedTags.entries()).every(([category, values]) => {
+        const filteredCards = cards.filter(card => {
+            // カード名とカテゴリのフィルタリング
+            const matchesQuery = card["カード名"].toLowerCase().includes(query);
+            const matchesCategory = selectedCategory === "" || card["カテゴリ"] === selectedCategory;
+        
+            // タグフィルタリング
+            const matchesTags = Array.from(selectedTags.entries()).every(([category, values]) => {
                 if (Array.isArray(card[category])) {
                     // 複数の値の場合
                     return card[category].some(value => values.has(value));
-                  } else {
-                     // 単一の値の場合
+                } else {
+                    // 単一の値の場合
                     return values.has(card[category]);
-                  }
+                }
             });
+        
+            // レンジフィルタリング
+            const matchesRanges = Array.from(selectedRanges.entries()).every(([category, range]) => {
+                const value = Number(card[category]);
+                
+                // 無制限条件の考慮
+                const fromOk = isNaN(range.from) || value >= range.from;
+                const toOk = isNaN(range.to) || value <= range.to;
+                
+                return fromOk && toOk;
+            });
+        
+            // すべての条件を満たすカードのみを残す
+            return matchesQuery && matchesCategory && matchesTags && matchesRanges;
         });
 
         // フィルタリングされたカードをリストに追加
@@ -128,6 +145,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const imgSrc = card["画像"] || DEFAULT_IMAGE;
             const cardName = card["カード名"];
 
+            // TODO: ロード時にcardDivのリストを作っておいてそこからフィルタリングするほうが良さそう
             cardDiv.innerHTML = `
                 <img src="${imgSrc}" alt="${cardName}">
                 <p>${cardName}</p>
@@ -145,14 +163,16 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+    // TODO: HTMLに型を置いておく
     addConditionBtn.addEventListener("click", () => {
-        const selectedCategory = categoryFilter.value;
-
         if (conditionContainer.innerHTML == "") {
 
         conditionContainer.style.width = "100%";
 
-        Object.keys(conditionData).forEach(mainCondition => {
+        const selectedCategory = categoryFilter.value;
+        const selectedData = conditionData[selectedCategory];
+
+        Object.keys(selectedData).forEach(mainCondition => {
             const wrapper = document.createElement("div");
             wrapper.style.display = "flex";
             wrapper.style.background = "#e7e7e7";
@@ -170,7 +190,7 @@ document.addEventListener("DOMContentLoaded", () => {
             boxR.style.flexDirection = "column";
             boxR.style.width = "100%";
 
-            const subConditions = conditionData[mainCondition];
+            const subConditions = selectedData[mainCondition];
             subConditions.forEach(subCondition => {
                 const subBoxT = document.createElement("div");
                 subBoxT.style.borderBottom = "1px solid #c3c3c3";
@@ -262,6 +282,23 @@ document.addEventListener("DOMContentLoaded", () => {
                         select2.appendChild(option);
                     });
                     subBoxB.appendChild(select2);
+
+                    selectedRanges.set(category, {
+                        from: Number(select1.value),
+                        to: Number(select2.value)
+                    });
+
+                    select1.addEventListener("change", () => {
+                        const current = selectedRanges.get(category) || {};
+                        selectedRanges.set(category, { ...current, from: Number(select1.value) });
+                        renderCardList();
+                    });
+
+                    select2.addEventListener("change", () => {
+                        const current = selectedRanges.get(category) || {};
+                        selectedRanges.set(category, { ...current, to: Number(select2.value) });
+                        renderCardList();
+                    });
                 } else if (type === "text") {
                     const input = document.createElement("input");
                     input.type = "text";
@@ -287,7 +324,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 selectedTags.set(category, new Set());
             }
             selectedTags.get(category).add(tag);
-            console.log("タグ追加:", category, tag);
+            // console.log("タグ追加:", category, tag);
         } else {
             if (selectedTags.has(category)) {
                 selectedTags.get(category).delete(tag);
@@ -295,9 +332,9 @@ document.addEventListener("DOMContentLoaded", () => {
                     selectedTags.delete(category);
                 }
             }
-            console.log("タグ解除:", category, tag);
+            // console.log("タグ解除:", category, tag);
         }
-        console.log("現在選択されているタグ:", Array.from(selectedTags));
+        // console.log("現在選択されているタグ:", Array.from(selectedTags));
 
         renderCardList();
     }
