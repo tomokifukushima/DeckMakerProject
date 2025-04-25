@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const DEFAULT_IMAGE = "images/default.png";
 
     const selectedTags = new Map(); // 選択されたタグを管理するMap
+    const selectedRanges = new Map();
     const conditionContainer = document.getElementById("condition-container");
 
     const deck = {};//Idをキーとして管理する
@@ -121,8 +122,23 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
 
+        // チェックボックスに加えて range-dropdown によるフィルター
+        const finalCards = filteredCards.filter(card => {
+            return Array.from(selectedRanges.entries()).every(([category, range]) => {
+                const value = Number(card[category]);
+        
+                // 無制限条件の考慮
+                const fromOk = isNaN(range.from) || value >= range.from;
+                const toOk = isNaN(range.to) || value <= range.to;
+        
+                return fromOk && toOk;
+            });
+        });
+
+        console.log(selectedRanges);
+
         // フィルタリングされたカードをリストに追加
-        filteredCards.forEach(card => {
+        finalCards.forEach(card => {
             const cardDiv = document.createElement("div");
             cardDiv.classList.add("card");
             const imgSrc = card["画像"] || DEFAULT_IMAGE;
@@ -262,6 +278,23 @@ document.addEventListener("DOMContentLoaded", () => {
                         select2.appendChild(option);
                     });
                     subBoxB.appendChild(select2);
+
+                    selectedRanges.set(category, {
+                        from: Number(select1.value),
+                        to: Number(select2.value)
+                    });
+
+                    select1.addEventListener("change", () => {
+                        const current = selectedRanges.get(category) || {};
+                        selectedRanges.set(category, { ...current, from: Number(select1.value) });
+                        renderCardList();
+                    });
+
+                    select2.addEventListener("change", () => {
+                        const current = selectedRanges.get(category) || {};
+                        selectedRanges.set(category, { ...current, to: Number(select2.value) });
+                        renderCardList();
+                    });
                 } else if (type === "text") {
                     const input = document.createElement("input");
                     input.type = "text";
