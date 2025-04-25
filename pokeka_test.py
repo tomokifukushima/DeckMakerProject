@@ -1,8 +1,8 @@
-import requests
-import re
 import json
-from bs4 import BeautifulSoup
+import re
 
+import requests
+from bs4 import BeautifulSoup
 
 # ポケモンのタイプ対応表
 type_dict = {
@@ -40,30 +40,72 @@ rarity_dict = {
 }
 
 #同じカードのidを記録する
+# def find_same_card(pokemon_data_list,flag):
+#     for i, card_i in enumerate(pokemon_data_list):
+#         for j, card_j in enumerate(pokemon_data_list):
+#             if i != j:
+#                 if(flag):
+#                     if (
+#                         card_i["カード名"] == card_j["カード名"] and
+#                         card_i["ポケモンのタイプ"] == card_j["ポケモンのタイプ"] and
+#                         card_i["HP"] == card_j["HP"]
+#                     ):
+#                         # ワザ名が一致するか確認
+#                         attacks_i = set(attack["名前"] for attack in card_i["ワザ"])
+#                         attacks_j = set(attack["名前"] for attack in card_j["ワザ"])
+#                         if attacks_i == attacks_j:
+#                             # 同じカードのidを追加
+#                             if "同じカードid" not in card_i:
+#                                 card_i["同じカードid"] = []  # 初期化
+#                             card_i["同じカードid"].append(card_j["id"])
+#                 else:
+#                     # ポケモンでないカードの場合
+#                     if card_i["カテゴリ"] != "ポケモン" and card_i["カード名"] == card_j["カード名"]:
+#                         if "同じカードid" not in card_i:
+#                             card_i["同じカードid"] = []  # 初期化
+#                         card_i["同じカードid"].append(card_j["id"])
+
 def find_same_card(pokemon_data_list,flag):
+    count = 0
+    max_count = int(len(pokemon_data_list) * (len(pokemon_data_list) - 1) / 2)
+    print("同じカードのidを記録中...")
     for i, card_i in enumerate(pokemon_data_list):
-        for j, card_j in enumerate(pokemon_data_list):
-            if i != j:
-                if(flag):
-                    if (
-                        card_i["カード名"] == card_j["カード名"] and
-                        card_i["ポケモンのタイプ"] == card_j["ポケモンのタイプ"] and
-                        card_i["HP"] == card_j["HP"]
-                    ):
-                        # ワザ名が一致するか確認
-                        attacks_i = set(attack["名前"] for attack in card_i["ワザ"])
-                        attacks_j = set(attack["名前"] for attack in card_j["ワザ"])
-                        if attacks_i == attacks_j:
-                            # 同じカードのidを追加
-                            if "同じカードid" not in card_i:
-                                card_i["同じカードid"] = []  # 初期化
-                            card_i["同じカードid"].append(card_j["id"])
-                else:
-                    # ポケモンでないカードの場合
-                    if card_i["カテゴリ"] != "ポケモン" and card_i["カード名"] == card_j["カード名"]:
+        for j, card_j in enumerate(pokemon_data_list[i+1:]):
+            j += i + 1
+            if(flag):
+                if (
+                    card_i["カード名"] == card_j["カード名"] and
+                    card_i["ポケモンのタイプ"] == card_j["ポケモンのタイプ"] and
+                    card_i["HP"] == card_j["HP"]
+                ):
+                    # ワザ名が一致するか確認
+                    attacks_i = set(attack["名前"] for attack in card_i["ワザ"])
+                    attacks_j = set(attack["名前"] for attack in card_j["ワザ"])
+                    if attacks_i == attacks_j:
+                        # 同じカードのidを追加
                         if "同じカードid" not in card_i:
                             card_i["同じカードid"] = []  # 初期化
+                        if "同じカードid" not in card_j:
+                            card_j["同じカードid"] = []  # 初期化
+                        if not card_j["id"] in card_i["同じカードid"]: # 重複チェック
+                            card_i["同じカードid"].append(card_j["id"])
+                        if not card_i["id"] in card_j["同じカードid"]: # 重複チェック
+                            card_j["同じカードid"].append(card_i["id"])
+            else:
+                # ポケモンでないカードの場合
+                if card_i["カテゴリ"] != "ポケモン" and card_i["カード名"] == card_j["カード名"]:
+                    # 同じカードのidを追加
+                    if "同じカードid" not in card_i:
+                        card_i["同じカードid"] = []  # 初期化
+                    if "同じカードid" not in card_j:
+                        card_j["同じカードid"] = []  # 初期化
+                    if not card_j["id"] in card_i["同じカードid"]: # 重複チェック
                         card_i["同じカードid"].append(card_j["id"])
+                    if not card_i["id"] in card_j["同じカードid"]: # 重複チェック
+                        card_j["同じカードid"].append(card_i["id"])
+            count += 1
+            print("\r"+f"{count/max_count*100:3.0f}%", end="")
+    print("\ncomplete!")
 
 
 def add_evolution_chain_ids(pokemon_data_list):
@@ -508,15 +550,20 @@ def main():
     pokemon_cards, non_pokemon_cards, energy_cards, id_order = fetch_pokemon_data(base_url, max_page, headers, ids, pack_flag=False)
 
     # 重複・進化情報の処理
-    find_same_card(pokemon_cards, True)
-    find_same_card(non_pokemon_cards, False)
-    find_same_card(energy_cards, False)
-    add_evolution_chain_ids(pokemon_cards)
+    # find_same_card(pokemon_cards, True)
+    # find_same_card(non_pokemon_cards, False)
+    # find_same_card(energy_cards, False)
+    # add_evolution_chain_ids(pokemon_cards)
 
     # 結合してソート
     combined_pokemon_data = pokemon_cards + parsed_pokemon_data
     combined_non_pokemon_data = non_pokemon_cards + parsed_non_pokemon_data
     combined_energy_data = energy_cards + parsed_energy_data
+    
+    find_same_card(combined_pokemon_data, True)
+    find_same_card(combined_non_pokemon_data, False)
+    find_same_card(combined_energy_data, False)
+    add_evolution_chain_ids(pokemon_cards)
 
     sorted_pokemon_data = sort_by_specified_ids(combined_pokemon_data, id_order)
     sorted_non_pokemon_data = sort_by_specified_ids(combined_non_pokemon_data, id_order)

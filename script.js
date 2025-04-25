@@ -27,11 +27,12 @@ document.addEventListener("DOMContentLoaded", () => {
     // 2つのJSONを並列で取得
     Promise.all([
         fetch("pokemon_cards.json").then(response => response.json()),
-        fetch("non_pokemon_cards.json").then(response => response.json())
+        fetch("non_pokemon_cards.json").then(response => response.json()),
+        fetch("energy_cards.json").then(response => response.json())
     ])
-    .then(([pokemonData, nonPokemonData]) => {
+    .then(([pokemonData, nonPokemonData, EnergyData]) => {
         // 両方のデータを統合
-        cards = [...pokemonData, ...nonPokemonData];
+        cards = [...pokemonData, ...nonPokemonData, ...EnergyData];
 
         // カテゴリフィルターを設定
         const allCategories = new Set(cards.map(card => card["カテゴリ"]).filter(Boolean));
