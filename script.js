@@ -538,7 +538,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (deck[id] > 0) {
             deck[id]--;
             cardCount.textContent = deck[id];
-
+    
             const deckCard = document.getElementById(`deck-card-${cssId(id)}`);
             if (deck[id] === 0) {
                 removeCardFromDeck(id);
@@ -547,7 +547,9 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }
         updateButtonState();
+        updateDeckCount(); // ← これを必ず追加！
     });
+    
 
     //deck生成ボタンのイベント処理
     generateDeckBtn.addEventListener("click", () => {
